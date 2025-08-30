@@ -1,4 +1,6 @@
 export default function GaleriePage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const prefix = basePath.endsWith("/") ? basePath.slice(0, -1) : basePath;
   const videos = [
     "/IMG_1206.mov",
     "/IMG_1233.mov",
@@ -7,7 +9,7 @@ export default function GaleriePage() {
     "/d2ef0089fcd74439892c01934ea1c418.mov",
     "/c64900009a00427289fbbfb59652a710.mov",
     "/6ba9659eb7c746c2a8fc29c938284be9.mov",
-  ];
+  ].map((p) => `${prefix}${p}`);
 
   return (
     <section className="min-h-[65vh] py-12">
