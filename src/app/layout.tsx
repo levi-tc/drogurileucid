@@ -37,6 +37,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const logoSrc = `${prefix}/logo_black.png`;
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
@@ -46,13 +47,12 @@ export default function RootLayout({
             <div className="surface-rounded flex items-center justify-between px-5 py-4 md:px-6 md:py-5">
               <Link href="/" className="flex items-center gap-3">
                 <Image
-                  src="/logo_black.png"
+                  src={logoSrc}
                   alt="Asociația Drogurile Ucid Visurile Copiilor"
                   width={260}
                   height={56}
                   priority
                   className="h-8 w-auto md:h-9"
-                  loader={({ src }) => `${prefix}${src}`}
                 />
                 <span className="sr-only">Asociația „Drogurile ucid visurile copiilor”</span>
               </Link>

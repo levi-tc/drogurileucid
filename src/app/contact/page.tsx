@@ -1,3 +1,5 @@
+"use client"
+
 import { Camera, Mail, Music2, Phone, ThumbsUp } from "lucide-react";
 
 export default function ContactPage() {

@@ -9,6 +9,8 @@ import Image from "next/image";
 export default function Home() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const prefix = basePath.endsWith("/") ? basePath.slice(0, -1) : basePath;
+  const heroImg = `${prefix}/kids_playing.jpg`;
+  const aboutImg = `${prefix}/despre-noi.png`;
   return (
     <div className="space-y-28 md:space-y-32 py-10">
       {/* Hero */}
@@ -40,13 +42,12 @@ export default function Home() {
               <div className="surface-rounded border-4 border-white overflow-hidden shadow-xl">
                 <div className="relative aspect-[16/10] md:aspect-[4/3] w-full">
                   <Image
-                    src="/kids_playing.jpg"
+                    src={heroImg}
                     alt="Copii jucându-se în parc"
                     fill
                     sizes="(min-width: 768px) 560px, 100vw"
                     className="object-cover"
                     priority
-                    loader={({ src }) => `${prefix}${src}`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-transparent" />
                 </div>
@@ -153,13 +154,12 @@ export default function Home() {
           <div className="surface-rounded glass-soft overflow-hidden border shadow-xl">
             <div className="relative aspect-[4/3] w-full">
           <Image
-                src="/despre-noi.png"
+                src={aboutImg}
                 alt="Despre noi – Asociația Drogurile ucid visurile copiilor"
                 fill
                 sizes="(min-width: 768px) 560px, 100vw"
                 className="object-cover"
                 priority
-                loader={({ src }) => `${prefix}${src}`}
               />
             </div>
           </div>
