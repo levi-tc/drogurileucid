@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Home() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const prefix = basePath.endsWith("/") ? basePath.slice(0, -1) : basePath;
   return (
     <div className="space-y-28 md:space-y-32 py-10">
       {/* Hero */}
@@ -44,6 +46,7 @@ export default function Home() {
                     sizes="(min-width: 768px) 560px, 100vw"
                     className="object-cover"
                     priority
+                    loader={({ src }) => `${prefix}${src}`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-transparent" />
                 </div>
@@ -156,6 +159,7 @@ export default function Home() {
                 sizes="(min-width: 768px) 560px, 100vw"
                 className="object-cover"
                 priority
+                loader={({ src }) => `${prefix}${src}`}
               />
             </div>
           </div>

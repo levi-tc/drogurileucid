@@ -16,16 +16,19 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const prefix = basePath.endsWith("/") ? basePath.slice(0, -1) : basePath;
+
 export const metadata: Metadata = {
   title: "Asociația Antidrog – Drogurile ucid visurile copiilor",
   description:
     "Primește sprijin gratuit și confidențial pentru prevenirea consumului de droguri. Suntem aici să te ajutăm să iei decizii sănătoase pentru viitorul tău.",
   icons: {
     icon: [
-      { url: "/favico.svg", type: "image/svg+xml" },
+      { url: `${prefix}/favico.svg`, type: "image/svg+xml" },
     ],
-    shortcut: "/favico.svg",
-    apple: "/favico.svg",
+    shortcut: `${prefix}/favico.svg`,
+    apple: `${prefix}/favico.svg`,
   },
 };
 
@@ -49,6 +52,7 @@ export default function RootLayout({
                   height={56}
                   priority
                   className="h-8 w-auto md:h-9"
+                  loader={({ src }) => `${prefix}${src}`}
                 />
                 <span className="sr-only">Asociația „Drogurile ucid visurile copiilor”</span>
               </Link>
