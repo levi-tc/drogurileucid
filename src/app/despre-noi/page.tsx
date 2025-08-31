@@ -55,7 +55,7 @@ export default function DespreNoiPage() {
     },
     {
       nume: "Diana Gropineanu",
-      rol: "Fost Consumator, Psiholoaga",
+      rol: "Fost Consumator, Psiholog",
       image: `/diana.jpeg`,
       description:
         "Mă numesc Diana Gropineanu, am 33 de ani și locuiesc în București. Am avut parte de o familie care mi-a oferit educație și sprijin, iar pentru asta le sunt recunoscătoare. Totuși, ani la rând m-am confruntat cu dependența de substanțe. De 5 ani sunt abstinentă, iar acest drum de recuperare mi-a schimbat complet direcția vieții.\nLa 28 de ani am ales să urmez psihologia, din dorința de a înțelege mai bine prin ce am trecut și de a fi alături de cei care se confruntă cu aceleași provocări.\nAstăzi sunt psiholog clinician și instructor de yoga și îmbin aceste două instrumente, care au fost și pentru mine ancore de vindecare.\nLucrez cu persoane aflate în recuperare și susțin grupuri de suport, pentru că știu cât de mult contează să nu fii singur pe acest drum. Cred că dependența nu definește un om, ci poate fi chiar începutul unei transformări profunde.",
