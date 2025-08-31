@@ -511,11 +511,11 @@ export default function ResursePage() {
         <div className="space-y-6">
           <div className="border-l-4 border-primary/30 pl-4 py-2">
             <p className="text-sm font-medium text-muted-foreground mb-2">Informare pentru părinți</p>
-            <p className="font-semibold">În curând veți găsi pe site-ul www.liquidmoney.ro teste antidrog utile pentru depistare.</p>
+            <p className="font-semibold">În curând veți găsi pe site-ul <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a> teste antidrog utile pentru depistare.</p>
           </div>
 
           <p>
-            În curând veți găsi pe site-ul www.liquidmoney.ro teste antidrog care vă pot ajuta să aflați adevărul despre consumul de substanțe.
+            În curând veți găsi pe site-ul <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a> teste antidrog care vă pot ajuta să aflați adevărul despre consumul de substanțe.
           </p>
 
           <div className="space-y-3">
