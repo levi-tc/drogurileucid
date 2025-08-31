@@ -1,7 +1,18 @@
 // Removed unused imports
 import { SupporterCard } from "./SupporterCard";
+import Image from "next/image";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@components/ui/dialog";
 
 export default function DespreNoiPage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const prefix = basePath.endsWith("/") ? basePath.slice(0, -1) : basePath;
   const sustinatori: { name: string; description?: string }[] = [
     { name: "Ilie Năstase" },
     { name: "Irina Margareta Nistor" },
@@ -22,11 +33,26 @@ export default function DespreNoiPage() {
     { name: "Alina Casoltan" },
     { name: "Lavinia Albu" },
     { name: "Catrinel Diana Țifrea" },
+  ];
+
+  const echipa = [
+    { nume: "Doru G.", rol: "Fondator" },
+    { nume: "Teodora C.", rol: "Fondator" },
+    { nume: "Gabriel B.", rol: "Fondator" },
     {
-      name: "Clinica Independent",
+      nume: "Diana Todeancă",
+      rol: "Psiholog",
+      image: `${prefix}/psiholog1.jpeg`,
       description:
-        "Clinica Independent este un centru dedicat recuperării, situat în inima naturii, în județul Prahova. Oferim un mediu sigur și empatic pentru cei care doresc să își regăsească echilibrul și să își reconstruiască viața.\n\nSuntem specializați în tratarea dependențelor de substanțe și comportamentale, oferind:\n• Programe terapeutice personalizate\n• Psihoterapie individuală și de grup\n• Ateliere de dezvoltare personală\n• Activități de recreere și de relaxare\n\n📞 Informații suplimentare la 0744533833 sau pe email la clinica.independent@gmail.com",
+        "Diana Todeancă este psihoterapeut cu o pregătire academică solidă și o experiență bogată de lucru cu oameni în contexte variate. Deține două doctorate – unul în Reprezentări Sociale și Comunicare și unul în Psihologie – și este certificată atât în psihoterapie ericksoniană & hipnoză clinică, cât și în terapia sistemică de cuplu și familie. Este, de asemenea, coach transformațional.\n\nCu peste 10 ani de practică în cabinet și mai mult de 6000 de ședințe de terapie individuală susținute, Diana a sprijinit numeroase persoane să își depășească blocajele și să își regăsească echilibrul. Dincolo de cabinet, are o experiență de peste 12 ani în training de soft-skills și consultanță de business, cu etape petrecute în mediul corporativ. A activat în cadrul secției de psihiatrie a Spitalului de Urgență și a lucrat în proiecte punctuale, într-o închisoare de maximă siguranță – experiențe care i-au oferit o perspectivă profundă asupra rezilienței și fragilității umane.\n\nPrin implicarea sa în Asociația Drogurile ucid visurile copiilor, Diana își continuă misiunea de a sprijini prevenția și conștientizarea riscurilor consumului de substanțe, pentru ca visurile copiilor și tinerilor să rămână vii și posibile.",
     },
+    {
+      nume: "Clinica Independent",
+      rol: "Partener",
+      description:
+        "Clinica Independent este un centru dedicat recuperării, situat în inima naturii, în județul Prahova. Oferă programe terapeutice personalizate, psihoterapie individuală și de grup, ateliere de dezvoltare personală și activități de recreere.\n\nContact: 0744 533 833 • clinica.independent@gmail.com",
+    },
+    { nume: "Clinica Social MED", rol: "Partener" },
   ];
 
   return (
@@ -50,23 +76,58 @@ export default function DespreNoiPage() {
         <h2 className="text-2xl md:text-3xl font-semibold text-center">Echipa noastră</h2>
         <p className="text-muted-foreground text-center">Oameni dedicați unui viitor fără dependențe</p>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {[
-            { nume: "Doru G.", rol: "Fondator" },
-            { nume: "Teodora C.", rol: "Fondator" },
-            { nume: "Gabriel B.", rol: "Fondator" },
-          ].map((m, i) => (
-            <div key={m.nume} className="glass-soft surface-rounded p-6 text-center">
-              <div className="mx-auto mb-4 size-16 rounded-full ring-1 shadow-sm"
-                   style={{
-                     background:
-                       i % 2 === 0
-                         ? "radial-gradient(60% 60% at 50% 50%, rgba(214,239,255,.9), rgba(255,255,255,.8))"
-                         : "radial-gradient(60% 60% at 50% 50%, rgba(254,209,140,.7), rgba(255,255,255,.85))",
-                   }}
-              />
-              <div className="font-semibold">{m.nume}</div>
-              <div className="text-sm text-muted-foreground">{m.rol}</div>
-            </div>
+          {echipa.map((m: { nume: string; rol: string; image?: string; description?: string }, i) => (
+            <Dialog key={m.nume}>
+              <DialogTrigger asChild>
+                <button className="glass-soft surface-rounded p-6 text-center w-full">
+                  <div
+                    className="mx-auto mb-4 size-16 rounded-full ring-1 shadow-sm overflow-hidden relative"
+                    style={
+                      m.image
+                        ? undefined
+                        : {
+                            background:
+                              i % 2 === 0
+                                ? "radial-gradient(60% 60% at 50% 50%, rgba(214,239,255,.9), rgba(255,255,255,.8))"
+                                : "radial-gradient(60% 60% at 50% 50%, rgba(254,209,140,.7), rgba(255,255,255,.85))",
+                          }
+                    }
+                  >
+                    {m.image ? (
+                      <Image
+                        src={m.image.startsWith("/") ? `${prefix}${m.image}` : m.image}
+                        alt={m.nume}
+                        fill
+                        className="object-cover"
+                      />
+                    ) : null}
+                  </div>
+                  <div className="font-semibold">{m.nume}</div>
+                  <div className="text-sm text-muted-foreground">{m.rol}</div>
+                </button>
+              </DialogTrigger>
+              <DialogContent className="w-[95vw] sm:max-w-2xl max-w-3xl p-4 sm:p-6 rounded-2xl surface-rounded">
+                <DialogHeader className="pb-4">
+                  <DialogTitle className="text-base sm:text-lg leading-tight pr-8">{m.nume}</DialogTitle>
+                  <DialogDescription className="text-sm">{m.rol}</DialogDescription>
+                </DialogHeader>
+                <div className="space-y-4">
+                  {m.image ? (
+                    <div className="relative mx-auto size-28 sm:size-32 rounded-full overflow-hidden ring-1 shadow-sm">
+                      <Image
+                        src={m.image.startsWith("/") ? `${prefix}${m.image}` : m.image}
+                        alt={m.nume}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  ) : null}
+                  {m.description ? (
+                    <p className="text-sm leading-relaxed whitespace-pre-line">{m.description}</p>
+                  ) : null}
+                </div>
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
       </section>
