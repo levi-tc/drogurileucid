@@ -238,6 +238,81 @@ export default function ResursePage() {
         </div>
       ),
     },
+    {
+      id: "a8",
+      title: "6 Întrebări Esențiale Despre Dependență",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Bazat pe ideile lui Dr. Gabor Maté</p>
+            <p className="font-semibold">Tradus și adaptat pentru publicul larg</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">1. Ce este dependența?</h4>
+            <p>
+              Dependența nu înseamnă doar consum de droguri sau alcool. Poate fi orice comportament repetitiv – cu sau fără
+              substanțe – care oferă alinare sau plăcere temporară, dar are consecințe negative pe termen lung. Elementele cheie sunt:
+              nevoia compulsivă de a repeta comportamentul, plăcerea sau ușurarea temporară, lipsa controlului, continuarea
+              comportamentului în ciuda problemelor și pofta intensă atunci când persoana nu are acces la comportament sau substanță.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">2. Cum influențează mediul dependența?</h4>
+            <p>
+              Creierul se dezvoltă în funcție de mediul în care trăim. Copiii au nevoie de siguranță emoțională și conectare pentru
+              ca sistemele lor de motivație și autoreglare să funcționeze sănătos. Lipsa unui mediu sigur, conflictele, stresul sau
+              lipsa afecțiunii pot afecta circuitele dopaminei și pot crește vulnerabilitatea la dependență.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">3. Ce ne arată experiența copilăriei timpurii?</h4>
+            <p>
+              Primele luni și ani de viață sunt decisive pentru dezvoltarea creierului. Lipsa contactului fizic sau separările
+              repetate pot afecta permanent circuitele responsabile de motivație și plăcere. Chiar și gesturi simple precum îmbrățișările
+              sau mângâierile sprijină dezvoltarea sănătoasă a creierului.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">4. Care este rolul atașamentului parental?</h4>
+            <p>
+              Atașamentul sigur cu părinții ajută copilul să își regleze emoțiile și stresul. Fără un atașament stabil, copilul poate
+              dezvolta anxietate, probleme de relaționare și o predispoziție mai mare spre comportamente de dependență.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">5. Cum contribuie trauma la dependență?</h4>
+            <p>
+              Majoritatea persoanelor dependente au trecut prin traume în copilărie: abuz fizic, emoțional, sexual, divorțul părinților
+              sau pierderea unei persoane dragi. Fiecare experiență traumatică crește riscul de consum precoce de substanțe de 2–4 ori,
+              iar mai multe traume cumulate cresc riscul de până la 10 ori.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">6. Care este rolul stresului?</h4>
+            <p>
+              Stresul cronic afectează întreg organismul, inclusiv creierul. Copiii expuși la stres devin adulți mai sensibili la
+              anxietate și mai predispuși să caute alinare rapidă în comportamente adictive. Astfel se creează un cerc vicios:
+              stres → consum → și mai mult stres.
+            </p>
+          </div>
+
+          <div className="border border-muted bg-muted/20 p-4 rounded-lg">
+            <h4 className="font-medium mb-2">Concluzie</h4>
+            <p>
+              Dependența nu este un defect de caracter, ci o încercare de a face față durerii și stresului. Creierul se poate vindeca
+              prin relații sigure, sprijin și terapie. Cu înțelegere și compasiune, putem sprijini persoanele dependente să își
+              reconstruiască viața.
+            </p>
+          </div>
+        </div>
+      ),
+    },
   ]
 
   return (
