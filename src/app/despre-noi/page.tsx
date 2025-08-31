@@ -37,7 +37,7 @@ export default function DespreNoiPage() {
 
   const echipa = [
     { nume: "Doru G.", rol: "Fondator" },
-    { nume: "Teodora C.", rol: "Fondator" },
+    { nume: "Teodora C.", rol: "Fondator", image: `${prefix}/TeodoraG.jpeg` },
     { nume: "Gabriel B.", rol: "Fondator" },
     {
       nume: "Diana Todeancă",
@@ -49,10 +49,11 @@ export default function DespreNoiPage() {
     {
       nume: "Clinica Independent",
       rol: "Partener",
+      image: `${prefix}/clinicindependent.JPEG`,
       description:
         "Clinica Independent este un centru dedicat recuperării, situat în inima naturii, în județul Prahova. Oferă programe terapeutice personalizate, psihoterapie individuală și de grup, ateliere de dezvoltare personală și activități de recreere.\n\nContact: 0744 533 833 • clinica.independent@gmail.com",
     },
-    { nume: "Clinica Social MED", rol: "Partener" },
+    { nume: "Clinica Social MED", rol: "Partener", image: `${prefix}/socialmed-logo-symbol.png` },
   ];
 
   return (

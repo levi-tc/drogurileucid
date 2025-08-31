@@ -313,6 +313,194 @@ export default function ResursePage() {
         </div>
       ),
     },
+    {
+      id: "a9",
+      title: "Ghid complet despre droguri pentru Părinți: Droguri, Simptome și Semne de Alarmă",
+      content: (
+        <div className="space-y-6">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Ghid pentru părinți</p>
+            <p className="font-semibold">Scris într-un limbaj prietenos, ca să știi la ce să fii atent(ă).</p>
+          </div>
+
+          <p>
+            Acest ghid este realizat pentru a-i ajuta pe părinți să înțeleagă ce tipuri de substanțe pot consuma adolescenții, cum sunt denumite în argou,
+            ce emojiuri folosesc online, ce efecte au aceste droguri și care sunt simptomele sau schimbările de comportament ce pot indica un risc de consum.
+            Informațiile sunt scrise într-un limbaj prietenos și ușor de înțeles.
+          </p>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Cannabis (marijuana, hașiș)</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> iarbă, verde, marij, ganja, joint, blunt, vutra</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 🍁, 🌿, 💨, 🔥, 🥦, 🚬</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 30–70 lei/gram</p>
+            <p>Cel mai folosit drog la adolescenți. Produce euforie și relaxare.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> scade motivația, memoria și concentrarea; apatie, retragere socială.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> ochi roșii, miros specific de fum, apetit crescut, râs excesiv, somnolență.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">MDMA / Ecstasy</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> E, Molly, pastile, bombonele</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 💊, 🍬, ❌⭕, 🍭, ⛔</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 40–60 lei/pastilă</p>
+            <p>Stimulant sintetic popular la petreceri. Crește energia și empatia.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> deshidratare, epuizare, pupile dilatate, insomnie.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> transpirație excesivă, scrâșnit din dinți, agitație, sete intensă.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Amfetamine / Metamfetamine</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> speed, crystal, meth, gheață, albă, praf</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> ⚡, 💎, ❄️, 🧂</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 50–100 lei/gram</p>
+            <p>Stimulente puternice care cresc vigilența. Extrem de adictive.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> iritabilitate, agresivitate, scădere în greutate, paranoia.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> pupile dilatate, lipsă somn, ticuri nervoase, neliniște.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Mephedrone / Cathinone / Etno</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> miau-miau, magic, sare, bubble, Spice</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 🧂, 🐱, ✨, 💥</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 10–30 lei/doză</p>
+            <p>Stimulente sintetice ce imită amfetaminele. Dau euforie scurtă.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> impulsivitate, halucinații, violență, paranoia.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> agitație, pupile mari, transpirație, lipsă apetit, comportament agresiv.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Cocaină</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> albă, praf, zăpadă, coke, snow, blow</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> ❄️, ⛄, 🤧, 🧂</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 350–500 lei/gram</p>
+            <p>Stimulant puternic ce oferă euforie intensă, dar de scurtă durată.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> după consum apare depresie și iritabilitate; dependență rapidă.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> pupile dilatate, secreții nazale, energie excesivă urmată de cădere emoțională.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Heroină</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> H, junk, maro, dope, horse</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 💉, 🐎, 😌</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 20–50 lei/doză</p>
+            <p>Opioid extrem de adictiv, produce relaxare profundă.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> dependență foarte rapidă, pierd interesul pentru școală.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> urme de înțepături, somnolență extremă, pupile foarte mici, vorbire lentă.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Benzodiazepine (Xanax, Klonopin)</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> benzos, bars, K-pin</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 💊, 🛏️, 😴</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 10–50 lei/pastilă</p>
+            <p>Medicamente pentru anxietate, abuzate pentru efectul de sedare.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> somnolență, lipsă de interes, risc de supradoză cu alcool.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> vorbire neclară, mers dezechilibrat, somn prelungit, uitare.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Codeină / Lean / Sizzurp</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> lean, purple drank, sizzurp</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 🍇, 🥤, 💧</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 50–100 lei/sticlă</p>
+            <p>Sirop de tuse cu codeină amestecat cu băuturi carbogazoase. Produce euforie blândă.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> letargie, adormit des, risc de supradoză.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> somnolență, vorbire lentă, stare visătoare, încetinire mentală.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Calvin Klein (CK) & CK Blend</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> CK, Calvin Klein</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 💊 + ❄️ + ⚡ + 🖤</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 100–200 lei/combo</p>
+            <p>Combinație de cocaină și ketamină. Extrem de periculoasă.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> halucinații, pierderi de cunoștință, risc de stop cardiac.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> comportament haotic, confuzie, pierdere echilibru.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Candyflipping</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> LSD + MDMA</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 🍭 + 🌈 + 💊 + 🔮</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 150–250 lei/set</p>
+            <p>Combinație de halucinogen și stimulent, foarte riscantă pentru creierul adolescentului.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> halucinații intense, atacuri de panică, episoade psihotice.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> privire pierdută, transpirație, confuzie, schimbări bruște de emoții.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Chemsex</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> sex + droguri (meth, GHB, Viagra)</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 🍑, 💋, 💉, 🍸, 🍌</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 100–300 lei/seară</p>
+            <p>Practică periculoasă ce combină droguri și activitate sexuală.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> risc de infecții, exploatare sexuală, dependență psihologică.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> dezinhibare extremă, comportament sexual compulsiv, epuizare fizică.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Ketamină</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> Special K, kit kat, vitamina K</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 💉, 👽, 🖤</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 80–150 lei/doză</p>
+            <p>Anestezic folosit ilegal pentru efecte halucinogene.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> pierderi de memorie, dezechilibru, episoade de disociere.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> mers nesigur, privire goală, vorbire încetinită, confuzie.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">GHB / Rohypnol</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> G, GBL, liquid ecstasy, roofies</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 💧, 🛏️, 🍸</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 60–100 lei/doză</p>
+            <p>Depresor al sistemului nervos, cunoscut ca „drogul violului”.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> sedare profundă, amnezie, pierderea cunoștinței.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> slăbiciune musculară, mers instabil, pierderi de memorie.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Speedball</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> cocaină + heroină</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> ❄️ + 💉 + ⚡ + 💀</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> &gt;500 lei/doză</p>
+            <p>Mix extrem de periculos: combinație de stimulant și opioid.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> risc ridicat de stop cardiac chiar după prima utilizare.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> transpirație, confuzie, pierderea cunoștinței; risc letal foarte mare.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Protoxid de azot</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> balon, funny gas, hippie crack</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 🎈, 😆, 💨, 🧁, 💉</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 5–10 lei/capsulă</p>
+            <p>Gaz ilariant inhalat din baloane. Produce euforie de câteva secunde.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> leșin, scăderea tensiunii, pierderea cunoștinței.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> amețeli, râs necontrolat, mers instabil, amorțeală la mâini/picioare.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Inhalanți (aracet, benzină, diluant)</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> aracet, lipici, vapori</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> 🍼, 🛢️, 🧴, 🎯</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> 5–15 lei</p>
+            <p>Substanțe inhalate pentru efect psihoactiv. Foarte toxice.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> leziuni cerebrale, afectare coordonare și memorie.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> miros puternic pe haine, amețeli, ochi injectați, greață.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Fentanil</h4>
+            <p className="text-sm"><span className="font-medium">Argou:</span> fenta</p>
+            <p className="text-sm"><span className="font-medium">Emojiuri:</span> ⚠️, 💀</p>
+            <p className="text-sm"><span className="font-medium">Preț aproximativ:</span> foarte ieftin, extrem de periculos</p>
+            <p>Opioid sintetic de 50–100 ori mai puternic decât morfina. Cauzează moarte rapidă prin supradoză.</p>
+            <p className="text-sm"><span className="font-medium">Efecte:</span> cea mai mare amenințare actuală pentru tineri; doze minime pot fi fatale.</p>
+            <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> respirație foarte lentă, pupile contractate, inconștiență, risc imediat de deces.</p>
+          </div>
+        </div>
+      ),
+    },
   ]
 
   return (
