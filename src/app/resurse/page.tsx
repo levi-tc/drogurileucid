@@ -9,8 +9,11 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@components/ui/dialog"
+import Image from "next/image"
 
 export default function ResursePage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const prefix = basePath.endsWith("/") ? basePath.slice(0, -1) : basePath;
   const articles = [
     {
       id: "a4",
@@ -497,6 +500,101 @@ export default function ResursePage() {
             <p>Opioid sintetic de 50–100 ori mai puternic decât morfina. Cauzează moarte rapidă prin supradoză.</p>
             <p className="text-sm"><span className="font-medium">Efecte:</span> cea mai mare amenințare actuală pentru tineri; doze minime pot fi fatale.</p>
             <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> respirație foarte lentă, pupile contractate, inconștiență, risc imediat de deces.</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a10",
+      title: "Protejează-ți copilul – Teste Antidrog Disponibile În Curând",
+      content: (
+        <div className="space-y-6">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Informare pentru părinți</p>
+            <p className="font-semibold">În curând veți găsi pe site-ul www.liquidmoney.ro teste antidrog utile pentru depistare.</p>
+          </div>
+
+          <p>
+            În curând veți găsi pe site-ul www.liquidmoney.ro teste antidrog care vă pot ajuta să aflați adevărul despre consumul de substanțe.
+          </p>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-lg">1. Teste de suprafață</h4>
+            <p>
+              Atunci când copilul nu vrea să fie testat, iar părintele consideră necesar să afle adevărul, aceste teste NU necesită acordul copilului.
+              Părinții pot să le folosească în camera acestuia, pe mobilă, pat sau alte obiecte personale. Dacă minorul a consumat, urme de substanțe pot rămâne pe
+              suprafețe prin transpirație sau contact direct, iar testul poate confirma consumul.
+            </p>
+            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border">
+              <Image src={`${prefix}/picture1.jpg`} alt="Test de suprafață – exemplu" fill className="object-cover" />
+            </div>
+            <p>
+              Acest test detectează reziduuri de substanțe de pe suprafețe, obiecte sau praf din cameră. Se poate folosi pe mobilă, pat, birou sau alte obiecte personale ale copilului.
+            </p>
+            <div>
+              <p className="font-medium mb-2">Detectează următoarele droguri:</p>
+              <ul className="list-disc list-inside space-y-1 text-sm">
+                <li>Opiacee (heroină) – MOP</li>
+                <li>MDMA (Ecstasy)</li>
+                <li>Cocaină și Crack – COC</li>
+                <li>Amfetamine – AMP</li>
+                <li>Metamfetamină (Crystal Ice) – MET</li>
+                <li>Metadonă – MTD</li>
+                <li>Benzodiazepine (tranchilizante) – BZO</li>
+                <li>Ketamină – KET</li>
+                <li>Buprenorfină – BUP</li>
+                <li>Cannabis (Marijuana, Skunk) – THC</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-lg">2. Teste din salivă</h4>
+            <p>
+              Atunci când copilul vrea să fie testat și își dă acordul, se poate utiliza testul din salivă, care este rapid și precis, fiind ideal pentru depistarea
+              mai multor tipuri de substanțe direct din organism.
+            </p>
+            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border">
+              <Image src={`${prefix}/picture2.jpg`} alt="Test din salivă – exemplu" fill className="object-cover" />
+            </div>
+            <div>
+              <p className="font-medium mb-2">Substanțe detectate și praguri de sensibilitate:</p>
+              <ul className="list-disc list-inside space-y-1 text-sm">
+                <li>Amfetamine (AMP) – 50 ng/ml</li>
+                <li>Cannabis (THC) – 50 ng/ml</li>
+                <li>Cocaină (COC) – 20 ng/ml</li>
+                <li>MDMA (Ecstasy) – 50 ng/ml</li>
+                <li>Opiacee (OPI) – 40 ng/ml</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="font-semibold text-lg">Instrucțiuni de utilizare</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>
+                Pentru testul din salivă: utilizați aplicatorul, colectați salivă, introduceți în soluție și așteptați 5–10 minute.
+              </li>
+              <li>
+                Pentru testul de suprafață: ștergeți suprafața suspectă cu aplicatorul, introduceți în soluție și așteptați 5–10 minute.
+              </li>
+            </ul>
+            <div className="mt-2">
+              <p className="font-medium mb-1">Citiți rezultatele în intervalul de timp recomandat:</p>
+              <ul className="list-disc list-inside space-y-1 text-sm">
+                <li>Dacă apare linia C și linia T, rezultatul este NEGATIV.</li>
+                <li>Dacă apare doar linia C (fără T), rezultatul este POZITIV.</li>
+                <li>Dacă nu apare linia C, testul este INVALID și trebuie repetat.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border border-muted bg-muted/20 p-4 rounded-lg">
+            <h4 className="font-medium mb-2">De unde pot fi achiziționate testele?</h4>
+            <p className="text-sm">
+              În curând, testele vor fi disponibile pe site-ul: <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a>
+            </p>
+            <p className="text-sm">Comenzi telefonice: <a className="text-primary hover:underline" href="tel:0765037444">0765 037 444</a></p>
           </div>
         </div>
       ),
