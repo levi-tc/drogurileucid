@@ -56,6 +56,143 @@ export default function ResursePage() {
       ),
     },
     {
+      id: "a11",
+      title: "🍽️ Plan alimentar pentru adolescenți (15–18 ani)",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Plan alimentar</p>
+            <p className="font-semibold">3 mese principale + 2 gustări pe zi.</p>
+            <p className="text-sm text-muted-foreground">Mese simple, multe la cuptor, pe care le pot face și adolescenții singuri.</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">📅 Luni</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>🥣 Mic dejun: Overnight oats + banană + unt de arahide</li>
+              <li>🍎 Gustare: Iaurt cu fructe</li>
+              <li>🍗 Prânz: Bol cu orez, pui la cuptor și legume coapte</li>
+              <li>🥜 Gustare: Nuci + fruct uscat</li>
+              <li>🌮 Cină: Tacos cu fasole neagră și mozzarella</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">📅 Marți</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>🥤 Mic dejun: Smoothie (lapte, fructe, ovăz, unt migdale)</li>
+              <li>🍏 Gustare: Măr cu unt de arahide</li>
+              <li>🌯 Prânz: Wrap cu pui, legume și sos de iaurt</li>
+              <li>🍿 Gustare: Popcorn simplu</li>
+              <li>🥗 Cină: Cartofi dulci la cuptor + somon + salată verde</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">📅 Miercuri</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>🍞 Mic dejun: Toast cu avocado + ouă fierte</li>
+              <li>🍫 Gustare: Baton proteic</li>
+              <li>🍲 Prânz: Stir-fry rapid cu pui/curcan și legume</li>
+              <li>🍯 Gustare: Iaurt grecesc + miere</li>
+              <li>🍝 Cină: Paste la cuptor cu ton și legume</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">📅 Joi</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>🥣 Mic dejun: Parfait cu iaurt, granola și fructe</li>
+              <li>🥕 Gustare: Morcovi + hummus</li>
+              <li>🍚 Prânz: Bol cu orez, legume coapte și ou prăjit</li>
+              <li>🥤 Gustare: Smoothie mic</li>
+              <li>🍕 Cină: Pizza rapidă făcută acasă (blat gata + legume + brânză)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">📅 Vineri</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>🥞 Mic dejun: Clătite integrale cu fructe</li>
+              <li>🌰 Gustare: Semințe și nuci</li>
+              <li>🥔 Prânz: Cartofi copți + piept de curcan + salată</li>
+              <li>🍇 Gustare: Fructe proaspete</li>
+              <li>🌶️ Cină: Chilli con carne (gătit într-o singură oală)</li>
+            </ul>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a12",
+      title: "🏋️‍♂️ Plan de antrenament pentru adolescenți (15–18 ani)",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Plan de antrenament</p>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>📌 Încălzire: 5–7 min alergare ușoară + mobilitate articulații</li>
+              <li>📌 Structură: fiecare exercițiu = 4 serii (1 încălzire + 3 lucru)</li>
+              <li>📌 Pauză între serii: 60–90 secunde</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">📅 Luni – Zi de picioare 🦵</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Genuflexiuni – 4×12</li>
+              <li>Fandări – 4×10/picior</li>
+              <li>Împins sania (sled push) – 4×20–30 m</li>
+              <li>Ridicări pe vârfuri (gambe) – 4×15</li>
+              <li>Abdomene – 4×15</li>
+              <li>Stretching picioare</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">📅 Marți – Activitate ușoară 🌿</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Mers pe bandă 30 min sau plimbare rapidă în parc</li>
+              <li>Mobilitate și stretching</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">📅 Miercuri – Partea superioară 💪</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Flotări – 4×10</li>
+              <li>Împins la piept cu gantere – 4×10</li>
+              <li>Tracțiuni asistate / scripete – 4×8</li>
+              <li>Ridicări laterale pentru umeri – 4×12</li>
+              <li>Plank – 4×30 sec</li>
+              <li>Stretching brațe, spate, umeri</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">📅 Joi – Activitate ușoară 🌿</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Bicicletă staționară sau alergare ușoară 20–30 min</li>
+              <li>Stretching pentru mobilitate</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-2">📅 Vineri – Full Body ⚡</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Genuflexiuni – 4×10</li>
+              <li>Flotări – 4×10</li>
+              <li>Fandări – 4×10/picior</li>
+              <li>Împins sania (sled push) – 4×20–30 m</li>
+              <li>Tracțiuni asistate / ramat cu gantere – 4×8</li>
+              <li>Plank + plank lateral – 4×30 sec fiecare</li>
+              <li>Stretching general</li>
+            </ul>
+          </div>
+        </div>
+      ),
+    },
+    {
       id: "a5",
       title: "Social MED – Redescoperă viața, pas cu pas",
       content: (
