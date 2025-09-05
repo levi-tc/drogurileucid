@@ -13,7 +13,7 @@ import {
 export default function DespreNoiPage() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const prefix = basePath.endsWith("/") ? basePath.slice(0, -1) : basePath;
-  const sustinatori: { name: string; description?: string }[] = [
+  const sustinatori: { name: string; description?: string; image?: string }[] = [
     { name: "Ilie Năstase" },
     { name: "Irina Margareta Nistor" },
     { name: "Miruna Lazea" },
@@ -33,6 +33,12 @@ export default function DespreNoiPage() {
     { name: "Alina Casoltan" },
     { name: "Lavinia Albu" },
     { name: "Catrinel Diana Țifrea" },
+    {
+      name: "Centrul ENLA",
+      description:
+        "Pianu de Jos, Alba – România are acum un nou reper în lupta împotriva dependențelor: Centrul ENLA, fondat de Ensar Duman și Dr. Laura Cătană, oferă tratament premium pentru dependențe (alcool, droguri, jocuri de noroc, tehnologie) și programe de reabilitare psihică.\n\nCu terapie individuală și de grup, activități creative și facilități premium (camere private, piscină, saună, restaurant propriu), ENLA devine un loc sigur unde pacienții își pot regăsi echilibrul și speranța.\n\n„Împreună putem rescrie povestea noastră!” – Centrul ENLA",
+      image: `${prefix}/ENLA_color.png`,
+    },
   ];
 
   const echipa = [
@@ -160,30 +166,8 @@ export default function DespreNoiPage() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
           {sustinatori.map((s, i) => (
-            <SupporterCard key={s.name} name={s.name} description={s.description} index={i} />
+            <SupporterCard key={s.name} name={s.name} description={s.description} image={s.image} index={i} />
           ))}
-        </div>
-
-        <div className="border rounded-lg bg-muted/20 p-4 sm:p-5">
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-            <div className="relative w-56 h-16 sm:w-64 sm:h-20">
-              <Image
-                src={`${prefix}/ENLA_color.png`}
-                alt="Centrul ENLA – logo"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div className="space-y-2 text-sm leading-relaxed">
-              <p>
-                Pianu de Jos, Alba – România are acum un nou reper în lupta împotriva dependențelor: Centrul ENLA, fondat de Ensar Duman și Dr. Laura Cătană, oferă tratament premium pentru dependențe (alcool, droguri, jocuri de noroc, tehnologie) și programe de reabilitare psihică. 🌱
-              </p>
-              <p>
-                Cu terapie individuală și de grup, activități creative și facilități premium (camere private, piscină, saună, restaurant propriu), ENLA devine un loc sigur unde pacienții își pot regăsi echilibrul și speranța. 💚
-              </p>
-              <p className="italic font-medium">„Împreună putem rescrie povestea noastră!” – Centrul ENLA</p>
-            </div>
-          </div>
         </div>
       </section>
 

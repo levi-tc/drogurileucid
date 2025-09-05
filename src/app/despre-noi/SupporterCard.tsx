@@ -2,9 +2,10 @@
 
 import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 
-export function SupporterCard({ name, index, description }: { name: string; index: number; description?: string }) {
+export function SupporterCard({ name, index, description, image }: { name: string; index: number; description?: string; image?: string }) {
   const [open, setOpen] = React.useState(false);
   const palette = [
     "radial-gradient(60% 60% at 50% 50%, rgba(214,239,255,.8), rgba(255,255,255,.9))",
@@ -20,7 +21,13 @@ export function SupporterCard({ name, index, description }: { name: string; inde
         className="glass-soft surface-rounded p-4 w-full text-left flex items-center justify-between gap-3 hover:shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
       >
         <div className="flex items-center gap-3">
-          <div className="size-9 rounded-full ring-1 shadow-sm" style={{ background: bg }} />
+          {image ? (
+            <div className="relative size-9 rounded-full ring-1 shadow-sm overflow-hidden bg-white">
+              <Image src={image} alt={name} fill className="object-contain p-1" />
+            </div>
+          ) : (
+            <div className="size-9 rounded-full ring-1 shadow-sm" style={{ background: bg }} />
+          )}
           <span className="text-sm font-medium">{name}</span>
         </div>
         <ChevronRight className="size-4 text-muted-foreground" />
@@ -43,7 +50,13 @@ export function SupporterCard({ name, index, description }: { name: string; inde
               className="glass surface-rounded w-full max-w-lg p-6 space-y-3"
             >
               <div className="flex items-center gap-3">
-                <div className="size-10 rounded-full ring-1" style={{ background: bg }} />
+                {image ? (
+                  <div className="relative size-10 rounded-full ring-1 overflow-hidden bg-white">
+                    <Image src={image} alt={name} fill className="object-contain p-1" />
+                  </div>
+                ) : (
+                  <div className="size-10 rounded-full ring-1" style={{ background: bg }} />
+                )}
                 <h3 className="text-lg font-semibold">{name}</h3>
               </div>
               <p className="text-sm text-muted-foreground whitespace-pre-line">
