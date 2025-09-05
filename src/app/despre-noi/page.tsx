@@ -163,6 +163,28 @@ export default function DespreNoiPage() {
             <SupporterCard key={s.name} name={s.name} description={s.description} index={i} />
           ))}
         </div>
+
+        <div className="border rounded-lg bg-muted/20 p-4 sm:p-5">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+            <div className="relative w-56 h-16 sm:w-64 sm:h-20">
+              <Image
+                src={`${prefix}/ENLA_color.png`}
+                alt="Centrul ENLA – logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="space-y-2 text-sm leading-relaxed">
+              <p>
+                Pianu de Jos, Alba – România are acum un nou reper în lupta împotriva dependențelor: Centrul ENLA, fondat de Ensar Duman și Dr. Laura Cătană, oferă tratament premium pentru dependențe (alcool, droguri, jocuri de noroc, tehnologie) și programe de reabilitare psihică. 🌱
+              </p>
+              <p>
+                Cu terapie individuală și de grup, activități creative și facilități premium (camere private, piscină, saună, restaurant propriu), ENLA devine un loc sigur unde pacienții își pot regăsi echilibrul și speranța. 💚
+              </p>
+              <p className="italic font-medium">„Împreună putem rescrie povestea noastră!” – Centrul ENLA</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       

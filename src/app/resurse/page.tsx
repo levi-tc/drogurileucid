@@ -193,6 +193,162 @@ export default function ResursePage() {
       ),
     },
     {
+      id: "a13",
+      title: "Tu, părinte, ești soluția!",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Mesaj pentru părinți</p>
+            <p className="font-semibold">Părinții pot fi ancora care schimbă destinul unui adolescent.</p>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-lg">O lume diferită</h4>
+            <p>
+              Trăim într-o lume diferită de cea în care ați crescut voi, părinții. Dacă adolescența voastră era despre joacă afară,
+              prietenii din cartier și câteva tentații ascunse, adolescența copiilor de azi înseamnă acces instant la orice printr-un telefon.
+              Drogurile, alcoolul, presiunea socială și izolarea emoțională sunt mult mai aproape de ei decât ne imaginăm.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-lg">Când afli că adolescentul consumă</h4>
+            <p>
+              Când descoperi că adolescentul tău a consumat sau este dependent, nu este doar un semnal de alarmă pentru el, ci și pentru tine, ca părinte.
+              Și aici e mesajul esențial: <span className="font-medium">tu ești soluția</span>. Copilul tău are nevoie de tine, nu de pedeapsă, nu de amenințări, nu de fraze precum „nu mai ești copilul meu”
+              sau „te dau afară din casă”. Astfel de reacții nu fac decât să adâncească prăpastia dintre voi și să împingă copilul mai departe spre consum.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-lg">De ce au nevoie adolescenții</h4>
+            <p>
+              Adolescenții nu au nevoie de perfecțiune, ci de înțelegere, siguranță și un spațiu în care să fie ascultați fără judecată.
+              Au nevoie să știe că, indiferent de greșeli, există un adult stabil pe care se pot sprijini. Ei caută sens, apartenență și un loc în care să fie văzuți și acceptați.
+              Dacă nu găsesc asta acasă, vor căuta în altă parte — uneori în substanțe sau anturaje periculoase.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-lg">Schimbarea de perspectivă</h4>
+            <p>
+              Schimbarea de perspectivă începe cu tine: fii curios, nu critic. Pune întrebări deschise, ascultă răspunsurile, arată interes pentru lumea lui,
+              chiar dacă nu o înțelegi pe deplin. Sprijină-l să descopere alte modalități de a face față durerii, anxietății sau presiunii sociale.
+              Nu e un drum ușor, dar este un drum care se poate parcurge cu răbdare, iubire și ajutor specializat. Noi suntem aici să te ajutăm,
+              așadar ne poți suna sau scrie dacă ești părintele unui copil consumator.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-lg">Mesajul final</h4>
+            <p>
+              Părinții au puterea de a fi ancora care salvează. Și, uneori, simplul fapt că adolescentul știe că „mama și tata nu renunță la mine”
+              poate face diferența dintre o prăbușire și o renaștere.
+            </p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a14",
+      title: "Înțelegerea emoțiilor – info de bază și practici utile",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Info de bază</p>
+            <p className="font-semibold">Toate emoțiile au un rol. Acceptarea lor e esențială pentru sănătatea psihică.</p>
+          </div>
+
+          <p>
+            Mai departe, ai o scurtă descriere a câtorva dintre ele. Dacă vrei să înveți mai multe despre emoții, te ajută să lucrezi cu un psihoterapeut sau să cauți
+            mai multe informații pe cont propriu, ca să înțelegi cum se simte la tine fiecare emoție și cum să o gestionezi într-un mod sănătos.
+          </p>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">Iată ce ar trebui să știi</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Toate emoțiile au un rol și un rost în viața noastră</li>
+              <li>Au nevoie de atenția noastră – ne transmit mesaje importante</li>
+              <li>Ajută să le denumim și să vorbim despre ele</li>
+              <li>Nu evita și nu respinge emoțiile neplăcute – și ele sunt importante</li>
+              <li>Învățăm să le observăm la noi și la ceilalți</li>
+              <li>„Negative” nu înseamnă „rele” – sunt doar mai neplăcute</li>
+              <li>Emoțiile sunt o formă de inteligență emoțională</li>
+              <li>Acceptarea tuturor emoțiilor este esențială pentru sănătatea psihică</li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Tristețea – ce este și ce poți face</h4>
+            <p className="text-sm">
+              O reacție la pierdere, respingere sau dezamăgire. Trimite un „strigăt de ajutor”, arată că ai nevoie de timp să te refaci și te încurajează să te îndepărtezi de ce te rănește.
+            </p>
+            <ul className="list-disc list-inside text-sm space-y-1">
+              <li>Cere ajutor și vorbește cu cineva</li>
+              <li>Dă-ți voie să plângi și să treci prin emoție</li>
+              <li>Odihnește-te, notează-ți gândurile, fă mișcare</li>
+              <li>Dacă intensă și prelungită (&gt;2 luni), mergi la psihiatru</li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Furia – ce este și ce poți face</h4>
+            <p className="text-sm">
+              Reacție la nedreptate sau încălcarea limitelor. Are rol de protecție și apărare. Emoția e utilă; comportamentul trebuie gestionat.
+            </p>
+            <ul className="list-disc list-inside text-sm space-y-1">
+              <li>Spune ce ai nevoie cu voce tare, pune limite ferme și blânde</li>
+              <li>Eliberează energia prin activități: sport, sac de box, dans</li>
+              <li>Respectă 3 reguli: nu te răni pe tine, nu îi răni pe ceilalți, nu distruge</li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Frica și anxietatea – ce este și ce poți face</h4>
+            <p className="text-sm">
+              Frica e reacție la pericol real; anxietatea e „frica fără obiect”. La nivel optim, te poate ajuta; pe termen lung, devine copleșitoare.
+            </p>
+            <ul className="list-disc list-inside text-sm space-y-1">
+              <li>Evaluează realist pericolul și alege siguranța</li>
+              <li>Observă gândurile automate și caută alternative mai realiste</li>
+              <li>Respirație controlată, relaxare, meditație, mișcare</li>
+              <li>Învață diferența dintre posibilitate și probabilitate</li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Fericirea și dezgustul</h4>
+            <p className="text-sm">Fericirea te orientează spre ce îți face bine. Dezgustul te protejează de ceea ce e toxic sau nepotrivit.</p>
+            <ul className="list-disc list-inside text-sm space-y-1">
+              <li>Fă o listă cu lucruri care îți aduc bucurie; practică recunoștința</li>
+              <li>Analizează convingerile care declanșează dezgustul; discută-le cu alții</li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Vinovăția și rușinea</h4>
+            <p className="text-sm">Vinovăția te ajută să corectezi. Rușinea este socială și se dizolvă vorbind despre ea.</p>
+            <ul className="list-disc list-inside text-sm space-y-1">
+              <li>Repară când poți, cere-ți scuze, schimbă comportamentul</li>
+              <li>Fă diferența: „am greșit” (vinovăție) vs „sunt rău/rea” (rușine)</li>
+              <li>Vorbește deschis – cuvintele reduc rușinea</li>
+            </ul>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4 space-y-2">
+            <h4 className="font-semibold">Dă-ți voie să simți</h4>
+            <p className="text-sm">
+              Tendința de a bloca emoțiile le intensifică și afectează relațiile și bucuria. Emoțiile vin, stau puțin și trec – sunt cheia pentru sănătate și relații bune.
+            </p>
+            <p className="text-sm">Decizia ta poate începe acum:</p>
+            <blockquote className="text-sm italic leading-relaxed">
+              Eu, ________________________________, îmi dau voie să simt emoțiile mele, chiar dacă uneori sunt inconfortabile. Decid să nu le mai ascund și să nu mai fug de ele. În acest moment închei războiul cu emoțiile. Sunt ale mele și învăț să le cunosc și să le primesc.
+            </blockquote>
+          </div>
+        </div>
+      ),
+    },
+    {
       id: "a5",
       title: "Social MED – Redescoperă viața, pas cu pas",
       content: (
