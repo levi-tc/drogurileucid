@@ -351,6 +351,121 @@ export default function ResursePage() {
       ),
     },
     {
+      id: "a15",
+      title: "💥 Pericolele steroizilor anabolizanți la adolescenți",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Sănătate și prevenție</p>
+            <p className="font-semibold">Steroizii anabolizanți pot lăsa efecte grave și ireversibile asupra adolescenților.</p>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="font-semibold text-lg">🧬 Ce sunt și de ce sunt periculoși?</h4>
+            <p>
+              Steroizii anabolizanți sunt substanțe sintetice, „copii” ale testosteronului. În medicină se folosesc în doze controlate pentru
+              anumite boli, dar utilizarea lor fără supraveghere medicală (pentru masă musculară sau performanță) este periculoasă.
+              Dereglează hormonii naturali ai corpului, cu efecte adesea ireversibile.
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="font-semibold text-lg">👶 De ce adolescenții sunt mai vulnerabili</h4>
+            <p>
+              În adolescență, corpul trece prin transformări majore (creștere, maturizare osoasă și hormonală). Intervenția cu steroizi
+              poate opri creșterea în înălțime, crea tulburări hormonale permanente și afecta sănătatea emoțională (agresivitate, anxietate,
+              depresie).
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="font-semibold text-lg">🦴 Efecte asupra creșterii și oaselor</h4>
+            <p>
+              Pot închide prematur cartilajele de creștere, ceea ce duce la oprirea definitivă a creșterii. Practic, „furi” centimetri din viitor.
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="font-semibold text-lg">❤️ Inima și vasele de sânge</h4>
+            <p>
+              Cresc tensiunea arterială și colesterolul LDL, favorizând plăci aterosclerotice. Riscul de infarct sau AVC poate crește chiar la 17–18 ani.
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="font-semibold text-lg">🩸 Ficatul și rinichii</h4>
+            <p>
+              Ficatul suferă primul, mai ales cu forme orale: steatoză, icter, colestază, creșteri ale enzimelor hepatice, chisturi sau tumori. Rinichii pot dezvolta hipertensiune,
+              proteinurie, glomeruloscleroză și insuficiență renală cronică.
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="font-semibold text-lg">🧠 Creierul, emoțiile și comportamentul</h4>
+            <p>
+              Pot induce agresivitate, iritabilitate, crize de furie, anxietate, depresie și chiar psihoze la doze mari. Multe efecte pot persista și după oprirea consumului.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-lg">🔥 Efecte hormonale și asupra fertilității</h4>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div>
+                <p className="font-medium">La băieți:</p>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li>Oprirea producției naturale de testosteron</li>
+                  <li>Atrofie testiculară</li>
+                  <li>Scăderea numărului și calității spermatozoizilor (infertilitate)</li>
+                  <li>Ginecomastie (dezvoltarea sânilor)</li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-medium">La fete:</p>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li>Dereglări sau oprirea ciclului menstrual</li>
+                  <li>Îngroșarea ireversibilă a vocii</li>
+                  <li>Pilozitate în exces și mărirea clitorisului</li>
+                  <li>Infertilitate</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="font-semibold text-lg">📊 Cât de răspândit este</h4>
+            <p>
+              Studii internaționale estimează 1–4% dintre adolescenți cu consum cel puțin o dată. Presiunea socială, rețelele și accesul online cresc riscul.
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="font-semibold text-lg">🛑 Cum spui „NU” presiunii</h4>
+            <ul className="list-disc list-inside text-sm space-y-1">
+              <li>Pregătește un răspuns simplu: „Nu, cresc natural.”</li>
+              <li>Caută un prieten pe aceeași lungime de undă și sprijiniți-vă.</li>
+              <li>Prioritizează sănătatea; dacă presiunea e mare, părăsește contextul.</li>
+            </ul>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="font-semibold text-lg">🤝 Cum ceri ajutor</h4>
+            <p>
+              Vorbește cu un adult de încredere (părinte, profesor, antrenor) sau cu medicul de familie/nutriționist. Cu cât mai devreme, cu atât mai bine.
+              Asociația noastră te poate ghida către soluții sigure.
+            </p>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-1">💚 Concluzie</h4>
+            <p>
+              Steroizii anabolizanți pun în pericol inima, ficatul, creierul, fertilitatea și echilibrul emoțional. Alege răbdarea și creșterea naturală –
+              decizia de azi îți poate salva viitorul. 💪✨
+            </p>
+          </div>
+        </div>
+      ),
+    },
+    {
       id: "a5",
       title: "Social MED – Redescoperă viața, pas cu pas",
       content: (
