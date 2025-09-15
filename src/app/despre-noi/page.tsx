@@ -46,6 +46,13 @@ export default function DespreNoiPage() {
     { nume: "Teodora C.", rol: "Fondator", image: `${prefix}/TeodoraG.jpeg` },
     { nume: "Gabriel B.", rol: "Fondator" },
     {
+      nume: "Lea Pelici",
+      rol: "Profesoara de sport",
+      image: `${prefix}/antrenorsportiv.jpeg`,
+      description:
+        "Sunt Lea Pelici, profesoară de sport și absolventă a Facultății de Educație Fizică și Sport, cu master în același domeniu.\n\nDe 5 ani activez ca antrenoare de fitness, unde îmi dedic energia și pasiunea pentru a-i ajuta pe oameni să-și atingă obiectivele.\n\nAm fost sportivă de performanță la volei, experiență care m-a format și m-a învățat disciplina și munca în echipă.\n\nAm participat la Survivor, unde am obținut locul 4 și am rămas ultima femeie în competiție.\n\nÎmi place să inspir prin exemplu și să transmit dorința de mișcare și un stil de viață activ.",
+    },
+    {
       nume: "Diana Todeancă",
       rol: "Psiholog",
       image: `${prefix}/psiholog1.jpeg`,
@@ -74,11 +81,11 @@ export default function DespreNoiPage() {
         "Clinica Independent este un centru dedicat recuperării, situat în inima naturii, în județul Prahova. Oferă programe terapeutice personalizate, psihoterapie individuală și de grup, ateliere de dezvoltare personală și activități de recreere.\n\nContact: 0744 533 833 • clinica.independent@gmail.com",
     },
     {
-      nume: "Clinica Social MED",
+      nume: "Emblematic România",
       rol: "Partener",
-      image: `${prefix}/socialmed-logo-symbol.png`,
+      image: `${prefix}/emblematicromania.png`,
       description:
-        "Social MED este un centru dedicat sprijinirii persoanelor care se confruntă cu dependențe de substanțe psihoactive, alcool sau alte forme de adicție. Cu o echipă multidisciplinară formată din medici psihiatri, terapeuți și consilieri specializați, oferim programe personalizate de detoxifiere asistată medical și recuperare psihologică, adaptate nevoilor fiecărui pacient.",
+        "Emblematic România este promotorul conceptului de branding de țară, o inițiativă care unește România printr-o imagine puternică și autentică. Punem în valoare identitatea, educația și inovația pentru a reda încrederea, mândria națională și sentimentul de siguranță, reafirmând România în sufletele românilor.\n\nAsociația Emblematic România are ca scop promovarea unitară a României în toate aspectele esențiale, tipice și identitare ale culturii sale istorice și actuale. Conceptul proiectului aduce în prim-plan repere: oameni, locuri, fapte, venind astfel în întâmpinarea nevoii de promovare reală a României și prin prisma privirii din exterior.\n\nEmblematic România, ca însemn, se poate constitui în recomandare și garant al personalităților, al calității produselor și al obiectivelor remarcabile.\n\nEmblematic România – identitate, educație și inovație pentru o țară puternică.\nEmblematic România – unitate și iubire pentru copiii noștri.",
     },
   ];
 

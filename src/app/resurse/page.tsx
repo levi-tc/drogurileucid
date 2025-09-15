@@ -259,6 +259,8 @@ export default function ResursePage() {
             <p className="font-semibold">Toate emoțiile au un rol. Acceptarea lor e esențială pentru sănătatea psihică.</p>
           </div>
 
+          <p className="text-xs text-muted-foreground">Autor: Diana Todeanca</p>
+
           <p>
             Mai departe, ai o scurtă descriere a câtorva dintre ele. Dacă vrei să înveți mai multe despre emoții, te ajută să lucrezi cu un psihoterapeut sau să cauți
             mai multe informații pe cont propriu, ca să înțelegi cum se simte la tine fiecare emoție și cum să o gestionezi într-un mod sănătos.
@@ -799,7 +801,7 @@ export default function ResursePage() {
     },
     {
       id: "a10",
-      title: "Protejează-ți copilul – Teste Antidrog Disponibile În Curând",
+      title: "Protejează-ți copilul – Teste Antidrog Disponibile",
       content: (
         <div className="space-y-6">
           <div className="border-l-4 border-primary/30 pl-4 py-2">
