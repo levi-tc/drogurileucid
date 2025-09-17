@@ -42,9 +42,9 @@ export default function DespreNoiPage() {
   ];
 
   const echipa = [
-    { nume: "Doru G.", rol: "Fondator" },
-    { nume: "Teodora C.", rol: "Fondator", image: `${prefix}/TeodoraG.jpeg` },
-    { nume: "Gabriel B.", rol: "Fondator" },
+    { nume: "Liviu Andrei", rol: "Fondator" },
+    { nume: "Teodora Cosma", rol: "Fondator", image: `${prefix}/TeodoraG.jpeg` },
+    { nume: "Gabriel Badea", rol: "Fondator" },
     {
       nume: "Lea Pelici",
       rol: "Profesoara de sport",

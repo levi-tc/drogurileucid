@@ -466,50 +466,6 @@ export default function ResursePage() {
       ),
     },
     {
-      id: "a5",
-      title: "Social MED – Redescoperă viața, pas cu pas",
-      content: (
-        <div className="space-y-5">
-          <div className="border-l-4 border-primary/30 pl-4 py-2">
-            <p className="text-sm font-medium text-muted-foreground mb-2">Despre Social MED</p>
-            <p className="font-semibold">Social MED este un centru dedicat sprijinirii persoanelor care se confruntă cu dependențe de substanțe psihoactive, alcool sau alte forme de adicție.</p>
-          </div>
-          
-          <p>Cu o echipă multidisciplinară formată din <em>medici psihiatri, terapeuți și consilieri specializați</em>, oferim programe personalizate de detoxifiere asistată medical și recuperare psihologică, adaptate nevoilor fiecărui pacient.</p>
-
-          <p>La Social MED, considerăm că fiecare persoană merită o nouă șansă la o viață fără dependențe, într-un mediu sigur, confidențial și susținut de compasiune. Fiecare pas al procesului de recuperare este însoțit de profesionalism și empatie, asigurând o vindecare completă, nu doar fizică, ci și emoțională.</p>
-
-          <div className="bg-muted/30 p-4 rounded-lg border">
-            <p>
-              <span className="font-semibold">Misiunea noastră:</span> 
-              <span className="italic"> Social MED este mai mult decât un simplu centru de reabilitare – este locul unde speranța renaște și viețile se transformă.</span>
-            </p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-lg mb-3">O premieră în România</h4>
-            <p className="text-sm leading-relaxed mb-3">Suntem <span className="font-medium">primul centru acreditat în România de tip comunitate terapeutică</span>, dedicat persoanelor afectate de consumul de droguri. Aici, am creat o comunitate a reabilitării, sprijinului și reconstrucției personale.</p>
-          </div>
-
-          <p>Într-o societate care adesea stigmatizează, alegem să întindem o mână. Vedem omul dincolo de dependență și credem cu tărie în puterea schimbării. Fiecare persoană care își recăpătă viața este o victorie tăcută, dar imensă.</p>
-
-          <p>La Social MED, nu luptăm doar împotriva dependenței, ci pentru dreptul fiecărei persoane la o viață cu sens. <span className="font-medium">O viață nouă!</span></p>
-
-          <div>
-            <h4 className="font-semibold text-lg mb-3">Rezultate concrete</h4>
-            <p>Prin programele noastre inovative și prin dedicarea echipei, am reușit să ajutăm <span className="font-medium">sute de oameni</span> să își regăsească calea.</p>
-          </div>
-
-          <div className="border border-muted bg-muted/20 p-4 rounded-lg">
-            <p className="font-medium mb-2">Mesaj de speranță</p>
-            <p>Dacă tu sau cineva drag ție se confruntă cu o astfel de problemă, află că <span className="font-medium">acum se poate și în România</span>.</p>
-          </div>
-
-          <p className="text-center font-medium italic border-t pt-4">Împreună, putem face primul pas spre schimbare!</p>
-        </div>
-      ),
-    },
-    {
       id: "a6",
       title: "Plan Strategic - Asociația Drogurile ucid visurile copiilor",
       content: (
@@ -921,11 +877,11 @@ export default function ResursePage() {
         <div className="space-y-6">
           <div className="border-l-4 border-primary/30 pl-4 py-2">
             <p className="text-sm font-medium text-muted-foreground mb-2">Informare pentru părinți</p>
-            <p className="font-semibold">În curând veți găsi pe site-ul <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a> teste antidrog utile pentru depistare.</p>
+            <p className="font-semibold">Le puteți găsi acum pe site-ul <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a> – teste antidrog utile pentru depistare.</p>
           </div>
 
           <p>
-            În curând veți găsi pe site-ul <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a> teste antidrog care vă pot ajuta să aflați adevărul despre consumul de substanțe.
+            Le puteți găsi acum pe site-ul <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a> – teste antidrog care vă pot ajuta să aflați adevărul despre consumul de substanțe.
           </p>
 
           <div className="space-y-3">
@@ -1002,7 +958,7 @@ export default function ResursePage() {
           <div className="border border-muted bg-muted/20 p-4 rounded-lg">
             <h4 className="font-medium mb-2">De unde pot fi achiziționate testele?</h4>
             <p className="text-sm">
-              În curând, testele vor fi disponibile pe site-ul: <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a>
+              Testele sunt disponibile acum pe site-ul: <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a>
             </p>
             <p className="text-sm">Comenzi telefonice: <a className="text-primary hover:underline" href="tel:0765037444">0765 037 444</a></p>
           </div>
