@@ -42,9 +42,9 @@ export default function DespreNoiPage() {
   ];
 
   const echipa = [
-    { nume: "Liviu Andrei", rol: "Fondator" },
+    { nume: "Liviu Andrei", rol: "Fondator", image: `${prefix}/liviuandrei.jpeg` },
     { nume: "Teodora Cosma", rol: "Fondator", image: `${prefix}/TeodoraG.jpeg` },
-    { nume: "Gabriel Badea", rol: "Fondator" },
+    { nume: "Gabriel Badea", rol: "Fondator", image: `${prefix}/gabibadea.jpeg` },
     {
       nume: "Lea Pelici",
       rol: "Profesoara de sport",
@@ -60,18 +60,18 @@ export default function DespreNoiPage() {
         "Diana Todeancă este psihoterapeut cu o pregătire academică solidă și o experiență bogată de lucru cu oameni în contexte variate. Deține două doctorate – unul în Reprezentări Sociale și Comunicare și unul în Psihologie – și este certificată atât în psihoterapie ericksoniană & hipnoză clinică, cât și în terapia sistemică de cuplu și familie. Este, de asemenea, coach transformațional.\n\nCu peste 10 ani de practică în cabinet și mai mult de 6000 de ședințe de terapie individuală susținute, Diana a sprijinit numeroase persoane să își depășească blocajele și să își regăsească echilibrul. Dincolo de cabinet, are o experiență de peste 12 ani în training de soft-skills și consultanță de business, cu etape petrecute în mediul corporativ. A activat în cadrul secției de psihiatrie a Spitalului de Urgență și a lucrat în proiecte punctuale, într-o închisoare de maximă siguranță – experiențe care i-au oferit o perspectivă profundă asupra rezilienței și fragilității umane.\n\nPrin implicarea sa în Asociația Drogurile ucid visurile copiilor, Diana își continuă misiunea de a sprijini prevenția și conștientizarea riscurilor consumului de substanțe, pentru ca visurile copiilor și tinerilor să rămână vii și posibile.",
     },
     {
-      nume: "Iulian Brănișteanu",
-      rol: "Fost Consumator",
-      image: `/iulian.jpeg`,
+      nume: "Larisa Herculea-Andronic",
+      rol: "Psihoterapeut",
+      image: `${prefix}/lasrisahercule.jpeg`,
       description:
-        "Mă numesc Iulian Brănișteanu, am 33 ani, sunt din Tulcea, dar locuiesc în București de mai bine de 3 ani.\n\nSunt antreprenor in domeniul Horeca și Ecommerce, coach și facilitator sistemic. M’am confruntat cu dependența de jocuri de noroc timp de 15 ani de zile, iar cu cea de droguri 10 ani de zile până am ajuns în punctul în care am zis că trebuie să fac o schimbare majoră în viața mea.\n\nPe parcursul acestui drum de schimbare și recuperare am făcut foarte multe cursuri de dezvoltare personală, programe de terapie și terapie alternativă, activități ce au condus către recuperarea mea, iar în prezent sunt abstinent de mai bine de 3 ani.\n\nÎn acest drum am avut alături familia, iubita și câțiva prieteni care m’au susținut necondiționat și fără de care această recuperare nu ar fi fost posibilă.",
+        "Sunt Larisa Herculea-Andronic, psihoterapeut și hipnoterapeut autonom (cod atestat CPR 23690), cu peste 1.000 de ore de formare și practică în psihoterapie și hipnoterapie.\n\nSunt membră a Colegiului Psihologilor din România și a AHPCC, cu supraspecializare în psiho-oncologie și certificări internaționale în hipnoterapie (IPHM, PHPA). Am experiență ca profesor de psihologie, psihoterapeut voluntar și coordonator în proiecte educaționale și sociale.\n\nAriile mele de lucru:\n✨ tulburări emoționale, anxietate, depresie\n✨ renunțarea la dependențe\n✨ traume, doliu, pierderi\n✨ psihoterapie pentru persoane cu boli cronice\n✨ dezvoltare personală și optimizarea vieții\n✨ psihoterapie de cuplu și sexualitate\n\nÎn prezent îmi desfășor activitatea în cabinet individual de psihologie, unde ofer un cadru sigur, empatic și confidențial. Accentul este pe vindecare emoțională, resurse interioare și transformare personală.\n\nMisiunea mea: să te sprijin să rupi lanțurile trecutului și să îți construiești un prezent și un viitor plin de bucurie și autenticitate. 🌿",
     },
     {
-      nume: "Diana Gropineanu",
-      rol: "Fost Consumator, Psiholog",
-      image: `/diana.jpeg`,
+      nume: "Mihaela Sava",
+      rol: "Hipnoterapeut",
+      image: `${prefix}/mihaelasava.jpeg`,
       description:
-        "Mă numesc Diana Gropineanu, am 33 de ani și locuiesc în București. Am avut parte de o familie care mi-a oferit educație și sprijin, iar pentru asta le sunt recunoscătoare. Totuși, ani la rând m-am confruntat cu dependența de substanțe. De 5 ani sunt abstinentă, iar acest drum de recuperare mi-a schimbat complet direcția vieții.\nLa 28 de ani am ales să urmez psihologia, din dorința de a înțelege mai bine prin ce am trecut și de a fi alături de cei care se confruntă cu aceleași provocări.\nAstăzi sunt psiholog clinician și instructor de yoga și îmbin aceste două instrumente, care au fost și pentru mine ancore de vindecare.\nLucrez cu persoane aflate în recuperare și susțin grupuri de suport, pentru că știu cât de mult contează să nu fii singur pe acest drum. Cred că dependența nu definește un om, ci poate fi chiar începutul unei transformări profunde.",
+        "Sunt Mihaela Sava, hipnoterapeut, specialist in vindecarea traumelor din copilărie si a mostenirilor transgenerationale prin hipnoza regresiva.\n\nCălătoria mea a început încă din copilărie, cand tatal meu alcoolic venea acasa foarte nervos si pus pe scandal. Mereu mi-am pus întrebarea \"ce-i face pe oameni dependenti?\", \"de ce are nevoie o persoana sa consume substanțe ca sa se simta bine in timp ce se distrug pe ei si tot ce-i înconjoară?\"\n\nIn urma ședințelor cu persoane dependente de alcool si droguri, punctele comune des întâlnite au fost: lipsa atenției, lipsa afecțiunii si neacceptarea de sine (copiii criticați, neacceptati asa cum sunt in realitate).\n\nCa si cauza comuna a acestor lipsuri este sărăcia. Lipsurile părinților si focusul lor pe munca n-a lăsat energie si timp pentru \"hrănirea\" suflețelul de copil.\n\nDe aici mai departe moștenirea neamului, simplu de inteles prin citirea manualului de istorie. \n\nSaracie, lipsuri, războaie, confiscarea averilor- toate au efecte negative si se manifesta astazi in psihicul si energia vieții fiecăruia dintre noi. \n\nRegresia este tehnica cea mai rapida si cea mai eficienta prin care te poți elibera de poverile trecutului.\n\nVrei sa încerci? Contacteaza-ma!\n\nWww.mihaelasava.com",
     },
     {
       nume: "Clinica Independent",
