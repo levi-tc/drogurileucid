@@ -34,7 +34,7 @@ export default function ResursePage() {
 
           <p>Dar într-o zi, din umbra străzilor a apărut un monstru periculos numit Drog.
           Avea ochi strălucitori și șoptea:<br/>
-          – „Vino cu mine, Alex! Îți voi da puteri magice și distracție fără sfârșit…"</p>
+          – &ldquo;Vino cu mine, Alex! Îți voi da puteri magice și distracție fără sfârșit&hellip;&rdquo;</p>
 
           <p>Monstrul părea prietenos, dar în spatele lui se ascundeau lanțuri negre și o pelerină întunecată care înfășura pe oricine cădea în capcana lui.</p>
 
@@ -47,12 +47,12 @@ export default function ResursePage() {
               <li>Le distrugea visurile și îi îndepărta de familie 👨‍👩‍👧‍👦</li>
               <li>Îi trimitea pe un drum fără viitor 🚫🎓</li>
             </ul>
-            <p className="mt-3 font-medium">„Nu, nu asta vreau eu!" și-a spus Alex.</p>
+            <p className="mt-3 font-medium">&ldquo;Nu, nu asta vreau eu!&rdquo; și-a spus Alex.</p>
           </div>
 
           <div className="border-t pt-4">
             <h4 className="font-semibold text-lg mb-3">✅ Atunci, băiatul și-a scos scutul curajului și a strigat:</h4>
-            <p>– „NU, Monstru Drog! Puterea mea este mai mare decât minciunile tale!"</p>
+            <p>– &ldquo;NU, Monstru Drog! Puterea mea este mai mare decât minciunile tale!&rdquo;</p>
             <p>Cu un pas hotărât, Alex a fugit din locul întunecat și a ales să meargă la prietenii lui. Acolo, cu mingea, muzica și cărțile, și-a găsit adevărata bucurie 🏀🎶📚.</p>
           </div>
 
@@ -67,7 +67,7 @@ export default function ResursePage() {
             <p>Monstrul Drog promite magie, dar aduce doar boală și lanțuri.
             Adevărații eroi aleg sănătatea, prietenia și visele lor luminoase. 🌟</p>
             <p className="mt-2 font-medium">👧👦 Fii eroul poveștii tale! Spune NU Monstrului Drog și păstrează-ți libertatea!</p>
-            <p className="text-sm text-muted-foreground mt-2">📌 Asociația „Drogurile Ucid Visurile Copiilor"</p>
+            <p className="text-sm text-muted-foreground mt-2">📌 Asociația &ldquo;Drogurile Ucid Visurile Copiilor&rdquo;</p>
           </div>
         </div>
       ),
@@ -118,7 +118,7 @@ export default function ResursePage() {
             <p>Dacă cineva te întreabă sau dacă tu vrei să recunoști că ai o problemă, e bine să știi câteva lucruri:</p>
             <ol className="list-decimal list-inside space-y-2 text-sm mt-3">
               <li><span className="font-medium">Alege un moment liniștit</span> – nu când e ceartă sau tensiune.</li>
-              <li><span className="font-medium">Vorbește deschis</span> – de exemplu: „Nu mă simt bine în ultima vreme și am nevoie de ajutor."</li>
+              <li><span className="font-medium">Vorbește deschis</span> – de exemplu: &ldquo;Nu mă simt bine în ultima vreme și am nevoie de ajutor.&rdquo;</li>
               <li><span className="font-medium">Ascultă și fii sincer</span> – nu te grăbi să negi sau să te aperi.</li>
               <li><span className="font-medium">Recunoaște ce simți</span> – uneori drogurile sunt folosite ca să ascundă stresul, tristețea sau presiunea.</li>
               <li><span className="font-medium">Gândește-te că nu ești singur</span> – familia și prietenii apropiați pot fi alături de tine.</li>
@@ -131,7 +131,7 @@ export default function ResursePage() {
               <li>Un terapeut nu e un polițist și nici un judecător. Este o persoană care te poate ajuta să înțelegi ce se întâmplă cu tine și să găsești soluții.</li>
               <li>Poți merge împreună cu cineva apropiat (părinte, frate/soră, prieten).</li>
               <li>Terapia nu e o pedeapsă, ci o cale de a te simți mai bine și de a recăpăta controlul.</li>
-              <li>Este normal să îți fie teamă sau rușine, dar asta nu înseamnă că ești „defect".</li>
+              <li>Este normal să îți fie teamă sau rușine, dar asta nu înseamnă că ești &ldquo;defect&rdquo;.</li>
             </ul>
           </div>
 
@@ -299,8 +299,8 @@ export default function ResursePage() {
               <p><span className="font-medium">📖 Ce este?</span></p>
               <ul className="list-disc list-inside space-y-1 text-xs ml-4">
                 <li>Marijuana provine din planta cannabis.</li>
-                <li>Conține peste 100 de substanțe chimice, dar cea mai cunoscută este THC (tetrahidrocanabinolul) — responsabil pentru efectele „euforice" sau de „a te simți high".</li>
-                <li>Altă substanță importantă este CBD (canabidiolul), care NU provoacă „high", dar este folosită uneori în scopuri medicale.</li>
+                <li>Conține peste 100 de substanțe chimice, dar cea mai cunoscută este THC (tetrahidrocanabinolul) — responsabil pentru efectele &ldquo;euforice&rdquo; sau de &ldquo;a te simți high&rdquo;.</li>
+                <li>Altă substanță importantă este CBD (canabidiolul), care NU provoacă &ldquo;high&rdquo;, dar este folosită uneori în scopuri medicale.</li>
               </ul>
               <p className="text-xs">👉 Marijuana poate fi fumată 🚬, vaporizată 💨, consumată în produse alimentare 🍪 sau băuturi 🥤.</p>
             </div>
@@ -322,7 +322,7 @@ export default function ResursePage() {
               <ul className="list-disc list-inside space-y-1 text-xs ml-4">
                 <li>Nicotina este o substanță chimică foarte adictivă găsită în plantele de tutun.</li>
                 <li>Produsele din tutun includ: țigări clasice 🚬, trabucuri, pipă, tutun de mestecat, dar și dispozitive moderne: e-cigarette 💨 și vape-uri.</li>
-                <li>Adolescenții sunt deseori atrași de vape-uri cu arome 🍓🍉 pentru că par „cool" și „inofensive".</li>
+                <li>Adolescenții sunt deseori atrași de vape-uri cu arome 🍓🍉 pentru că par &ldquo;cool&rdquo; și &ldquo;inofensive&rdquo;.</li>
               </ul>
               <p className="text-xs">👉 Realitatea: chiar și aceste produse conțin nicotină și alte substanțe toxice care afectează grav sănătatea.</p>
             </div>
@@ -335,14 +335,14 @@ export default function ResursePage() {
               <ul className="list-disc list-inside space-y-1 text-xs ml-4">
                 <li>Alcoolul este o substanță psihotropă prezentă în băuturile alcoolice: bere 🍺, vin 🍷, tării 🥃, cocktail-uri 🍹.</li>
                 <li>Este legal pentru adulți, dar ilegal și periculos pentru minori 👩‍🎓👨‍🎓.</li>
-                <li>Adolescenții pot fi tentați să bea din: curiozitate, presiunea grupului 🧑‍🤝‍🧑, dorința de a se relaxa sau „distracție".</li>
+                <li>Adolescenții pot fi tentați să bea din: curiozitate, presiunea grupului 🧑‍🤝‍🧑, dorința de a se relaxa sau &ldquo;distracție&rdquo;.</li>
               </ul>
             </div>
           </div>
 
           <div className="bg-muted/20 border rounded-lg p-4">
             <h4 className="font-semibold mb-2">🤝 Sprijin din partea asociației</h4>
-            <p className="text-sm">Asociația „Drogurile ucid visurile copiilor" este alături de profesori, părinți și elevi în lupta împotriva dependențelor.</p>
+            <p className="text-sm">Asociația &ldquo;Drogurile ucid visurile copiilor&rdquo; este alături de profesori, părinți și elevi în lupta împotriva dependențelor.</p>
             <p className="text-sm mt-2">👉 Dacă întâmpinați o problemă legată de consum sau dependență, ne puteți contacta:</p>
             <ul className="list-disc list-inside text-sm mt-2 ml-4">
               <li>📞 Telefon oficial: 0750633148</li>
