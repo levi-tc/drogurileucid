@@ -9,14 +9,354 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@components/ui/dialog"
-
+import Image from "next/image"
 
 export default function ResursePage() {
-  
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const prefix = basePath.endsWith("/") ? basePath.slice(0, -1) : basePath;
   const articles = [
     {
+      id: "a_story",
+      title: "Povestea lui Eroul Alex și Monstrul Drog 🦸‍♀️",
+      content: (
+        <div className="space-y-5">
+          <div className="w-full rounded-xl overflow-hidden border mb-6">
+            <Image 
+              src={`${prefix}/poveste.jpeg`} 
+              alt="Povestea lui Eroul Alex și Monstrul Drog" 
+              width={800} 
+              height={600} 
+              className="w-full h-auto object-contain" 
+            />
+          </div>
+          
+          <p>Demult, într-un oraș liniștit, trăia un băiat curajos pe nume Alex. El visa să devină supererou adevărat, care să salveze oamenii și să aducă bucurie.</p>
+
+          <p>Dar într-o zi, din umbra străzilor a apărut un monstru periculos numit Drog.
+          Avea ochi strălucitori și șoptea:<br/>
+          – „Vino cu mine, Alex! Îți voi da puteri magice și distracție fără sfârșit…"</p>
+
+          <p>Monstrul părea prietenos, dar în spatele lui se ascundeau lanțuri negre și o pelerină întunecată care înfășura pe oricine cădea în capcana lui.</p>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold text-lg mb-3">⚠️ Alex a văzut ce făcea Monstrul Drog oamenilor:</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Le fura sănătatea, făcându-le inimile și mințile slabe ❤️🧠</li>
+              <li>Le răpea memoria și bucuria 📉</li>
+              <li>Îi lega cu lanțuri grele de dependență 🔗</li>
+              <li>Le distrugea visurile și îi îndepărta de familie 👨‍👩‍👧‍👦</li>
+              <li>Îi trimitea pe un drum fără viitor 🚫🎓</li>
+            </ul>
+            <p className="mt-3 font-medium">„Nu, nu asta vreau eu!" și-a spus Alex.</p>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold text-lg mb-3">✅ Atunci, băiatul și-a scos scutul curajului și a strigat:</h4>
+            <p>– „NU, Monstru Drog! Puterea mea este mai mare decât minciunile tale!"</p>
+            <p>Cu un pas hotărât, Alex a fugit din locul întunecat și a ales să meargă la prietenii lui. Acolo, cu mingea, muzica și cărțile, și-a găsit adevărata bucurie 🏀🎶📚.</p>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold text-lg mb-3">🆘 Dar Alex a înțeles și ceva important:</h4>
+            <p>Dacă un prieten cădea în ghearele Monstrului Drog, nu trebuia să lupte singur.
+            El știa că poate cere ajutor de la înțelepții adulți: părinți, profesori sau doctori. Aceștia aveau arme speciale – înțelepciunea și grija – cu care puteau slăbi puterea monstrului.</p>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">🔑 Morala basmului:</h4>
+            <p>Monstrul Drog promite magie, dar aduce doar boală și lanțuri.
+            Adevărații eroi aleg sănătatea, prietenia și visele lor luminoase. 🌟</p>
+            <p className="mt-2 font-medium">👧👦 Fii eroul poveștii tale! Spune NU Monstrului Drog și păstrează-ți libertatea!</p>
+            <p className="text-sm text-muted-foreground mt-2">📌 Asociația „Drogurile Ucid Visurile Copiilor"</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a_recognition",
+      title: "Cum îți dai seama că un prieten sau chiar tu ai putea să ai probleme cu drogurile",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Semne de recunoaștere</p>
+            <p className="font-semibold">La adolescență este normal să treci prin schimbări de dispoziție, dar uneori unele semne pot arăta că cineva începe să aibă probleme cu drogurile. Este important să le recunoști și să ceri ajutor la timp.</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">Semne fizice</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Ochii roșii sau foarte strălucitori, pupile prea mici sau prea mari</li>
+              <li>Slăbire sau îngrășare bruscă</li>
+              <li>Somn foarte puțin sau prea mult</li>
+              <li>Lipsa de chef să ai grijă de igiena ta (duș, haine curate)</li>
+              <li>Haine sau cameră cu mirosuri ciudate</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">Semne de comportament</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Nu mai ai chef de hobby-uri sau activități care îți plăceau</li>
+              <li>Îți schimbi prietenii brusc, fără să spui prea multe despre ei</li>
+              <li>Spui minciuni mai des, ascunzi lucruri</li>
+              <li>Începi să lipsești de la școală și notele scad</li>
+              <li>Devii foarte nervos, agresiv sau dimpotrivă, retras și trist</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">Semne emoționale</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Schimbări bruște de dispoziție (de la fericire la furie sau tristețe)</li>
+              <li>Te enervezi repede sau devii foarte anxios</li>
+              <li>Ai stări de confuzie sau teamă fără motiv clar</li>
+            </ul>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold text-lg mb-3">Cum să vorbești despre asta</h4>
+            <p>Dacă cineva te întreabă sau dacă tu vrei să recunoști că ai o problemă, e bine să știi câteva lucruri:</p>
+            <ol className="list-decimal list-inside space-y-2 text-sm mt-3">
+              <li><span className="font-medium">Alege un moment liniștit</span> – nu când e ceartă sau tensiune.</li>
+              <li><span className="font-medium">Vorbește deschis</span> – de exemplu: „Nu mă simt bine în ultima vreme și am nevoie de ajutor."</li>
+              <li><span className="font-medium">Ascultă și fii sincer</span> – nu te grăbi să negi sau să te aperi.</li>
+              <li><span className="font-medium">Recunoaște ce simți</span> – uneori drogurile sunt folosite ca să ascundă stresul, tristețea sau presiunea.</li>
+              <li><span className="font-medium">Gândește-te că nu ești singur</span> – familia și prietenii apropiați pot fi alături de tine.</li>
+            </ol>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold text-lg mb-3">De ce e importantă terapia</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Un terapeut nu e un polițist și nici un judecător. Este o persoană care te poate ajuta să înțelegi ce se întâmplă cu tine și să găsești soluții.</li>
+              <li>Poți merge împreună cu cineva apropiat (părinte, frate/soră, prieten).</li>
+              <li>Terapia nu e o pedeapsă, ci o cale de a te simți mai bine și de a recăpăta controlul.</li>
+              <li>Este normal să îți fie teamă sau rușine, dar asta nu înseamnă că ești „defect".</li>
+            </ul>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">Nu rămâne singur!</h4>
+            <p className="text-sm">Dacă simți că ai început să consumi droguri sau ai un prieten care trece prin asta, vorbește cu un adult de încredere: un părinte, un profesor, un medic sau un consilier școlar. Cu cât ceri mai repede ajutor, cu atât îți va fi mai ușor să-ți revii și să-ți construiești un viitor sănătos.</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a10",
+      title: "Protejează-ți copilul – Teste Antidrog Disponibile",
+      content: (
+        <div className="space-y-6">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Informare pentru părinți</p>
+            <p className="font-semibold">În curând veți găsi pe site-ul <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a> teste antidrog utile pentru depistare.</p>
+          </div>
+
+          <p>
+            În curând veți găsi pe site-ul <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a> teste antidrog care vă pot ajuta să aflați adevărul despre consumul de substanțe.
+          </p>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-lg">1. Teste de suprafață</h4>
+            <p>
+              Atunci când copilul nu vrea să fie testat, iar părintele consideră necesar să afle adevărul, aceste teste NU necesită acordul copilului.
+              Părinții pot să le folosească în camera acestuia, pe mobilă, pat sau alte obiecte personale. Dacă minorul a consumat, urme de substanțe pot rămâne pe
+              suprafețe prin transpirație sau contact direct, iar testul poate confirma consumul.
+            </p>
+            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border">
+              <Image src={`${prefix}/picture1.jpg`} alt="Test de suprafață – exemplu" fill className="object-cover" />
+            </div>
+            <p>
+              Acest test detectează reziduuri de substanțe de pe suprafețe, obiecte sau praf din cameră. Se poate folosi pe mobilă, pat, birou sau alte obiecte personale ale copilului.
+            </p>
+            <div>
+              <p className="font-medium mb-2">Detectează următoarele droguri:</p>
+              <ul className="list-disc list-inside space-y-1 text-sm">
+                <li>Opiacee (heroină) – MOP</li>
+                <li>MDMA (Ecstasy)</li>
+                <li>Cocaină și Crack – COC</li>
+                <li>Amfetamine – AMP</li>
+                <li>Metamfetamină (Crystal Ice) – MET</li>
+                <li>Metadonă – MTD</li>
+                <li>Benzodiazepine (tranchilizante) – BZO</li>
+                <li>Ketamină – KET</li>
+                <li>Buprenorfină – BUP</li>
+                <li>Cannabis (Marijuana, Skunk) – THC</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-lg">2. Teste din salivă</h4>
+            <p>
+              Atunci când copilul vrea să fie testat și își dă acordul, se poate utiliza testul din salivă, care este rapid și precis, fiind ideal pentru depistarea
+              mai multor tipuri de substanțe direct din organism.
+            </p>
+            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border">
+              <Image src={`${prefix}/picture2.jpg`} alt="Test din salivă – exemplu" fill className="object-cover" />
+            </div>
+            <div>
+              <p className="font-medium mb-2">Substanțe detectate și praguri de sensibilitate:</p>
+              <ul className="list-disc list-inside space-y-1 text-sm">
+                <li>Amfetamine (AMP) – 50 ng/ml</li>
+                <li>Cannabis (THC) – 50 ng/ml</li>
+                <li>Cocaină (COC) – 20 ng/ml</li>
+                <li>MDMA (Ecstasy) – 50 ng/ml</li>
+                <li>Opiacee (OPI) – 40 ng/ml</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="font-semibold text-lg">Instrucțiuni de utilizare</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>
+                Pentru testul din salivă: utilizați aplicatorul, colectați salivă, introduceți în soluție și așteptați 5–10 minute.
+              </li>
+              <li>
+                Pentru testul de suprafață: ștergeți suprafața suspectă cu aplicatorul, introduceți în soluție și așteptați 5–10 minute.
+              </li>
+            </ul>
+            <div className="mt-2">
+              <p className="font-medium mb-1">Citiți rezultatele în intervalul de timp recomandat:</p>
+              <ul className="list-disc list-inside space-y-1 text-sm">
+                <li>Dacă apare linia C și linia T, rezultatul este NEGATIV.</li>
+                <li>Dacă apare doar linia C (fără T), rezultatul este POZITIV.</li>
+                <li>Dacă nu apare linia C, testul este INVALID și trebuie repetat.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border border-muted bg-muted/20 p-4 rounded-lg">
+            <h4 className="font-medium mb-2">De unde pot fi achiziționate testele?</h4>
+            <p className="text-sm">
+              În curând, testele vor fi disponibile pe site-ul: <a className="text-primary hover:underline" href="https://www.liquidmoney.ro" target="_blank" rel="noreferrer">www.liquidmoney.ro</a>
+            </p>
+            <p className="text-sm">Comenzi telefonice: <a className="text-primary hover:underline" href="tel:0765037444">0765 037 444</a></p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a_mind_matters",
+      title: "📘 Despre seria \"Mind Matters\"",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Ghid pentru profesori</p>
+            <p className="font-semibold">Seria Mind Matters a fost realizată de National Institute on Drug Abuse (NIDA) pentru a-i ajuta pe elevi 👩‍🎓👨‍🎓 să înțeleagă cum drogurile afectează 🧠 creierul și 🫀 corpul.</p>
+          </div>
+
+          <div>
+            <p>🎯 Obiectivul principal este ca profesorii să aibă resurse clare și adaptate pentru a discuta cu elevii despre aceste subiecte sensibile, într-un mod științific, dar accesibil.</p>
+            <p className="mt-2">Seria conține:</p>
+            <ul className="list-none space-y-1 text-sm mt-2">
+              <li>✅ broșuri pentru elevi (explicații simple + ilustrații atractive),</li>
+              <li>✅ ghidul profesorului (cu idei de discuții și activități interactive),</li>
+              <li>✅ resurse suplimentare pentru aprofundare.</li>
+            </ul>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold text-lg mb-3">🧑‍🏫 Cum să folosești acest ghid</h4>
+            <p>Ghidul este gândit ca un instrument flexibil, care poate fi folosit la mai multe tipuri de ore:</p>
+            <ul className="list-disc list-inside space-y-1 text-sm mt-2">
+              <li>📚 educație pentru sănătate,</li>
+              <li>🔬 biologie,</li>
+              <li>🌍 științe sociale,</li>
+              <li>🗣 ore de dirigenție sau activități extracurriculare.</li>
+            </ul>
+            <p className="text-sm mt-2">Nu trebuie parcurs în ordine 📖. Profesorii pot alege exact capitolele și activitățile care se potrivesc nevoilor și vârstei elevilor lor.</p>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold text-lg mb-3">📌 Ce vei găsi în acest ghid</h4>
+            <ul className="list-none space-y-1 text-sm">
+              <li>👉 Explicații clare: cum afectează fiecare drog creierul și corpul.</li>
+              <li>👉 Întrebări pentru discuții: concepute să-i ajute pe elevi să gândească critic 🧩.</li>
+              <li>👉 Activități practice: exerciții simple pentru a înțelege mecanismele și riscurile.</li>
+              <li>👉 Resurse suplimentare: linkuri și materiale pentru aprofundare.</li>
+            </ul>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold text-lg mb-3">🌟 De ce e util pentru profesori</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Îți oferă un limbaj simplu și ușor de transmis elevilor.</li>
+              <li>Te ajută să abordezi un subiect sensibil într-un mod sigur și documentat.</li>
+              <li>Îți dă exemple de lecții interactive care atrag atenția elevilor.</li>
+              <li>Contribuie la construirea unui climat de încredere și prevenție în școală.</li>
+            </ul>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <p>✨ Cu alte cuvinte, acest ghid este ca o trusă de prim-ajutor educațional pentru profesori: îți pune în mână unelte practice și informații de încredere, ca să poți sprijini elevii și să previi riscurile încă de la vârste fragede.</p>
+          </div>
+
+          <div className="space-y-4 mt-6">
+            <h4 className="font-semibold text-lg">🌿 Marijuana (Cannabis)</h4>
+            <div className="text-sm space-y-2">
+              <p><span className="font-medium">📖 Ce este?</span></p>
+              <ul className="list-disc list-inside space-y-1 text-xs ml-4">
+                <li>Marijuana provine din planta cannabis.</li>
+                <li>Conține peste 100 de substanțe chimice, dar cea mai cunoscută este THC (tetrahidrocanabinolul) — responsabil pentru efectele „euforice" sau de „a te simți high".</li>
+                <li>Altă substanță importantă este CBD (canabidiolul), care NU provoacă „high", dar este folosită uneori în scopuri medicale.</li>
+              </ul>
+              <p className="text-xs">👉 Marijuana poate fi fumată 🚬, vaporizată 💨, consumată în produse alimentare 🍪 sau băuturi 🥤.</p>
+            </div>
+
+            <div className="text-sm space-y-2">
+              <p><span className="font-medium">🧠 Cum afectează creierul?</span></p>
+              <ul className="list-disc list-inside space-y-1 text-xs ml-4">
+                <li>THC-ul se leagă de receptori speciali din creier care controlează: memoria, învățarea, coordonarea, plăcerea.</li>
+                <li>Adolescenții 👩‍🎓👨‍🎓 sunt mult mai vulnerabili pentru că creierul lor este încă în dezvoltare (până la 25 de ani).</li>
+                <li>Consumul regulat poate duce la: 📉 scăderea capacității de concentrare și memorare, 💤 lipsă de motivație, 😟 anxietate sau paranoia, 🚨 risc crescut de dependență.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">🚬 Nicotină și Tutun</h4>
+            <div className="text-sm space-y-2">
+              <p><span className="font-medium">📖 Ce este?</span></p>
+              <ul className="list-disc list-inside space-y-1 text-xs ml-4">
+                <li>Nicotina este o substanță chimică foarte adictivă găsită în plantele de tutun.</li>
+                <li>Produsele din tutun includ: țigări clasice 🚬, trabucuri, pipă, tutun de mestecat, dar și dispozitive moderne: e-cigarette 💨 și vape-uri.</li>
+                <li>Adolescenții sunt deseori atrași de vape-uri cu arome 🍓🍉 pentru că par „cool" și „inofensive".</li>
+              </ul>
+              <p className="text-xs">👉 Realitatea: chiar și aceste produse conțin nicotină și alte substanțe toxice care afectează grav sănătatea.</p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">🍺 Alcool</h4>
+            <div className="text-sm space-y-2">
+              <p><span className="font-medium">📖 Ce este?</span></p>
+              <ul className="list-disc list-inside space-y-1 text-xs ml-4">
+                <li>Alcoolul este o substanță psihotropă prezentă în băuturile alcoolice: bere 🍺, vin 🍷, tării 🥃, cocktail-uri 🍹.</li>
+                <li>Este legal pentru adulți, dar ilegal și periculos pentru minori 👩‍🎓👨‍🎓.</li>
+                <li>Adolescenții pot fi tentați să bea din: curiozitate, presiunea grupului 🧑‍🤝‍🧑, dorința de a se relaxa sau „distracție".</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">🤝 Sprijin din partea asociației</h4>
+            <p className="text-sm">Asociația „Drogurile ucid visurile copiilor" este alături de profesori, părinți și elevi în lupta împotriva dependențelor.</p>
+            <p className="text-sm mt-2">👉 Dacă întâmpinați o problemă legată de consum sau dependență, ne puteți contacta:</p>
+            <ul className="list-disc list-inside text-sm mt-2 ml-4">
+              <li>📞 Telefon oficial: 0750633148</li>
+              <li>🌐 Site: https://drogurileucid.ro</li>
+            </ul>
+            <p className="text-sm mt-2">Împreună cu echipa noastră oferim consultanță, resurse și sprijin pentru a găsi cele mai bune soluții.
+            Nu sunteți singuri – suntem aici să ajutăm, pas cu pas, pentru un viitor mai sănătos și mai sigur pentru copii ❤.</p>
+          </div>
+        </div>
+      ),
+    },
+    {
       id: "a4",
-      title: "Asociația „Drogurile ucid visurile copiilor” lansează o campanie națională pe 1 septembrie",
+      title: "Asociația \"Drogurile ucid visurile copiilor\" lansează o campanie națională pe 1 septembrie",
       content: (
         <div className="space-y-5">
           <div className="border-l-4 border-primary/30 pl-4 py-2">
@@ -358,7 +698,7 @@ export default function ResursePage() {
             <p className="text-sm font-medium text-muted-foreground mb-2">Sănătate și prevenție</p>
             <p className="font-semibold">Steroizii anabolizanți pot lăsa efecte grave și ireversibile asupra adolescenților.</p>
           </div>
-          
+
           <div className="space-y-2">
             <h4 className="font-semibold text-lg">🧬 Ce sunt și de ce sunt periculoși?</h4>
             <p>
@@ -418,7 +758,7 @@ export default function ResursePage() {
                   <li>Ginecomastie (dezvoltarea sânilor)</li>
                 </ul>
               </div>
-          <div>
+              <div>
                 <p className="font-medium">La fete:</p>
                 <ul className="list-disc list-inside text-sm space-y-1">
                   <li>Dereglări sau oprirea ciclului menstrual</li>
@@ -461,6 +801,50 @@ export default function ResursePage() {
               decizia de azi îți poate salva viitorul. 💪✨
             </p>
           </div>
+        </div>
+      ),
+    },
+    {
+      id: "a5",
+      title: "Social MED – Redescoperă viața, pas cu pas",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Despre Social MED</p>
+            <p className="font-semibold">Social MED este un centru dedicat sprijinirii persoanelor care se confruntă cu dependențe de substanțe psihoactive, alcool sau alte forme de adicție.</p>
+          </div>
+          
+          <p>Cu o echipă multidisciplinară formată din <em>medici psihiatri, terapeuți și consilieri specializați</em>, oferim programe personalizate de detoxifiere asistată medical și recuperare psihologică, adaptate nevoilor fiecărui pacient.</p>
+
+          <p>La Social MED, considerăm că fiecare persoană merită o nouă șansă la o viață fără dependențe, într-un mediu sigur, confidențial și susținut de compasiune. Fiecare pas al procesului de recuperare este însoțit de profesionalism și empatie, asigurând o vindecare completă, nu doar fizică, ci și emoțională.</p>
+
+          <div className="bg-muted/30 p-4 rounded-lg border">
+            <p>
+              <span className="font-semibold">Misiunea noastră:</span> 
+              <span className="italic"> Social MED este mai mult decât un simplu centru de reabilitare – este locul unde speranța renaște și viețile se transformă.</span>
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">O premieră în România</h4>
+            <p className="text-sm leading-relaxed mb-3">Suntem <span className="font-medium">primul centru acreditat în România de tip comunitate terapeutică</span>, dedicat persoanelor afectate de consumul de droguri. Aici, am creat o comunitate a reabilitării, sprijinului și reconstrucției personale.</p>
+          </div>
+
+          <p>Într-o societate care adesea stigmatizează, alegem să întindem o mână. Vedem omul dincolo de dependență și credem cu tărie în puterea schimbării. Fiecare persoană care își recăpătă viața este o victorie tăcută, dar imensă.</p>
+
+          <p>La Social MED, nu luptăm doar împotriva dependenței, ci pentru dreptul fiecărei persoane la o viață cu sens. <span className="font-medium">O viață nouă!</span></p>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">Rezultate concrete</h4>
+            <p>Prin programele noastre inovative și prin dedicarea echipei, am reușit să ajutăm <span className="font-medium">sute de oameni</span> să își regăsească calea.</p>
+          </div>
+
+          <div className="border border-muted bg-muted/20 p-4 rounded-lg">
+            <p className="font-medium mb-2">Mesaj de speranță</p>
+            <p>Dacă tu sau cineva drag ție se confruntă cu o astfel de problemă, află că <span className="font-medium">acum se poate și în România</span>.</p>
+          </div>
+
+          <p className="text-center font-medium italic border-t pt-4">Împreună, putem face primul pas spre schimbare!</p>
         </div>
       ),
     },
@@ -869,7 +1253,6 @@ export default function ResursePage() {
         </div>
       ),
     },
-    
   ]
 
   return (
