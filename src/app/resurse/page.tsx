@@ -139,6 +139,14 @@ export default function ResursePage() {
             <h4 className="font-semibold mb-2">Nu rămâne singur!</h4>
             <p className="text-sm">Dacă simți că ai început să consumi droguri sau ai un prieten care trece prin asta, vorbește cu un adult de încredere: un părinte, un profesor, un medic sau un consilier școlar. Cu cât ceri mai repede ajutor, cu atât îți va fi mai ușor să-ți revii și să-ți construiești un viitor sănătos.</p>
           </div>
+
+          <div className="border-t pt-4 mt-6">
+            <p className="text-sm text-muted-foreground italic">
+              Articol scris de psiholog Mihaela Sava. Ai nevoie de ajutor? Contactează-mă:<br/>
+              <a href="https://www.mihaelasava.com" className="text-primary hover:underline" target="_blank" rel="noreferrer">www.mihaelasava.com</a><br/>
+              Telefon: <a href="tel:+40745595057" className="text-primary hover:underline">004 0745 595 057</a>
+            </p>
+          </div>
         </div>
       ),
     },
@@ -1154,6 +1162,382 @@ export default function ResursePage() {
             <p>Opioid sintetic de 50–100 ori mai puternic decât morfina. Cauzează moarte rapidă prin supradoză.</p>
             <p className="text-sm"><span className="font-medium">Efecte:</span> cea mai mare amenințare actuală pentru tineri; doze minime pot fi fatale.</p>
             <p className="text-sm"><span className="font-medium">Simptome vizibile:</span> respirație foarte lentă, pupile contractate, inconștiență, risc imediat de deces.</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a_spune_nu",
+      title: "🚫 SPUNE NU DROGURILOR! 🚫",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Ghid de prevenție</p>
+            <p className="font-semibold">Substanțe care îți schimbă corpul și mintea. Promit distracție, dar aduc doar probleme.</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">❓ Ce sunt drogurile?</h4>
+            <p>Substanțe care îți schimbă corpul și mintea. Promit distracție, dar aduc doar probleme.</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">⚠️ De ce să NU consumi?</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Îți distrug sănătatea 🫁❤️🧠</li>
+              <li>Îți scad memoria și concentrarea 📉</li>
+              <li>Creează dependență 🔗</li>
+              <li>Îți pun viitorul în pericol 🚫🎓</li>
+              <li>Îți îndepărtează familia și prietenii 👨‍👩‍👧‍👦</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">❌ Riscuri majore:</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Boli grave și accidente 🚑</li>
+              <li>Anxietate și depresie 😟</li>
+              <li>Probleme cu legea ⚖️</li>
+              <li>Izolare socială 🕳️</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">✅ Cum să spui &ldquo;NU&rdquo;?</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Fii ferm: &ldquo;Nu, nu vreau!&rdquo;</li>
+              <li>Pleacă din situațiile riscante 🚶‍♂️</li>
+              <li>Alege alternative sănătoase 🏀🎶📚</li>
+              <li>Înconjoară-te de prieteni adevărați 🤝</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">🆘 Dacă cineva consumă deja&hellip;</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Vorbește cu un adult de încredere 👩‍🏫👨‍👩‍👧</li>
+              <li>Cere ajutor specializat 👨‍⚕️</li>
+              <li>Nu te învinovăți, caută soluții! 💪</li>
+            </ul>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">🔑 Concluzie</h4>
+            <p>Drogurile nu aduc libertate. Aduc boală, dependență și tristețe.</p>
+            <p className="mt-2 font-medium">Alege să fii sănătos, fericit și liber! 🌟</p>
+            <p className="text-sm text-muted-foreground mt-2">Asociația &ldquo;Drogurile Ucid Visurile Copiilor&rdquo;</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a_semne_consum",
+      title: "Semne care indică faptul că un copil ar putea consuma droguri",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Ghid pentru părinți</p>
+            <p className="font-semibold">Este normal ca adolescenții să treacă prin schimbări de dispoziție, dar este important să fii atent la semnele care depășesc comportamentul tipic.</p>
+          </div>
+
+          <p>Detectarea timpurie a consumului de droguri poate fi crucială. Iată câteva semne la care ar trebui să fii atent:</p>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">Schimbări fizice</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Ochii roșii, pupile dilatate sau contractate</li>
+              <li>Pierdere sau creștere în greutate</li>
+              <li>Probleme cu somnul</li>
+              <li>Lipsa igienei personale</li>
+              <li>Mirosuri neobișnuite pe haine sau în cameră</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">Schimbări comportamentale</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Lipsa de interes pentru hobby-uri sau activități care îi plăceau înainte</li>
+              <li>Prieteni noi și misterioși</li>
+              <li>Minciuni frecvente</li>
+              <li>Furtul de bani sau obiecte din casă</li>
+              <li>Absențe nemotivate de la școală, note în scădere</li>
+              <li>Comportament agresiv sau depresiv</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">Schimbări emoționale și psihice</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Schimbări bruște de dispoziție</li>
+              <li>Iritabilitate crescută</li>
+              <li>Anxietate, paranoia sau episoade de confuzie</li>
+            </ul>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold text-lg mb-3">Cum să abordezi discuția cu copilul</h4>
+            <p className="mb-3">A aborda un copil suspectat de consum de droguri este un moment plin de tensiune. Este esențial să te pregătești și să ai o atitudine calmă și deschisă.</p>
+            
+            <ol className="list-decimal list-inside space-y-2 text-sm">
+              <li><span className="font-medium">Alege momentul potrivit.</span> Nu începe discuția când ești furios sau când copilul este sub influența substanțelor.</li>
+              <li><span className="font-medium">Fii calm și empatic.</span> Începe conversația cu o atitudine blândă, nu acuzatoare.</li>
+              <li><span className="font-medium">Ascultă, nu judeca.</span> Lasă-l pe copil să vorbească și ascultă-l cu atenție.</li>
+              <li><span className="font-medium">Recunoaște-i suferința.</span> Consumul de droguri este adesea o modalitate de a face față unei dureri emoționale.</li>
+              <li><span className="font-medium">Fii un partener, nu un &ldquo;detectiv&rdquo;.</span> Spune-i că sunteți o echipă și că împreună veți găsi o soluție.</li>
+            </ol>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold text-lg mb-3">Cum să-l convingi să meargă la terapie</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li><span className="font-medium">Propune-i să mergeți împreună.</span> Spune-i că nu este singur în această luptă.</li>
+              <li><span className="font-medium">Prezintă terapia ca pe o soluție, nu ca pe o pedeapsă.</span> Subliniază că un terapeut este un aliat.</li>
+              <li><span className="font-medium">Fii deschis și transparent.</span> Îi poți spune că este normal să simtă frică sau rușine.</li>
+            </ul>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">Important</h4>
+            <p className="text-sm">Nu încerca să gestionezi singur problema. Contactează un specialist în dependențe sau un psihoterapeut cu experiență în lucrul cu adolescenți. Sprijinul profesional este esențial pentru a-i oferi copilului cele mai bune șanse de a se recupera și de a-și construi un viitor sănătos.</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a_atasament",
+      title: "🌱 Atașamentul și îngrijirea în copilărie",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Dezvoltarea creierului copilului</p>
+            <p className="font-semibold">Dragostea, contactul și grija de zi cu zi construiesc literalmente creierul copilului.</p>
+          </div>
+
+          <div>
+            <p>👶 Atunci când un bebeluș primește dragoste, zâmbete și atingeri blânde de la părinți, creierul lui eliberează &ldquo;substanțe ale fericirii&rdquo; (endorfine). Acestea îl ajută să se simtă în siguranță și îi dezvoltă circuitele din creier care mai târziu vor regla plăcerea, motivația și capacitatea de a se conecta cu ceilalți.</p>
+          </div>
+
+          <div>
+            <p>😔 În schimb, atunci când copilul trece prin lipsă de atenție, absența părinților sau situații stresante, creierul său dezvoltă mai puțini receptori pentru aceste &ldquo;substanțe ale bucuriei&rdquo;. Asta îl face mai vulnerabil la anxietate și, mai târziu, la tentația de a apela la substanțe care îi dau artificial o senzație de bine.</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">📉 Studiile pe animale au arătat lucruri uimitoare:</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>puii de maimuță separați de mamă doar câteva zile aveau modificări serioase în creier</li>
+              <li>șobolanii ținuți în izolare de mici erau mai predispuși ca adulți să consume cocaină</li>
+              <li>dimpotrivă, șobolanii care au primit multă îngrijire și &ldquo;afecțiune de mamă&rdquo; au dezvoltat creiere mai rezistente la stres și anxietate</li>
+            </ul>
+          </div>
+
+          <div>
+            <p>👩‍👧‍👦 Pentru copii, prezența și afecțiunea părinților sunt la fel de vitale ca mâncarea și apa. Bebelușii prematuri, de exemplu, cresc mai repede și mai sănătos atunci când sunt atinși și mângâiați câteva minute pe zi.</p>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">💞 Concluzie</h4>
+            <p className="text-sm">Cu alte cuvinte: dragostea, contactul și grija de zi cu zi construiesc literalmente creierul copilului. Fără ele, copilul poate rămâne cu un gol emoțional pe care, mai târziu, ar putea încerca să îl umple cu substanțe.</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a_trauma_copilarie",
+      title: "🌪️ Trauma din copilărie și riscul de dependență",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Cercetare științifică</p>
+            <p className="font-semibold">Majoritatea celor care ajung dependenți au trecut prin forme de traumă în copilărie.</p>
+          </div>
+
+          <div>
+            <p>🔎 Studiile arată clar: majoritatea celor care ajung dependenți au trecut prin forme de traumă în copilărie — abuz fizic, emoțional, sexual sau neglijare. Cercetarea celebră ACE (Adverse Childhood Experiences) a descoperit că fiecare experiență grea din copilărie (violență, divorț, moartea unui părinte, alcoolism în familie etc.) crește de 2–4 ori șansele de a începe devreme consumul de substanțe. Dacă un copil trece prin 5 sau mai multe astfel de traume, riscul ajunge să fie și de 10 ori mai mare 🚨.</p>
+          </div>
+
+          <div>
+            <p>💉 Studiile spun că aproape două treimi din cazurile de consum de droguri injectabile își au rădăcina în traumele din copilărie. Și nu e vorba doar de copii din medii &ldquo;defavorizate&rdquo;: mulți dintre cei afectați au studii universitare. Trauma nu alege clase sociale.</p>
+          </div>
+
+          <div>
+            <p>🍷 În cazul alcoolului, povestea e similară: adolescenții care au fost abuzați sexual au de 3 ori mai multe șanse să înceapă să bea devreme. Pentru fiecare traumă emoțională trăită în copilărie, șansele de abuz de alcool cresc de 2–3 ori. Mulți folosesc băutura sau drogurile ca &ldquo;medicament&rdquo; pentru a-și calma durerea interioară.</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">🧠 Trauma lasă urme și în creier:</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Copiii abuzați au creierul cu 7–8% mai mic decât normal, în special în zonele care reglează emoțiile și impulsurile</li>
+              <li>Hipocampul (centrul memoriei și emoțiilor) poate fi mai mic cu 15% la cei abuzați în copilărie</li>
+              <li>&ldquo;Corpus callosum&rdquo; – puntea dintre emisferele cerebrale – e afectată, ceea ce duce la probleme în procesarea emoțiilor</li>
+            </ul>
+          </div>
+
+          <div>
+            <p>⚖️ Asta explică de ce unii adulți oscilează între a idealiza și a disprețui aceeași persoană, între a se simți foarte buni sau complet lipsiți de valoare. Creierul lor nu reușește să integreze ambele fețe ale realității.</p>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">👉 Concluzia</h4>
+            <p className="text-sm">Trauma din copilărie nu este doar un &ldquo;episod trecut&rdquo;, ci modelează modul în care creierul și emoțiile funcționează toată viața, crescând masiv riscul de dependență.</p>
+            <p className="text-xs text-muted-foreground mt-2">Text adaptat și simplificat din articolul &ldquo;Addiction: Childhood Trauma, Stress and the Biology of Addiction&rdquo;, scris de dr. Gabor Maté, publicat în Journal of Restorative Medicine (2012).</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a_stres_dependenta",
+      title: "😰 Stresul și dependența",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Înțelegerea stresului</p>
+            <p className="font-semibold">Dependența este, în mare parte, o încercare de a face față stresului.</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">👉 Ce este stresul?</h4>
+            <p>Stresul e felul în care corpul și mintea reacționează atunci când simt că nu mai pot face față. Se eliberează hormoni ca adrenalina ⚡ și cortizolul 🔥, care afectează inima, plămânii, mușchii și mai ales creierul.</p>
+            <p className="mt-2">💔 Cel mai mare stres pentru oameni nu e lipsa banilor sau a resurselor, ci frica de a pierde dragostea și siguranța emoțională.</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">👉 Cum influențează stresul din copilărie?</h4>
+            <p>👶 Dacă un copil trece prin mult stres sau traumă devreme (abuz, neglijare, depresia mamei, abandon), creierul lui se &ldquo;setează&rdquo; pe modul alert permanent. Asta înseamnă că, și ca adult, se va stresa mult mai repede și mai intens decât cineva care a avut o copilărie stabilă.</p>
+            
+            <div className="bg-muted/10 p-3 rounded-lg mt-3">
+              <p className="text-sm">Dr. Bruce Perry dă un exemplu simplu: O persoană calmă și una stresată beau alcool 🍷. Amândoi simt efectele, dar cel deja stresat are un plus de plăcere — pentru că alcoolul îi ușurează tensiunea. Exact ca atunci când bei apă rece 🥤 când îți este foarte sete: senzația e mult mai intensă.</p>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">👉 De ce apare dependența?</h4>
+            <p>Un creier obișnuit să fie mereu tensionat caută soluții rapide pentru alinare. Drogurile, alcoolul sau alte comportamente (sex, agresivitate, chiar mâncare în exces 🍔) oferă această alinare pe moment. Problema e că pe termen lung distrug și mai mult echilibrul.</p>
+            
+            <div className="mt-3">
+              <p className="text-sm font-medium">⚠️ Persoanele care au trecut prin stres sever în copilărie sunt mai vulnerabile:</p>
+              <ul className="list-disc list-inside space-y-1 text-sm mt-2 ml-4">
+                <li>Se declanșează foarte ușor în fața stresului</li>
+                <li>Hormonii stresului se &ldquo;leagă&rdquo; de pofta pentru droguri</li>
+                <li>Stresul duce adesea la recăderi după perioade de abstinență</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">👉 Ce factori ne stresează cel mai mult?</h4>
+            <p className="mb-2">📌 Cercetările arată trei lucruri universale:</p>
+            <ol className="list-decimal list-inside space-y-1 text-sm ml-4">
+              <li>Incertitudinea ❓</li>
+              <li>Lipsa de informații 🕳️</li>
+              <li>Pierderea controlului 🫲</li>
+            </ol>
+            <p className="mt-2 text-sm">La acestea se adaugă conflictele nerezolvate și singurătatea 🥀. Studiile pe animale au arătat că izolarea crește dorința de droguri, în timp ce viața într-un grup stabil oferă protecție.</p>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">💡 Pe scurt</h4>
+            <p className="text-sm">Dependența este, în mare parte, o încercare de a face față stresului. Deși soluția aleasă (drogurile/alcoolul) dă alinare rapidă, pe termen lung aduce și mai multă durere.</p>
+            <p className="text-xs text-muted-foreground mt-2">Text adaptat și simplificat din articolul &ldquo;Addiction: Childhood Trauma, Stress and the Biology of Addiction&rdquo;, scris de dr. Gabor Maté, publicat în Journal of Restorative Medicine (2012).</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a_sprijin_adolescent",
+      title: "🧭 Cum poți sprijini un adolescent care consumă sau e dependent 🚸💔",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Ghid pentru părinți</p>
+            <p className="font-semibold">A descoperi că propriul copil consumă substanțe este o experiență dureroasă și copleșitoare. Totuși, există pași concreți pe care îi poți face.</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">1. Înțelege situația înainte să acționezi 🔍</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Consumul nu apare din senin — de multe ori este o strategie de supraviețuire pentru dureri emoționale, traume sau presiuni sociale</li>
+              <li>Primul pas nu este pedeapsa, ci înțelegerea contextului: când a început, ce substanțe folosește, în ce medii, cu cine</li>
+              <li>Ține un mic jurnal 📓 al observațiilor tale — asta poate fi foarte util la o discuție cu un specialist</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">2. Creează un plan în familie 👨‍👩‍👧</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Toți membrii familiei trebuie implicați: nu e doar &ldquo;problema copilului&rdquo;</li>
+              <li>E bine să stabiliți împreună reguli clare (de ex. fără substanțe în casă 🚫), dar și spații sigure de comunicare</li>
+              <li>Caută sprijin și pentru tine ca părinte (grupuri de suport, consiliere parentală). Un părinte copleșit nu poate sprijini eficient</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">3. Consultă profesioniști cât mai repede 🧑‍⚕️</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Caută un psiholog/psihiatru specializat în adicții la adolescenți</li>
+              <li>Intervențiile cele mai eficiente sunt terapiile cognitiv-comportamentale (CBT) și terapia motivațională</li>
+              <li>Dacă dependența e severă, se pot recomanda și tratamente medicale 💊 (dar numai prescrise de medic)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">4. Colaborarea cu școala 🎓</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Nu ascunde problema — vorbește cu dirigintele și consilierul școlar</li>
+              <li>Unele programe școlare pot oferi sesiuni de suport sau grupuri educaționale</li>
+              <li>Profesorii pot fi aliați importanți în monitorizarea comportamentului și în oferirea de alternative sănătoase</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">5. Ajută-l să găsească alternative sănătoase 🌱</h4>
+            <p className="text-sm mb-2">Adolescenții au nevoie de dopamină (senzații de plăcere, satisfacție). Dacă drogurile le oferă asta rapid, tu trebuie să îl ajuți să descopere surse sănătoase:</p>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Sportul 🏀 – reduce stresul și crește încrederea în sine</li>
+              <li>Muzica sau arta 🎶🎨 – canale excelente pentru exprimarea emoțiilor</li>
+              <li>Voluntariatul ❤️ – îi dă sentimentul că are un scop și e valoros pentru comunitate</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">6. Creează un mediu fără judecată, dar cu responsabilitate ⚖️</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Nu ajută să spui &ldquo;Ești un drogat / o rușine&rdquo;. Asta doar adâncește rana și împinge copilul și mai mult spre consum</li>
+              <li>În schimb, setează limite clare și consecințe logice</li>
+              <li>Echilibrul între empatie 🤗 și fermitate 🚦 este cheia</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">7. Învață să recunoști semnele recăderii 🔄</h4>
+            <p className="text-sm mb-2">Recăderile fac parte din proces. Semnele care arată că adolescentul e în pericol să reia consumul:</p>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>schimbări bruște de dispoziție 😡😭</li>
+              <li>lipsă de interes pentru activități</li>
+              <li>anturaj nou suspect</li>
+              <li>secrete, minciuni, dispariția banilor sau a obiectelor de valoare</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-lg mb-3">8. Ai grijă și de tine 🧘‍♀️</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Ca părinte, e ușor să cazi în vinovăție sau epuizare</li>
+              <li>Caută sprijin pentru tine: terapie, grupuri de părinți, spiritualitate, sport</li>
+              <li>Copilul are nevoie de un părinte puternic, nu de unul care se prăbușește</li>
+            </ul>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">📌 Mesaj final</h4>
+            <p className="text-sm mb-2">Dependența nu este o rușine și nici un &ldquo;sfârșit de drum&rdquo;. Este un semnal de alarmă, un strigăt de ajutor al copilului tău 🚨. În spatele consumului se ascund adesea durere, neputință, presiuni sociale sau traume pe care adolescentul nu știe cum să le exprime altfel.</p>
+            <p className="text-sm">De aceea, cheia nu este pedeapsa sau critica, ci sprijinul constant, iubirea fermă și accesul la ajutor specializat. Adolescenții au o capacitate extraordinară de a se transforma atunci când simt că cineva crede în ei 💡.</p>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold mb-2">📞 Sprijin direct din partea noastră</h4>
+            <p className="text-sm mb-2">Asociația &ldquo;Drogurile ucid visurile copiilor&rdquo; este aici să te sprijine. Avem o echipă de specialiști pregătiți să îți ofere informații, să te direcționeze către centre de ajutor și să te susțină pe tine și pe copilul tău în acest proces dificil.</p>
+            <p className="text-sm">📲 Ne poți suna la <a href="tel:0750633148" className="text-primary hover:underline">0750 633 148</a> sau ne poți contacta pe site: <a href="https://drogurileucid.ro" className="text-primary hover:underline" target="_blank" rel="noreferrer">www.drogurileucid.ro</a>.</p>
+            <p className="text-sm font-medium mt-2">Nu ești singur. Împreună putem găsi soluția cea mai bună pentru copilul tău și pentru familia ta. 💜</p>
           </div>
         </div>
       ),
