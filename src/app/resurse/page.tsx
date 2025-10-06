@@ -284,7 +284,7 @@ export default function ResursePage() {
           <div className="bg-muted/30 p-4 rounded-lg border">
             <p>
               <span className="font-semibold">Mesajul central:</span> 
-              <span className="italic"> „Dependențele ucid visurile copiilor, dar împreună putem să le protejăm.”</span>
+              <span className="italic"> „Dependențele ucid visurile copiilor, dar împreună putem să le protejăm.&quot;</span>
             </p>
           </div>
 
@@ -308,8 +308,8 @@ export default function ResursePage() {
       ),
     },
     {
-      id: "a11",
-      title: "🍽️ Plan alimentar pentru adolescenți (15–18 ani)",
+      id: "a_semne_consum",
+      title: "Semne care indică faptul că un copil ar putea consuma droguri",
       content: (
         <div className="space-y-5">
           <div className="border-l-4 border-primary/30 pl-4 py-2">
@@ -376,8 +376,8 @@ export default function ResursePage() {
       ),
     },
     {
-      id: "a12",
-      title: "🏋️‍♂️ Plan de antrenament pentru adolescenți (15–18 ani)",
+      id: "a_sprijin_adolescent",
+      title: "🧭 Cum poți sprijini un adolescent care consumă sau e dependent 🚸💔",
       content: (
         <div className="space-y-5">
           <div className="border-l-4 border-primary/30 pl-4 py-2">
@@ -718,46 +718,96 @@ export default function ResursePage() {
       ),
     },
     {
-      id: "a5",
-      title: "Social MED – Redescoperă viața, pas cu pas",
+      id: "a_semne_adolescent",
+      title: "5 semne că se întâmplă ceva cu adolescentul tău (și nu e de bine)",
       content: (
         <div className="space-y-5">
           <div className="border-l-4 border-primary/30 pl-4 py-2">
-            <p className="text-sm font-medium text-muted-foreground mb-2">Despre Social MED</p>
-            <p className="font-semibold">Social MED este un centru dedicat sprijinirii persoanelor care se confruntă cu dependențe de substanțe psihoactive, alcool sau alte forme de adicție.</p>
+            <p className="text-sm font-medium text-muted-foreground mb-2">Ghid pentru părinți</p>
+            <p className="font-semibold">Adolescența nu este doar o etapă de descoperiri și entuziasm. Este și o perioadă plină de încercări, în care echilibrul emoțional și alegerile corecte pot face diferența între un drum sănătos și unul periculos.</p>
           </div>
           
-          <p>Cu o echipă multidisciplinară formată din <em>medici psihiatri, terapeuți și consilieri specializați</em>, oferim programe personalizate de detoxifiere asistată medical și recuperare psihologică, adaptate nevoilor fiecărui pacient.</p>
+          <p>Pentru părinți, provocarea cea mai mare este să recunoască la timp semnele că fiul sau fiica lor trece printr-o situație dificilă. Câteva semne care pot ridica semnale de alarmă:</p>
 
-          <p>La Social MED, considerăm că fiecare persoană merită o nouă șansă la o viață fără dependențe, într-un mediu sigur, confidențial și susținut de compasiune. Fiecare pas al procesului de recuperare este însoțit de profesionalism și empatie, asigurând o vindecare completă, nu doar fizică, ci și emoțională.</p>
-
-          <div className="bg-muted/30 p-4 rounded-lg border">
-            <p>
-              <span className="font-semibold">Misiunea noastră:</span> 
-              <span className="italic"> Social MED este mai mult decât un simplu centru de reabilitare – este locul unde speranța renaște și viețile se transformă.</span>
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">1. Devine foarte secretos</h4>
+            <p className="text-sm">
+              Telefonul devine un teritoriu interzis, dispar conversațiile de la cină și evită privirea ochi în ochi. Intimitatea este firească la această vârstă, dar atunci când secretomania devine excesivă, părinții trebuie să fie atenți: poate ascunde comportamente riscante sau influențe nocive.
             </p>
           </div>
 
-          <div>
-            <h4 className="font-semibold text-lg mb-3">O premieră în România</h4>
-            <p className="text-sm leading-relaxed mb-3">Suntem <span className="font-medium">primul centru acreditat în România de tip comunitate terapeutică</span>, dedicat persoanelor afectate de consumul de droguri. Aici, am creat o comunitate a reabilitării, sprijinului și reconstrucției personale.</p>
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">2. Își schimbă brusc prietenii</h4>
+            <p className="text-sm">
+              La 16–17 ani, prieteniile cântăresc enorm. Dar schimbarea bruscă a anturajului și tăcerea în privința celor noi pot fi semne că adolescentul caută altceva: validare, apartenență, sau, mai grav, expunere la tentații.
+            </p>
           </div>
 
-          <p>Într-o societate care adesea stigmatizează, alegem să întindem o mână. Vedem omul dincolo de dependență și credem cu tărie în puterea schimbării. Fiecare persoană care își recăpătă viața este o victorie tăcută, dar imensă.</p>
-
-          <p>La Social MED, nu luptăm doar împotriva dependenței, ci pentru dreptul fiecărei persoane la o viață cu sens. <span className="font-medium">O viață nouă!</span></p>
-
-          <div>
-            <h4 className="font-semibold text-lg mb-3">Rezultate concrete</h4>
-            <p>Prin programele noastre inovative și prin dedicarea echipei, am reușit să ajutăm <span className="font-medium">sute de oameni</span> să își regăsească calea.</p>
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">3. Probleme cu banii</h4>
+            <p className="text-sm">
+              Cere mai mulți bani decât de obicei, dispar sume din casă, iar explicațiile lipsesc. De multe ori, banii sunt primul indicator că adolescentul este presat de cineva sau începe să experimenteze comportamente riscante.
+            </p>
           </div>
 
-          <div className="border border-muted bg-muted/20 p-4 rounded-lg">
-            <p className="font-medium mb-2">Mesaj de speranță</p>
-            <p>Dacă tu sau cineva drag ție se confruntă cu o astfel de problemă, află că <span className="font-medium">acum se poate și în România</span>.</p>
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">4. Schimbări de comportament și dispoziție</h4>
+            <p className="text-sm">
+              De la irascibilitate și retragere până la nopți pierdute și somn excesiv, schimbările bruște de comportament nu trebuie ignorate. Ele apar frecvent în cazul consumului de substanțe sau al tulburărilor emoționale.
+            </p>
           </div>
 
-          <p className="text-center font-medium italic border-t pt-4">Împreună, putem face primul pas spre schimbare!</p>
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">5. Pierde interesul pentru școală și activități</h4>
+            <p className="text-sm">
+              Scad notele, dispare motivația, hobby-urile rămân uitate într-un colț. Când adolescentul nu mai găsește bucurie în lucrurile care îi plăceau, trebuie să ne întrebăm ce anume i-a ocupat locul.
+            </p>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">Drogurile ucid visele copiilor</h4>
+            <p className="text-sm mb-2">Drogurile nu fură doar sănătatea, ci și viitorul. Ele schimbă chimia creierului și răpesc plăcerile simple ale vieții:</p>
+            <ul className="list-disc list-inside text-sm space-y-1">
+              <li><strong>Dopamina</strong>, motorul motivației, este supraîncărcată și apoi slăbită. Nimic nu mai aduce bucurie.</li>
+              <li><strong>Serotonina</strong>, responsabilă de echilibru emoțional, se dezechilibrează, aducând anxietate și depresie.</li>
+              <li><strong>Noradrenalina</strong>, care ține atenția trează, este distorsionată, alternând hiperactivitatea cu epuizarea.</li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Context românesc – cifre care dor</h4>
+            <p className="text-sm mb-2">Datele recente sunt îngrijorătoare și arată cât de aproape este pericolul:</p>
+            <ul className="list-disc list-inside text-sm space-y-1">
+              <li>3 din 10 adolescenți spun că știu pe cineva care consumă droguri sau substanțe psihoactive.</li>
+              <li>Aproape 3% dintre elevi recunosc consumul direct, dar procentul real ar putea fi mai mare.</li>
+              <li>8,7% dintre adolescenții sub 16 ani au încercat canabis cel puțin o dată, potrivit Agenției Naționale Antidrog.</li>
+              <li>În București, aproape 7% dintre liceeni de 15–16 ani declară că au consumat canabis, iar 68% recunosc consumul de alcool.</li>
+              <li>Vârsta de debut a scăzut alarmant, ajungând la 13–14 ani.</li>
+              <li>Numărul dosarelor pentru trafic și consum a crescut de peste trei ori în ultimul deceniu, iar minorii apar din ce în ce mai des printre cei implicați.</li>
+            </ul>
+            <p className="text-sm mt-2">Aceasta este realitatea: tentația există, iar riscurile sunt tot mai devreme și tot mai aproape.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Cum poate sportul să refacă echilibrul?</h4>
+            <p className="text-sm mb-2">Există însă o veste bună: sportul este un aliat puternic. Activitatea fizică reface în mod natural echilibrul neurotransmițătorilor:</p>
+            <ul className="list-disc list-inside text-sm space-y-1">
+              <li><strong>Dopamina</strong> – fiecare antrenament aduce satisfacție și motivație reală.</li>
+              <li><strong>Serotonina</strong> – exercițiile regulate îmbunătățesc starea de spirit și reduc anxietatea.</li>
+              <li><strong>Endorfinele</strong> – oferă un „high&quot; natural și sănătos, o stare de bine după efort.</li>
+            </ul>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <h4 className="font-semibold mb-2">Sportul – centura de siguranță a adolescentului</h4>
+            <p className="text-sm mb-2">În mijlocul tentațiilor, sportul devine o centură de siguranță: sala, antrenorul și colegii oferă stabilitate, valori și apartenență. Copiii care cresc în sport nu mai au nevoie să caute validare în anturaje riscante.</p>
+            <p className="text-sm">Sportul le dă obiective clare, disciplină și încredere. Și, dacă au noroc, echipa lor are și un psiholog sportiv care îi ajută să își înțeleagă emoțiile și să facă față presiunilor.</p>
+          </div>
+
+          <div className="border-t pt-4">
+            <p className="text-sm font-medium italic">Dragi părinți, întrebați-vă: Ce fel de centură de siguranță are adolescentul vostru?</p>
+            <p className="text-sm mt-2">Nina Buru, Psiholog Sportiv<br/>27 septembrie 2025</p>
+          </div>
         </div>
       ),
     },
