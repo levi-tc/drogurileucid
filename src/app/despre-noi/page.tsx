@@ -36,8 +36,34 @@ export default function DespreNoiPage() {
     {
       name: "Centrul ENLA",
       description:
-        "Pianu de Jos, Alba – România are acum un nou reper în lupta împotriva dependențelor: Centrul ENLA, fondat de Ensar Duman și Dr. Laura Cătană, oferă tratament premium pentru dependențe (alcool, droguri, jocuri de noroc, tehnologie) și programe de reabilitare psihică.\n\nCu terapie individuală și de grup, activități creative și facilități premium (camere private, piscină, saună, restaurant propriu), ENLA devine un loc sigur unde pacienții își pot regăsi echilibrul și speranța.\n\n„Împreună putem rescrie povestea noastră!” – Centrul ENLA",
+        "Pianu de Jos, Alba - România are acum un nou reper în lupta împotriva dependențelor: Centrul ENLA, fondat de Ensar Duman și Dr. Laura Cătană, oferă tratament premium pentru dependențe (alcool, droguri, jocuri de noroc, tehnologie) și programe de reabilitare psihică.\n\nCu terapie individuală și de grup, activități creative și facilități premium (camere private, piscină, saună, restaurant propriu), ENLA devine un loc sigur unde pacienții își pot regăsi echilibrul și speranța.\n\n\"Împreună putem rescrie povestea noastră!\" - Centrul ENLA",
       image: `${prefix}/ENLA_color.png`,
+    },
+    {
+      name: "Dr. Alis Ivașcu",
+      description:
+        "Sunt Dr. Alis Ivașcu, psiholog clinician specialist autonom și expert, membru al Colegiului Psihologilor din România, cu drept de practică în psihologie clinică, din anul 2007.\n\nAm absolvit Facultatea de Psihologie și Științele Educației - Universitatea din București, iar parcursul meu profesional a fost consolidat prin:\n\nMaster în Educație integrată pentru copii cu cerințe educaționale speciale - Universitatea București\n\nMaster în Prevenirea și combaterea consumului de droguri - Universitatea București, Facultatea de Sociologie și Asistență Socială\n\nMaster în Consiliere psihologică și școlară - Universitatea Spiru Haret\n\nDoctorat în sociologie, cu temă în domeniul adicțiilor, obținut în cadrul Universității din București\n\nAm participat la multiple stagii de formare și schimburi de experiență în comunități terapeutice pentru persoane dependente de substanțe, în Italia, Spania, Olanda, Israel și Statele Unite ale Americii. Aceste experiențe au fost esențiale pentru conturarea unei abordări profunde, adaptate realității și conectate cu suferința umană.\nAm lucrat peste 17 ani în cadrul Agenției Naționale Antidrog, în serviciile de prevenire, evaluare și consiliere, adresându-mă direct persoanelor dependente, familiilor acestora și comunității.\n\nCa expert în adicții, am susținut sute de persoane în procesul de ieșire din consum - prin terapie, consiliere, educație și reconstrucție personală. Am sprijinit adolescenți, tineri și adulți în cele mai vulnerabile momente ale lor.\nDe peste 20 ani lucrez alături de oameni aflați în momente de cumpănă: adolescenți, adulți, seniori, familii. Am fost martoră la suferință și renaștere, la confuzie și clarificare, la rupturi și reconstrucții. Și de fiecare dată, am văzut cum, cu răbdare, blândețe și sprijin profesionist, schimbarea devine posibilă.\n\nFiecare om care intră în cabinetul meu vine cu o poveste. Eu nu încerc să o rescriu, ci să o înțeleg împreună cu el. Să-i ofer un spațiu sigur în care să se regăsească.\nVă invit să accesați site-ul www.doctoralisivascu.ro pentru o primă programare gratuită.",
+      image: `${prefix}/alisivascu.jpeg`,
+    },
+    {
+      name: "Antolin",
+      description:
+        "Antolin este un lider global în furnizarea de componente pentru interior auto, cu soluții tehnologice avansate în domenii precum iluminat, panouri de bord, console centrale și finisaje de uși. Cu peste 25.000 de angajați și operațiuni în peste 20 de țări, Antolin își propune să transforme experiența la bord prin inovație, eficiență și sustenabilitate. În România, unitatea de la Sibiu produce elemente de iluminat interior pentru autovehicule, livrând către branduri de renume din industria auto.",
+      image: `${prefix}/antolin.jpeg`,
+    },
+    {
+      name: "FCSB",
+      description:
+        "Echipa FCSB - Una dintre cele mai iubite și titrate echipe de fotbal din România, FCSB sprijină cu mândrie inițiativele dedicate tinerilor și educației. Prin implicarea lor, transmit un mesaj puternic despre importanța sportului, a disciplinei și a alegerii unui drum sănătos în viață.",
+      image: `${prefix}/FCSB_logo.svg`,
+    },
+    { name: "Inspectoratul Școlar Ilfov" },
+    { name: "Inspectoratul Școlar Sibiu" },
+    { name: "Inspectoratul Școlar Călărași" },
+    {
+      name: "Brothers Lăcătuș",
+      description:
+        "Brothers Lăcătuș - Foști campioni la box, acum antrenăm viitorii luptători. Pasiunea noastră? Să formăm caractere puternice, în ring și în viață.\n\nOferiți antrenamente de box pentru începători, antrenamente de performanță și sesiuni personalizate 1-la-1, adaptate fiecărui nivel și obiectiv.\n\nPentru mai multe informații, vizitați: https://www.brotherslacatus.ro/",
     },
   ];
 
