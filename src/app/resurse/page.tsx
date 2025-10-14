@@ -718,6 +718,252 @@ export default function ResursePage() {
       ),
     },
     {
+      id: "a_despre_tine",
+      title: "Nu e despre droguri. E despre tine, cel care ai ales sa dai atentie acestui mesaj!",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="font-semibold text-lg">O conversație sinceră despre tentație, durere și alegeri</p>
+          </div>
+
+          <p>Nu știu cine ești, nu știu ce porți în suflet, ce te frământă, te face să zâmbești sau să plângi. Dar știu că dacă citești asta, înseamnă că ești în fața unei alegeri. Poate ai fost întrebat, poate ai văzut, poate ai fost tentat, poate ai spus &ldquo;nu&rdquo; o dată, dar nu știi dacă vei mai putea.</p>
+          
+          <p>Așa că hai să vorbim, nu despre droguri ci despre tine, despre ce te poate duce acolo si despre ce te poate ține departe.</p>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">De ce ai ajunge să încerci?</h4>
+            <p>Nimeni nu se trezește într-o dimineață și spune: &ldquo;Azi vreau să-mi distrug viața!&rdquo; Nu ! Totul începe subtil, cu o nevoie, cu o lipsă, cu o durere.</p>
+            <p>Iti las cateva posibile motive pentru care ai putea sa ajungi sa consumi :</p>
+            
+            <div className="space-y-3">
+              <div>
+                <p className="font-medium">1. Presiunea grupului !</p>
+                <p className="text-sm">Prietenii tăi sunt totul, vrei să aparții si să nu fii &ldquo;ciudatul&rdquo; care refuză. Să nu fii exclus ! Dar uneori, acceptarea vine cu un preț. Un joint, o pastilă. o promisiune că &ldquo;nu e mare lucru&rdquo;. Dar adevărul e că grupul care te împinge spre autodistrugere nu e un grup care te acceptă, e un grup care te folosește iar tu meriți mai mult.</p>
+              </div>
+              
+              <div>
+                <p className="font-medium">2. Curiozitatea !</p>
+                <p className="text-sm">Adolescența e despre explorare, despre &ldquo;ce-ar fi dacă&rdquo;, despre limite iar drogurile par o experiență, un experiment, o aventură. Dar nu toate aventurile sunt inoffensive, unele lasă urme adanci in corp, in minte sim ai ales in suflet.</p>
+              </div>
+              
+              <div>
+                <p className="font-medium">3. Durerea emoțională !</p>
+                <p className="text-sm">Anxietate, depresie, singurătate, trauma. Poate nu le-ai spus nimănui, poate le porți în tăcere si drogurile par o soluție, o evadare, o pauză de la durere. Dar nu vindecă, doar amână si când revin, revin mai puternice.</p>
+              </div>
+              
+              <div>
+                <p className="font-medium">4. Problemele din familie!</p>
+                <p className="text-sm">Conflicte, lipsă de comunicare, absenta parintilor, critici. Poate acasă nu e un loc sigur, poate nu te simți iubit si cauți alinare în altă parte. Dar drogurile nu sunt alinare, sunt o iluzie. Și iluzia doare mai tare decât realitatea.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Ce se întâmplă cu tine când consumi?</h4>
+            <p>Hai să vorbim despre ce nu se vede în filme, despre ce nu-ți spun prietenii, despre ce nu apare pe TikTok sau alte platforme de social media.</p>
+            <p>Iti spun cateva din efectele care pot aparea in tine dar si in afara ta, ambele variante implicand defapt situatii care te vor afecta pe termen lung sau iremediabil.</p>
+            
+            <div className="space-y-3">
+              <div>
+                <p className="font-medium">1. În creier</p>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li>Drogurile modifică chimia creierului. Îți afectează memoria, atenția, capacitatea de decizie.</li>
+                  <li>Creează dependență. Nu pentru că ești slab, ci pentru că sunt făcute să te prindă.</li>
+                  <li>Pot declanșa tulburări psihice: depresie, anxietate, psihoză.</li>
+                </ul>
+              </div>
+              
+              <div>
+                <p className="font-medium">2. În corp</p>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li>Slăbiciune, insomnie, dureri, tremurături.</li>
+                  <li>Probleme cardiace, hepatice, renale.</li>
+                  <li>Supradoze. Uneori, o singură dată e suficient.</li>
+                </ul>
+              </div>
+              
+              <div>
+                <p className="font-medium">3. În viață</p>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li>Note scăzute, exmatriculare, abandon școlar.</li>
+                  <li>Conflicte cu părinții, prietenii, iubita/iubitul.</li>
+                  <li>Cazier, dosar penal, pierderea oportunităților.</li>
+                </ul>
+              </div>
+            </div>
+            <p className="font-medium">Și toate astea pot începe cu &ldquo;doar o dată&rdquo;.</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Ce pierzi când alegi drogurile?</h4>
+            <p>Nu pierzi doar sănătatea, pierzi mult mai mult.</p>
+            
+            <div className="space-y-2">
+              <p className="text-sm"><span className="font-medium">1. Încrederea în tine !</span> La început, pare că te eliberează, dar în timp, te fac să te urăști, să te simți slab, vinovat si rușinat.</p>
+              <p className="text-sm"><span className="font-medium">2. Relațiile!</span> Minți, te ascunzi, te izolezi si oamenii care te iubesc nu mai știu cum să te ajute sau aleg sa plece.</p>
+              <p className="text-sm"><span className="font-medium">3. Viitorul!</span> Poate visai să devii medic sau artist sau antreprenor. Dar drogurile nu au visuri, au doar lanțuri si limitari iar tu meriți un viitor nu o regresie.</p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Ce poți face în schimb?</h4>
+            <p>Nu-ți spun să devii perfect, iți spun să devii sincer cu tine si cu cei din jurul tau. Iti las cateva alternative pe care ai putea sa le folosesti pentru a te ajuta:</p>
+            
+            <div className="space-y-2">
+              <p className="text-sm"><span className="font-medium">1. Vorbește</span> cu un adult in care ai incredere, cu un consilier scolar sau psiholog, cu un prieten care nu te judecă si este matur. Spune ce simți, ce te doare, ce te sperie.</p>
+              
+              <div>
+                <p className="font-medium">2. Caută alternative</p>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li>Sport. Te eliberează.</li>
+                  <li>Artă. Te exprimă.</li>
+                  <li>Voluntariat. Te conectează.</li>
+                  <li>Terapie. Te vindecă.</li>
+                </ul>
+              </div>
+              
+              <p className="text-sm"><span className="font-medium">3. Fii atent la semne,</span> dacă simți că ești atras de droguri, întreabă-te: &ldquo;Ce-mi lipsește?&rdquo; si caută răspunsul în locuri sănătoase.</p>
+            </div>
+          </div>
+
+          <div className="border-t pt-4">
+            <h4 className="font-semibold text-lg mb-3">Decizia finala iti apartine</h4>
+            <p>Nu e ușor ! Nimeni nu spune că e. Dar e posibil să alegi altceva, să te alegi pe tine!</p>
+            <p>Și dacă ai consumat deja, nu ești pierdut! Ești în proces, ești în luptă, ești în viață si viața ta contează!</p>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4 space-y-2">
+            <p className="font-medium">Așa că, te rog, înainte să spui &ldquo;da&rdquo; unei astfel de experiente, întreabă-te:</p>
+            <ul className="list-none space-y-1 text-sm">
+              <li>&ldquo;Ce vreau cu adevărat?&rdquo;</li>
+              <li>&ldquo;Ce merit cu adevărat?&rdquo;</li>
+              <li>&ldquo;Ce pot construi cu adevărat?&rdquo;</li>
+            </ul>
+            <p className="font-medium">Intelege ca răspunsul e în tine, nu în substanțe, nu în evadare, ci în curajul de a fi tu!</p>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Ce se întâmplă în mintea ta – psihologia consumului</h4>
+            <p>Dacă ai ajuns până aici, înseamnă că vrei să înțelegi ,nu doar ce sunt drogurile, ci ce fac cu tine, cu gândurile tale, cu emoțiile tale si cu felul în care te vezi și te simți.</p>
+            <p>Consumul de droguri nu e doar o experiență fizică, e o invazie psihologică, o reconfigurare a felului în care funcționezi si uneori, nici nu-ți dai seama cât de adânc te afectează.</p>
+            <p>Iti las cateva din efectele consumului de droguri, in plan fizio-psihologic:</p>
+            
+            <div className="space-y-3">
+              <div>
+                <p className="font-medium">1. Dopamina – plăcerea care te prinde</p>
+                <p className="text-sm">Majoritatea drogurilor stimulează eliberarea de dopamină, neurotransmițătorul responsabil pentru senzația de plăcere. La început, pare magic: euforie, relaxare, energie. Dar creierul tău începe să se obișnuiască si cere mai mult si mai mult. Rezultatul? Plăcerile naturale – muzica, prietenii, sportul – nu mai provoacă aceeași bucurie, totul pare fad si singura sursă de &ldquo;bine&rdquo; devine substanța iar asta e începutul dependenței psihologice.</p>
+              </div>
+              
+              <div>
+                <p className="font-medium">2. Tulburări cognitive</p>
+                <p className="text-sm">Consumul repetat afectează:</p>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li>Capacitatea de concentrare</li>
+                  <li>Memoria de scurtă durată</li>
+                  <li>Gândirea logică</li>
+                  <li>Luarea deciziilor</li>
+                </ul>
+                <p className="text-sm">Adolescenții care consumă droguri au dificultăți în învățare, în gestionarea timpului și în rezolvarea problemelor si asta nu e doar temporar, unele efecte pot dura ani sau deveni permanente.</p>
+              </div>
+              
+              <div>
+                <p className="font-medium">3. Tulburări afective</p>
+                <p className="text-sm">Drogurile nu doar că nu vindecă depresia sau anxietatea – ele le pot agrava, după euforia inițială, urmează:</p>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li>Episoade de depresie profundă</li>
+                  <li>Atacuri de panică</li>
+                  <li>Sentimente de gol și inutilitate</li>
+                  <li>Irascibilitate și furie</li>
+                </ul>
+                <p className="text-sm">Unele substanțe pot induce psihoze – episoade în care realitatea e distorsionată, apar halucinații sau paranoia.</p>
+              </div>
+              
+              <div>
+                <p className="font-medium">4. Identitate și imagine de sine</p>
+                <p className="text-sm">Adolescența e perioada în care îți construiești identitatea, drogurile o pot fragmenta. Te pot face să te simți fals, confuz, rupt de cine erai. Mulți adolescenți spun că nu se mai recunosc, că nu mai știu cine sunt fără substanță. Imaginea de sine se degradează, apare rușinea, auto-critica, sentimentul că &ldquo;nu mai contez&rdquo; si asta poate duce la izolare, auto-sabotaj, chiar gânduri suicidare.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Cum se instalează dependența psihologică?</h4>
+            <p>Dependența nu înseamnă doar nevoia fizică, inseamnă că mintea ta începe să creadă că nu poate funcționa fără drog.</p>
+            
+            <div>
+              <p className="font-medium mb-2">Etapele:</p>
+              <ol className="list-decimal list-inside text-sm space-y-1">
+                <li>Curiozitate – &ldquo;Hai să încerc.&rdquo;</li>
+                <li>Repetiție – &ldquo;A fost ok, mai vreau.&rdquo;</li>
+                <li>Asociere – &ldquo;Mă simt bine doar când consum.&rdquo;</li>
+                <li>Negare – &ldquo;Nu e o problemă, pot controla.&rdquo;</li>
+                <li>Dependență – &ldquo;Nu pot fără.&rdquo;</li>
+              </ol>
+              <p className="text-sm mt-2">Și în tot acest timp, creierul tău învață să se bazeze pe substanță pentru orice: relaxare, distracție, somn, încredere iar tu începi să te pierzi.</p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Ce poți face pentru a te proteja psihologic?</h4>
+            <p>Nu e suficient să spui &ldquo;nu&rdquo;, trebuie să înțelegi de ce spui &ldquo;nu&rdquo; si să construiești în tine o rezistență reală.</p>
+            
+            <div className="space-y-2">
+              <p className="text-sm"><span className="font-medium">1. Cunoaște-te !</span> Fă-ți timp să înțelegi ce simți, ce te doare, ce te sperie, ce te face vulnerabil. Cu cât te cunoști mai bine, cu atât ești mai greu de manipulat.</p>
+              <p className="text-sm"><span className="font-medium">2. Vorbește !</span> Terapia nu e pentru &ldquo;nebuni&rdquo;, e pentru oameni curajoși care vor să se înțeleagă, să se vindece si să se reconstruiască.</p>
+              <p className="text-sm"><span className="font-medium">3. Găsește sens !</span> Fă lucruri care te stimuleaza, care te provoacă, care te conectează. Sensul e antidotul dependenței.</p>
+              <p className="text-sm"><span className="font-medium">4. Înconjoară-te de oameni care te respect !</span> Nu de cei care te împing spre distrugere, ci de cei care te văd, te ascultă si te susțin.</p>
+            </div>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <p className="text-sm">Daca vrei, haide sa ne cunostem mai mult decat in spatele cuvintelor de pana acum, te invit sa intri pe site-ul meu, <a href="https://www.doctoralisivascu.ro" target="_blank" rel="noopener noreferrer" className="text-primary underline">www.doctoralisivascu.ro</a> in sectiunea &ldquo;primul pas&rdquo; si sa faci o prima programare gratuita.</p>
+            <p className="font-medium mt-3">Te imbratisez! Doctor Alis Ivascu, psiholog clinician si expert in adictii.</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "a_hipnoza_regresiva",
+      title: "Hipnoza regresivă – sprijin profund în procesul de vindecare a dependențelor",
+      content: (
+        <div className="space-y-5">
+          <div className="w-full rounded-xl overflow-hidden border mb-6">
+            <Image 
+              src={`${prefix}/imaginearticol222.jpeg`} 
+              alt="Hipnoza regresivă – sprijin profund în procesul de vindecare a dependențelor" 
+              width={800} 
+              height={600} 
+              className="w-full h-auto object-contain" 
+            />
+          </div>
+
+          <p>Dependențele de droguri și alte substanțe reprezintă adesea o manifestare a unei suferințe emoționale profunde.</p>
+
+          <p>Dincolo de comportamentele vizibile, ele pot avea rădăcini în traume nerezolvate, răni emoționale vechi sau chiar în tipare transgeneraționale moștenite inconștient.</p>
+
+          <p>Hipnoza regresivă oferă o abordare terapeutică blândă și eficientă, care sprijină procesul de vindecare din interior, accesând direct nivelurile profunde ale subconștientului.</p>
+
+          <p>Într-o stare de relaxare și siguranță, persoana este ghidată să exploreze originea emoțională a dependenței, pentru a înțelege, elibera și transforma acele experiențe care au creat vulnerabilitatea inițială.</p>
+
+          <div className="space-y-3">
+            <h4 className="font-semibold text-lg">Prin acest proces, hipnoza regresivă poate contribui la:</h4>
+            <ul className="list-disc list-inside text-sm space-y-2">
+              <li>conștientizarea și vindecarea traumelor emoționale din copilărie sau din alte perioade semnificative ale vieții;</li>
+              <li>înțelegerea legăturilor transgeneraționale și a tiparelor moștenite care influențează comportamentele adictive;</li>
+              <li>restabilirea conexiunii cu sinele autentic și cu resursele interioare de echilibru, încredere și autocontrol;</li>
+              <li>reprogramarea subconștientului pentru a susține alegeri sănătoase, claritate și stabilitate emoțională.</li>
+            </ul>
+          </div>
+
+          <div className="bg-muted/20 border rounded-lg p-4">
+            <p className="text-sm">Hipnoza regresivă nu înlocuiește tratamentele medicale, dar le poate completa în mod benefic, oferind o înțelegere mai profundă a cauzelor interioare și facilitând procesul de recuperare.</p>
+            <p className="text-sm mt-2">Prin accesarea și vindecarea sursei emoționale a dependenței, persoana poate recăpăta sentimentul de libertate, echilibru și sens în propria viață.</p>
+          </div>
+
+          <p className="text-sm text-muted-foreground mt-4">Articol scris de terapeutul Mihaela Sava.</p>
+        </div>
+      ),
+    },
+    {
       id: "a_semne_adolescent",
       title: "5 semne că se întâmplă ceva cu adolescentul tău (și nu e de bine)",
       content: (
