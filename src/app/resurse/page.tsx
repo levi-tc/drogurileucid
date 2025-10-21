@@ -11,10 +11,12 @@ import {
 } from "@components/ui/dialog"
 import Image from "next/image"
 
+type Article = { id: string; title: string; content: React.ReactNode };
+
 export default function ResursePage() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const prefix = basePath.endsWith("/") ? basePath.slice(0, -1) : basePath;
-  const articles = [
+  const articles: Article[] = [
     {
       id: "a_story",
       title: "Povestea lui Eroul Alex și Monstrul Drog 🦸‍♀️",
@@ -69,6 +71,31 @@ export default function ResursePage() {
             <p className="mt-2 font-medium">👧👦 Fii eroul poveștii tale! Spune NU Monstrului Drog și păstrează-ți libertatea!</p>
             <p className="text-sm text-muted-foreground mt-2">📌 Asociația &ldquo;Drogurile Ucid Visurile Copiilor&rdquo;</p>
           </div>
+        </div>
+      ),
+    },
+    {
+      id: "a_pdf_ghid",
+      title: "Ghid PDF: Prevenție și sprijin pentru părinți și elevi",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Document PDF</p>
+            <p className="font-semibold">Deschide și consultă ghidul complet în format PDF. Poți și descărca documentul.</p>
+          </div>
+
+          <div className="w-full rounded-xl overflow-hidden border">
+            <iframe
+              src={`${prefix}/Ghid_%20familii_ANPCDDA_2025.pdf`}
+              title="Ghid PDF — Prevenție și sprijin"
+              className="w-full h-[70vh]"
+            />
+          </div>
+
+          <p className="text-sm">
+            Dacă vizualizarea nu pornește, poți
+            {' '}<a href={`${prefix}/Ghid_%20familii_ANPCDDA_2025.pdf`} target="_blank" rel="noreferrer" className="text-primary underline">descarcă PDF-ul</a>.
+          </p>
         </div>
       ),
     },
@@ -719,7 +746,7 @@ export default function ResursePage() {
     },
     {
       id: "a_despre_tine",
-      title: "Nu e despre droguri. E despre tine, cel care ai ales sa dai atentie acestui mesaj!",
+      title: "Nu e despre droguri. E despre tine, cel care ai ales să dai atenție acestui mesaj!",
       content: (
         <div className="space-y-5">
           <div className="border-l-4 border-primary/30 pl-4 py-2">
@@ -1840,6 +1867,45 @@ export default function ResursePage() {
     },
   ]
 
+  // Ensure unique articles and correct display order
+  const displayOrder = [
+    "a_spune_nu",
+    "a_story",
+    "a_recognition",
+    "a_semne_adolescent",
+    "a_pdf_ghid",
+    "a_semne_consum",
+    "a_sprijin_adolescent",
+    "a_despre_tine",
+    "a15",
+    "a_mind_matters",
+    "a8",
+    "a_atasament",
+    "a_trauma_copilarie",
+    "a_stres_dependenta",
+    "a7",
+    "a14",
+    "a_hipnoza_regresiva",
+    "a9",
+    "a6",
+    "a4",
+  ] as const;
+
+  const idToArticle = new Map<string, Article>();
+  for (let i = articles.length - 1; i >= 0; i--) {
+    const article = articles[i];
+    if (!idToArticle.has(article.id)) idToArticle.set(article.id, article);
+  }
+  const uniqueArticles: Article[] = Array.from(idToArticle.values()).reverse();
+
+  const orderIndex = (id: Article["id"]) => {
+    const idx = displayOrder.indexOf(id as typeof displayOrder[number]);
+    return idx === -1 ? Number.MAX_SAFE_INTEGER : idx;
+  };
+  const sortedArticles: Article[] = uniqueArticles
+    .slice()
+    .sort((a, b) => orderIndex(a.id) - orderIndex(b.id));
+
   return (
     <div className="min-h-screen ">
       <div className="container mx-auto px-4 py-12 space-y-12">
@@ -1899,7 +1965,7 @@ export default function ResursePage() {
           </div>
           
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-2 auto-rows-[1fr] items-stretch max-w-6xl mx-auto">
-            {articles.map((article, index) => (
+            {sortedArticles.map((article, index) => (
               <div key={article.id} className="group h-full">
               <Dialog>
                 <DialogTrigger asChild>
