@@ -75,6 +75,31 @@ export default function ResursePage() {
       ),
     },
     {
+      id: "a_pdf_prezentare",
+      title: "Prezentarea Asociației — PDF",
+      content: (
+        <div className="space-y-5">
+          <div className="border-l-4 border-primary/30 pl-4 py-2">
+            <p className="text-sm font-medium text-muted-foreground mb-2">Document PDF</p>
+            <p className="font-semibold">Deschide și consultă prezentarea asociației în format PDF. Poți și descărca documentul.</p>
+          </div>
+
+          <div className="w-full rounded-xl overflow-hidden border">
+            <iframe
+              src={`${prefix}/prezentareasociatie.pdf`}
+              title="Prezentarea Asociației — PDF"
+              className="w-full h-[70vh]"
+            />
+          </div>
+
+          <p className="text-sm">
+            Dacă vizualizarea nu pornește, poți{' '}
+            <a href={`${prefix}/prezentareasociatie.pdf`} target="_blank" rel="noreferrer" className="text-primary underline">descarcă PDF-ul</a>.
+          </p>
+        </div>
+      ),
+    },
+    {
       id: "a_pdf_ghid",
       title: "Ghid PDF: Prevenție și sprijin pentru părinți și elevi",
       content: (
@@ -1869,6 +1894,7 @@ export default function ResursePage() {
 
   // Ensure unique articles and correct display order
   const displayOrder = [
+    "a_pdf_prezentare",
     "a_spune_nu",
     "a_story",
     "a_recognition",
