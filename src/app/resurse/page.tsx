@@ -1876,7 +1876,6 @@ export default function ResursePage() {
     "a_pdf_ghid",
     "a_semne_consum",
     "a_sprijin_adolescent",
-    "a_despre_tine",
     "a15",
     "a_mind_matters",
     "a8",
@@ -1897,12 +1896,13 @@ export default function ResursePage() {
     if (!idToArticle.has(article.id)) idToArticle.set(article.id, article);
   }
   const uniqueArticles: Article[] = Array.from(idToArticle.values()).reverse();
+  const filteredArticles: Article[] = uniqueArticles.filter((a) => a.id !== "a_despre_tine");
 
   const orderIndex = (id: Article["id"]) => {
     const idx = displayOrder.indexOf(id as typeof displayOrder[number]);
     return idx === -1 ? Number.MAX_SAFE_INTEGER : idx;
   };
-  const sortedArticles: Article[] = uniqueArticles
+  const sortedArticles: Article[] = filteredArticles
     .slice()
     .sort((a, b) => orderIndex(a.id) - orderIndex(b.id));
 
