@@ -85,6 +85,13 @@ export default function DespreNoiPage() {
         "Diana Todeancă este psihoterapeut cu o pregătire academică solidă și o experiență bogată de lucru cu oameni în contexte variate. Deține două doctorate – unul în Reprezentări Sociale și Comunicare și unul în Psihologie – și este certificată atât în psihoterapie ericksoniană & hipnoză clinică, cât și în terapia sistemică de cuplu și familie. Este, de asemenea, coach transformațional.\n\nCu peste 10 ani de practică în cabinet și mai mult de 6000 de ședințe de terapie individuală susținute, Diana a sprijinit numeroase persoane să își depășească blocajele și să își regăsească echilibrul. Dincolo de cabinet, are o experiență de peste 12 ani în training de soft-skills și consultanță de business, cu etape petrecute în mediul corporativ. A activat în cadrul secției de psihiatrie a Spitalului de Urgență și a lucrat în proiecte punctuale, într-o închisoare de maximă siguranță – experiențe care i-au oferit o perspectivă profundă asupra rezilienței și fragilității umane.\n\nPrin implicarea sa în Asociația Drogurile ucid visurile copiilor, Diana își continuă misiunea de a sprijini prevenția și conștientizarea riscurilor consumului de substanțe, pentru ca visurile copiilor și tinerilor să rămână vii și posibile.",
     },
     {
+      nume: "Nina Buru",
+      rol: "Psiholog",
+      image: `${prefix}/nina.jpeg`,
+      description:
+        "Cine este Nina Buru\n\nSunt psiholog acreditat și membru COPSI. Lucrez de peste 10 ani cu sportivi de performanță din România. Sunt activă în Sibiu și lucrez cu copii, adolescenți, campioni naționali și echipe profesioniste. Am creat platforma ninaburu.ro, unde ofer articole, ghiduri și cursuri gratuite pentru dezvoltarea mentală în sport.\n\nFolosesc metode validate științific din psihologia sportului, CBT, ACT și mindfulness. Susțin atleții cu exerciții de încredere, respirație, vizualizare, jurnal sportiv și gestionarea sabotorilor interni.\n\nCe aduc în această asociație\n\nMă implic în prevenția consumului de substanțe prin educație psihologică. Lucrez direct cu copii și adolescenți și îi ajut să înțeleagă cum funcționează stresul, presiunea, motivația și grupul. Le ofer instrumente practice pentru reziliență, limite sănătoase și alegeri echilibrate.\n\nPentru mine, mintea unui copil contează la fel de mult ca performanța lui. Iar educația emoțională este primul pas spre protejarea viselor sale.",
+    },
+    {
       nume: "Larisa Herculea-Andronic",
       rol: "Psihoterapeut",
       image: `${prefix}/lasrisahercule.jpeg`,
