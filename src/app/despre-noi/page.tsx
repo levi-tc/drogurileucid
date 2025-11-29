@@ -86,7 +86,7 @@ export default function DespreNoiPage() {
     },
     {
       nume: "Nina Buru",
-      rol: "Psiholog",
+      rol: "Psihoterapeut CBT",
       image: `${prefix}/nina.jpeg`,
       description:
         "Cine este Nina Buru\n\nSunt psiholog acreditat și membru COPSI. Lucrez de peste 10 ani cu sportivi de performanță din România. Sunt activă în Sibiu și lucrez cu copii, adolescenți, campioni naționali și echipe profesioniste. Am creat platforma ninaburu.ro, unde ofer articole, ghiduri și cursuri gratuite pentru dezvoltarea mentală în sport.\n\nFolosesc metode validate științific din psihologia sportului, CBT, ACT și mindfulness. Susțin atleții cu exerciții de încredere, respirație, vizualizare, jurnal sportiv și gestionarea sabotorilor interni.\n\nCe aduc în această asociație\n\nMă implic în prevenția consumului de substanțe prin educație psihologică. Lucrez direct cu copii și adolescenți și îi ajut să înțeleagă cum funcționează stresul, presiunea, motivația și grupul. Le ofer instrumente practice pentru reziliență, limite sănătoase și alegeri echilibrate.\n\nPentru mine, mintea unui copil contează la fel de mult ca performanța lui. Iar educația emoțională este primul pas spre protejarea viselor sale.",
