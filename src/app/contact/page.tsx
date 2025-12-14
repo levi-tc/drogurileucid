@@ -35,7 +35,7 @@ export default function ContactPage() {
               </span>
               <div className="flex flex-col min-w-0">
                 <span className="text-sm text-muted-foreground">Telefon</span>
-                <span className="font-medium group-hover:underline">+40 750 633 148</span>
+                <span className="font-medium group-hover:underline">+40 730 173 727</span>
               </div>
             </a>
 
