@@ -57,8 +57,9 @@ export default function RootLayout({
                 <span className="sr-only">Asociația „Drogurile ucid visurile copiilor”</span>
               </Link>
               <nav className="hidden md:flex items-center gap-6 text-sm">
+                <Link href="/povesti" className="hover:underline">Povești</Link>
                 <Link href="/resurse" className="hover:underline">Resurse</Link>
-                <Link href="/galerie" className="hover:underline">Galerie</Link>
+                <Link href="/organizatii" className="hover:underline">Organizații</Link>
                 <Link href="/despre-noi" className="hover:underline">Despre noi</Link>
                 <Link href="/contact" className="hover:underline">Contact</Link>
               </nav>
