@@ -7,10 +7,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Home() {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-  const prefix = basePath.endsWith("/") ? basePath.slice(0, -1) : basePath;
-  const heroImg = `${prefix}/kids_playing.jpg`;
-  const aboutImg = `${prefix}/despre-noi.png`;
   return (
     <div className="space-y-28 md:space-y-32 py-10">
       {/* Hero */}
@@ -19,7 +15,7 @@ export default function Home() {
           <div className="mx-auto max-w-6xl grid md:grid-cols-[1.15fr_1fr] gap-14 items-center md:-translate-y-6 lg:-translate-y-10">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-                Suntem alături de tine <span style={{color:"var(--brand-orange-500)"}}>la fiecare pas</span>
+                Suntem alături de tine <span style={{ color: "var(--brand-orange-500)" }}>la fiecare pas</span>
               </h1>
               <p className="text-base md:text-lg text-muted-foreground max-w-2xl">
                 Primește sprijin gratuit și confidențial pentru prevenirea consumului de droguri. Suntem aici să te ajutăm să iei decizii sănătoase pentru viitorul tău.
@@ -42,7 +38,7 @@ export default function Home() {
               <div className="surface-rounded border-4 border-white overflow-hidden shadow-xl">
                 <div className="relative aspect-[16/10] md:aspect-[4/3] w-full">
                   <Image
-                    src={heroImg}
+                    src="/kids_playing.jpg"
                     alt="Copii jucându-se în parc"
                     fill
                     sizes="(min-width: 768px) 560px, 100vw"
@@ -72,11 +68,10 @@ export default function Home() {
               cta: "Chat acum",
             },
             {
-              title:
-                "Campania națională alege viața nu dependență “1 Septembrie”",
-              desc: "",
-              href: "/resurse",
-              cta: "Află mai multe",
+              title: "Povești reale",
+              desc: "Citește și împărtășește experiențe",
+              href: "/povesti",
+              cta: "Vezi povești",
             },
             {
               title: "Sfaturi și informații",
@@ -94,7 +89,7 @@ export default function Home() {
             const isOrange = idx % 2 === 0;
             const btnBg = isOrange ? "#FE654F" : "#FED18C";
             const btnText = isOrange ? "#ffffff" : "#1f2937";
-            const emojis = ["💬", "🔍", "📚", "📨"] as const;
+            const emojis = ["💬", "📖", "📚", "📨"] as const;
             return (
               <motion.div
                 key={card.title}
@@ -140,7 +135,7 @@ export default function Home() {
           <div className="space-y-4 text-center md:text-left">
             <h2 className="text-2xl md:text-3xl font-semibold">Despre noi</h2>
             <p>
-              Asociația „Drogurile ucid visurile copiilor” este o organizație non-guvernamentală dedicată prevenirii consumului de droguri și sprijinirii tinerilor și familiilor afectate.
+              Asociația „Drogurile ucid visurile copiilor" este o organizație non-guvernamentală dedicată prevenirii consumului de droguri și sprijinirii tinerilor și familiilor afectate.
             </p>
             <p className="text-muted-foreground">
               Prin campanii educaționale, programe de consiliere și colaborare cu comunitatea, protejăm visurile copiilor și construim un viitor mai sănătos pentru toți.
@@ -153,8 +148,8 @@ export default function Home() {
           </div>
           <div className="surface-rounded glass-soft overflow-hidden border shadow-xl">
             <div className="relative aspect-[4/3] w-full">
-          <Image
-                src={aboutImg}
+              <Image
+                src="/despre-noi.png"
                 alt="Despre noi – Asociația Drogurile ucid visurile copiilor"
                 fill
                 sizes="(min-width: 768px) 560px, 100vw"
@@ -272,11 +267,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Removed separate Resurse CTA in favor of unified block above */}
-
-      {/* Contact CTA */}
-  
     </div>
   );
 }
