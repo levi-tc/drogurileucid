@@ -44,11 +44,14 @@ export default function MobileMenu() {
             aria-label="Meniu principal"
             className="surface-rounded border mx-auto w-full max-w-sm px-8 py-8 text-center space-y-4 shadow-lg"
           >
+            <Link href="/povesti" className="block text-lg font-medium hover:underline" onClick={() => setOpen(false)}>
+              Povești
+            </Link>
             <Link href="/resurse" className="block text-lg font-medium hover:underline" onClick={() => setOpen(false)}>
               Resurse
             </Link>
-            <Link href="/galerie" className="block text-lg font-medium hover:underline" onClick={() => setOpen(false)}>
-              Galerie
+            <Link href="/organizatii" className="block text-lg font-medium hover:underline" onClick={() => setOpen(false)}>
+              Organizații
             </Link>
             <Link href="/despre-noi" className="block text-lg font-medium hover:underline" onClick={() => setOpen(false)}>
               Despre noi
