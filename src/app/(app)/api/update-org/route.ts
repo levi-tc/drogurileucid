@@ -18,7 +18,8 @@ export async function POST(req: NextRequest) {
         }
 
         // Verify the user is an approved representative
-        const reps = Array.isArray(org.representatives) ? org.representatives : []
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const reps = Array.isArray((org as any).representatives) ? (org as any).representatives : []
         const isApproved = reps.some(
             (r: { clerkUserId: string; status: string }) =>
                 r.clerkUserId === clerkUserId && r.status === 'approved'

@@ -19,7 +19,8 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ error: 'Organization not found' }, { status: 404 })
         }
 
-        const reps = Array.isArray(org.representatives) ? org.representatives : []
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const reps = Array.isArray((org as any).representatives) ? (org as any).representatives : []
 
         // Check if already a rep
         if (reps.some((r: { clerkUserId: string }) => r.clerkUserId === clerkUserId)) {
@@ -36,7 +37,8 @@ export async function POST(req: NextRequest) {
         await payload.update({
             collection: 'organizations',
             id: orgId,
-            data: { representatives: updatedReps },
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            data: { representatives: updatedReps } as any,
             overrideAccess: true,
         })
 

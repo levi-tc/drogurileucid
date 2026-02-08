@@ -33,8 +33,9 @@ export default async function OrgDetailPage({ params }: { params: Promise<{ slug
     const logo = typeof org.logo === 'object' && org.logo !== null ? org.logo : null
 
     // Serialize representatives for client components
-    const reps = Array.isArray(org.representatives)
-        ? org.representatives.map((r: { clerkUserId: string; email: string; status: string }) => ({
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const reps = Array.isArray((org as any).representatives)
+        ? (org as any).representatives.map((r: { clerkUserId: string; email: string; status: string }) => ({
             clerkUserId: r.clerkUserId || '',
             email: r.email || '',
             status: r.status || 'pending',
