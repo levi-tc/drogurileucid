@@ -6,7 +6,7 @@ import {
     SignedOut,
     UserButton,
 } from "@clerk/nextjs";
-
+// auth
 export default function AuthButtons() {
     return (
         <span className="ml-2 border-l pl-4 border-black/10">

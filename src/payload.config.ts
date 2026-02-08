@@ -4,9 +4,6 @@ import path from "path";
 import { buildConfig } from "payload";
 import { fileURLToPath } from "url";
 import sharp from "sharp";
-// @ts-ignore — Turbopack can't resolve wildcard exports, use direct dist path
-import { ro } from "@payloadcms/translations/dist/languages/ro.js";
-
 import { Users } from "./collections/Users";
 import { Media } from "./collections/Media";
 import { Stories } from "./collections/Stories";
@@ -26,10 +23,6 @@ export default buildConfig({
     meta: {
       titleSuffix: "— Asociația Antidrog",
     },
-  },
-  i18n: {
-    supportedLanguages: { ro },
-    fallbackLanguage: "ro",
   },
   collections: [Users, Media, Stories, Comments, Articles, Organizations],
   editor: lexicalEditor(),
