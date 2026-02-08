@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { useUser } from "@clerk/nextjs"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function OrgSubmitForm() {
     const { user } = useUser()
@@ -12,6 +13,7 @@ export default function OrgSubmitForm() {
     const [form, setForm] = useState({ name: "", type: "supporter", website: "", description: "" })
     const [status, setStatus] = useState<"idle" | "sending" | "success" | "error" | "already-has-org">("idle")
     const [existingOrgName, setExistingOrgName] = useState("")
+    const [existingOrgSlug, setExistingOrgSlug] = useState("")
 
     // Check if user already has an organization
     useEffect(() => {
@@ -21,6 +23,7 @@ export default function OrgSubmitForm() {
             .then(data => {
                 if (data.docs && data.docs.length > 0) {
                     setExistingOrgName(data.docs[0].name)
+                    setExistingOrgSlug(data.docs[0].slug || "")
                     setStatus("already-has-org")
                 }
             })
@@ -81,8 +84,13 @@ export default function OrgSubmitForm() {
                 <div className="text-4xl">🏢</div>
                 <p className="font-semibold text-lg">Ai deja o organizație înregistrată</p>
                 <p className="text-sm text-muted-foreground">
-                    Organizația ta: <strong>{existingOrgName}</strong>. Fiecare utilizator poate avea o singură organizație.
+                    Organizația ta: <strong>{existingOrgName}</strong>
                 </p>
+                {existingOrgSlug && (
+                    <Button asChild variant="outline">
+                        <Link href={`/organizatii/${existingOrgSlug}`}>Vezi organizația ta</Link>
+                    </Button>
+                )}
             </div>
         )
     }
