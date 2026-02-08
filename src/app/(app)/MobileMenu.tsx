@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Menu as MenuIcon, X as XIcon } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import AuthButtons from "./AuthButtons";
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -44,6 +45,9 @@ export default function MobileMenu() {
             aria-label="Meniu principal"
             className="surface-rounded border mx-auto w-full max-w-sm px-8 py-8 text-center space-y-4 shadow-lg"
           >
+            <Link href="/" className="block text-lg font-medium hover:underline" onClick={() => setOpen(false)}>
+              Acasă
+            </Link>
             <Link href="/povesti" className="block text-lg font-medium hover:underline" onClick={() => setOpen(false)}>
               Povești
             </Link>
@@ -59,6 +63,9 @@ export default function MobileMenu() {
             <Link href="/contact" className="block text-lg font-medium hover:underline" onClick={() => setOpen(false)}>
               Contact
             </Link>
+            <div className="pt-2 border-t">
+              <AuthButtons />
+            </div>
           </div>
         </div>
       )}
