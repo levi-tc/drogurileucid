@@ -18,6 +18,8 @@ const categoryColors: Record<string, string> = {
     professional: '#d6efff',
 }
 
+export const dynamic = 'force-dynamic'
+
 export default async function PovestiPage() {
     const payload = await getPayload({ config })
     const { docs: stories } = await payload.find({

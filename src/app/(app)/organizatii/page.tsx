@@ -5,6 +5,8 @@ import Image from 'next/image'
 import AuthGate from '../AuthGate'
 import OrgSubmitForm from './OrgSubmitForm'
 
+export const dynamic = 'force-dynamic'
+
 export default async function OrganizatiiPage() {
     const payload = await getPayload({ config })
     const { docs: orgs } = await payload.find({

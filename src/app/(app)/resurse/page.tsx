@@ -2,6 +2,8 @@ import { getPayload } from 'payload'
 import config from '@/payload.config'
 import ResurseContent from './ResurseContent'
 
+export const dynamic = 'force-dynamic'
+
 export default async function ResursePage() {
   const payload = await getPayload({ config })
 
