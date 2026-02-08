@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useUser } from "@clerk/nextjs"
 import { Button } from "@/components/ui/button"
 
@@ -10,7 +10,22 @@ export default function OrgSubmitForm() {
     const userEmail = user?.primaryEmailAddress?.emailAddress || ""
 
     const [form, setForm] = useState({ name: "", type: "supporter", website: "", description: "" })
-    const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle")
+    const [status, setStatus] = useState<"idle" | "sending" | "success" | "error" | "already-has-org">("idle")
+    const [existingOrgName, setExistingOrgName] = useState("")
+
+    // Check if user already has an organization
+    useEffect(() => {
+        if (!user?.id) return
+        fetch(`/api/organizations?where[representatives.clerkUserId][equals]=${user.id}&limit=1`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.docs && data.docs.length > 0) {
+                    setExistingOrgName(data.docs[0].name)
+                    setStatus("already-has-org")
+                }
+            })
+            .catch(() => { })
+    }, [user?.id])
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
@@ -60,13 +75,24 @@ export default function OrgSubmitForm() {
         }
     }
 
+    if (status === "already-has-org") {
+        return (
+            <div className="text-center py-8 space-y-3">
+                <div className="text-4xl">🏢</div>
+                <p className="font-semibold text-lg">Ai deja o organizație înregistrată</p>
+                <p className="text-sm text-muted-foreground">
+                    Organizația ta: <strong>{existingOrgName}</strong>. Fiecare utilizator poate avea o singură organizație.
+                </p>
+            </div>
+        )
+    }
+
     if (status === "success") {
         return (
             <div className="text-center py-8 space-y-3">
                 <div className="text-4xl">🎉</div>
                 <p className="font-semibold text-lg">Cererea a fost trimisă!</p>
                 <p className="text-sm text-muted-foreground">Echipa noastră va verifica și aproba organizația în curând.</p>
-                <Button onClick={() => setStatus("idle")} variant="outline">Trimite altă cerere</Button>
             </div>
         )
     }
