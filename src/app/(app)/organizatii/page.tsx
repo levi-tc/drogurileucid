@@ -2,11 +2,14 @@ import { getPayload } from 'payload'
 import config from '@/payload.config'
 import Link from 'next/link'
 import Image from 'next/image'
+import AuthGate from '../AuthGate'
+import OrgSubmitForm from './OrgSubmitForm'
 
 export default async function OrganizatiiPage() {
     const payload = await getPayload({ config })
     const { docs: orgs } = await payload.find({
         collection: 'organizations',
+        where: { status: { equals: 'approved' } },
         sort: 'name',
         limit: 100,
     })
@@ -27,7 +30,7 @@ export default async function OrganizatiiPage() {
             <section>
                 {orgs.length === 0 ? (
                     <p className="text-center text-muted-foreground">
-                        Încă nu sunt organizații înregistrate. Contactează-ne dacă dorești să te alături!
+                        Încă nu sunt organizații aprobate. Fii prima organizație care se alătură!
                     </p>
                 ) : (
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -72,6 +75,19 @@ export default async function OrganizatiiPage() {
                         })}
                     </div>
                 )}
+            </section>
+
+            {/* Submit Organization — auth-gated */}
+            <section className="glow-wrap glow-blue glow-peach glass surface-rounded p-6 md:p-10 space-y-6">
+                <div className="text-center space-y-2">
+                    <h2 className="text-xl md:text-2xl font-semibold">Înscrie-ți organizația</h2>
+                    <p className="text-sm text-muted-foreground">
+                        Cererea ta va fi evaluată de echipa noastră. Reprezentantul trebuie să fie autentificat.
+                    </p>
+                </div>
+                <AuthGate message="Conectează-te ca reprezentant al organizației pentru a trimite o cerere.">
+                    <OrgSubmitForm />
+                </AuthGate>
             </section>
         </div>
     )

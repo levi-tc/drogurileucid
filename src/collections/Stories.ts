@@ -4,10 +4,22 @@ export const Stories: CollectionConfig = {
     slug: 'stories',
     admin: {
         useAsTitle: 'title',
-        defaultColumns: ['title', 'author', 'category', 'status', 'publishedAt'],
+        defaultColumns: ['title', 'author', 'status', 'category', 'publishedAt'],
+        description: 'User-submitted stories. New submissions arrive as "Pending" — review and approve or reject them.',
+    },
+    hooks: {
+        beforeChange: [
+            ({ data, originalDoc }) => {
+                // Auto-set publishedAt when status transitions to published
+                if (data?.status === 'published' && originalDoc?.status !== 'published' && !data.publishedAt) {
+                    data.publishedAt = new Date().toISOString()
+                }
+                return data
+            },
+        ],
     },
     access: {
-        // Anyone can submit a story (goes as draft)
+        // Anyone can submit a story (goes as pending)
         create: () => true,
         // Only published stories are public; admins see all
         read: ({ req }) => {
@@ -68,12 +80,32 @@ export const Stories: CollectionConfig = {
         {
             name: 'status',
             type: 'select',
-            defaultValue: 'draft',
+            defaultValue: 'pending',
             options: [
-                { label: 'Draft', value: 'draft' },
-                { label: 'Published', value: 'published' },
+                { label: '📝 Draft', value: 'draft' },
+                { label: '⏳ Pending', value: 'pending' },
+                { label: '✅ Published', value: 'published' },
+                { label: '❌ Rejected', value: 'rejected' },
             ],
-            admin: { position: 'sidebar' },
+            admin: {
+                position: 'sidebar',
+                description: 'Submissions arrive as Pending. Review and set to Published or Rejected.',
+            },
+        },
+        {
+            name: 'adminNotes',
+            type: 'textarea',
+            label: 'Admin Notes',
+            admin: {
+                position: 'sidebar',
+                description: 'Internal notes — not shown publicly',
+            },
+            access: {
+                // Only admins can read/write admin notes
+                read: ({ req }) => !!req.user,
+                create: ({ req }) => !!req.user,
+                update: ({ req }) => !!req.user,
+            },
         },
         {
             name: 'featuredImage',

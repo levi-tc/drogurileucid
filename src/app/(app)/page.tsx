@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import LatestArticles from "./LatestArticles";
 
 /* ── animated counter ─────────────────────────────────────── */
 function Counter({ target, label }: { target: number; label: string }) {
@@ -70,7 +71,6 @@ const categoryColors: Record<string, string> = {
 export default function Home() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const prefix = basePath.endsWith("/") ? basePath.slice(0, -1) : basePath;
-  const heroImg = `${prefix}/kids_playing.jpg`;
 
   return (
     <div className="space-y-20 md:space-y-28 py-10">
@@ -113,20 +113,16 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+              className="flex items-center justify-center"
             >
-              <div className="surface-rounded border-4 border-white overflow-hidden shadow-xl">
-                <div className="relative aspect-[16/10] md:aspect-[4/3] w-full">
-                  <Image
-                    src={heroImg}
-                    alt="Copii jucându-se — viitorul fără dependențe"
-                    fill
-                    sizes="(min-width: 768px) 560px, 100vw"
-                    className="object-cover"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-transparent" />
-                </div>
-              </div>
+              <Image
+                src={`${prefix}/asociatie.svg`}
+                alt="Logo Asociația Drogurile Ucid Visurile Copiilor"
+                width={500}
+                height={500}
+                className="w-full max-w-[400px] md:max-w-[460px] h-auto"
+                priority
+              />
             </motion.div>
           </div>
         </div>
@@ -296,9 +292,10 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl font-semibold">Resurse și articole</h2>
           <p className="text-muted-foreground">Ghiduri, informații și materiale utile</p>
         </div>
+        <LatestArticles />
         <div className="text-center">
-          <Button asChild>
-            <Link href="/resurse">Explorează resursele</Link>
+          <Button asChild variant="outline">
+            <Link href="/resurse">Vezi toate resursele</Link>
           </Button>
         </div>
       </section>

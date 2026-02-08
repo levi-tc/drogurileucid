@@ -40,12 +40,12 @@ export default async function StoryPage({ params }: { params: Promise<{ slug: st
                         className="size-12 rounded-full flex items-center justify-center text-lg font-bold"
                         style={{ background: '#fed18c' }}
                     >
-                        {(story.author as string)?.charAt(0) || '?'}
+                        {story.author?.charAt(0) || '?'}
                     </div>
                     <div>
-                        <div className="font-semibold">{story.author as string}</div>
+                        <div className="font-semibold">{story.author}</div>
                         {story.authorRole && (
-                            <div className="text-sm text-muted-foreground">{story.authorRole as string}</div>
+                            <div className="text-sm text-muted-foreground">{story.authorRole}</div>
                         )}
                     </div>
                 </div>
@@ -87,10 +87,10 @@ export default async function StoryPage({ params }: { params: Promise<{ slug: st
 
             {/* Comments */}
             <CommentsSection
-                parentId={story.id as number}
+                parentId={story.id}
                 parentType="story"
                 comments={comments.map((c) => ({
-                    id: c.id as number,
+                    id: c.id,
                     authorName: c.authorName,
                     message: c.message,
                     isTeamMember: c.isTeamMember || false,

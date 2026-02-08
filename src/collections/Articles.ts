@@ -6,12 +6,22 @@ export const Articles: CollectionConfig = {
         useAsTitle: 'title',
         defaultColumns: ['title', 'category', 'status', 'publishedAt'],
     },
+    hooks: {
+        beforeChange: [
+            ({ data, originalDoc }) => {
+                if (data?.status === 'published' && originalDoc?.status !== 'published' && !data.publishedAt) {
+                    data.publishedAt = new Date().toISOString()
+                }
+                return data
+            },
+        ],
+    },
     access: {
         read: ({ req }) => {
             if (req.user) return true
             return { status: { equals: 'published' } }
         },
-        create: ({ req }) => !!req.user,
+        create: () => true,
         update: ({ req }) => !!req.user,
         delete: ({ req }) => !!req.user,
     },
@@ -61,12 +71,29 @@ export const Articles: CollectionConfig = {
             admin: { description: 'Optional author credit' },
         },
         {
+            name: 'organization',
+            type: 'relationship',
+            relationTo: 'organizations',
+            admin: { description: 'Organization that submitted this article' },
+        },
+        {
+            name: 'clerkUserId',
+            type: 'text',
+            admin: {
+                position: 'sidebar',
+                readOnly: true,
+                description: 'Clerk user ID of submitter',
+            },
+        },
+        {
             name: 'status',
             type: 'select',
-            defaultValue: 'draft',
+            defaultValue: 'pending',
             options: [
-                { label: 'Draft', value: 'draft' },
-                { label: 'Published', value: 'published' },
+                { label: '📝 Draft', value: 'draft' },
+                { label: '⏳ Pending', value: 'pending' },
+                { label: '✅ Published', value: 'published' },
+                { label: '❌ Rejected', value: 'rejected' },
             ],
             admin: { position: 'sidebar' },
         },

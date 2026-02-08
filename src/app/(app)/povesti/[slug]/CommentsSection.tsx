@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 
 type Comment = {
-    id: number
+    id: string
     authorName: string
     message: string
     isTeamMember: boolean
@@ -17,13 +17,14 @@ export default function CommentsSection({
     parentType,
     comments: initialComments,
 }: {
-    parentId: number
-    parentType: "story" | "organization"
+    parentId: string
+    parentType: "story" | "organization" | "article"
     comments: Comment[]
 }) {
     const [comments] = useState(initialComments)
     const [form, setForm] = useState({ authorName: "", message: "" })
     const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle")
+    const [wasAutoApproved, setWasAutoApproved] = useState(false)
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
@@ -37,6 +38,7 @@ export default function CommentsSection({
             }
             if (parentType === "story") body.story = parentId
             if (parentType === "organization") body.organization = parentId
+            if (parentType === "article") body.article = parentId
 
             const res = await fetch("/api/comments", {
                 method: "POST",
@@ -44,6 +46,8 @@ export default function CommentsSection({
                 body: JSON.stringify(body),
             })
             if (res.ok) {
+                const created = await res.json()
+                setWasAutoApproved(created?.doc?.status === "approved")
                 setStatus("success")
                 setForm({ authorName: "", message: "" })
             } else {
@@ -96,8 +100,14 @@ export default function CommentsSection({
                 <h4 className="font-medium text-sm">Lasă un comentariu</h4>
                 {status === "success" ? (
                     <div className="text-center py-4 space-y-2">
-                        <p className="text-sm font-medium">Mulțumim! 💬</p>
-                        <p className="text-xs text-muted-foreground">Comentariul tău va fi vizibil după aprobare.</p>
+                        <p className="text-sm font-medium">
+                            {wasAutoApproved ? "Comentariul tău este acum vizibil! ✅" : "Mulțumim! 💬"}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                            {wasAutoApproved
+                                ? "Mulțumim pentru contribuția ta."
+                                : "Comentariul tău va fi vizibil după aprobare."}
+                        </p>
                         <Button size="sm" variant="outline" onClick={() => setStatus("idle")}>
                             Scrie alt comentariu
                         </Button>

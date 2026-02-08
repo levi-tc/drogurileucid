@@ -1,6 +1,7 @@
 import { getPayload } from 'payload'
 import config from '@/payload.config'
 import Link from 'next/link'
+import AuthGate from '../AuthGate'
 import StorySubmitForm from './StorySubmitForm'
 
 const categoryLabels: Record<string, string> = {
@@ -23,7 +24,7 @@ export default async function PovestiPage() {
         collection: 'stories',
         where: { status: { equals: 'published' } },
         sort: '-publishedAt',
-        limit: 50,
+        limit: 9,
     })
 
     return (
@@ -38,18 +39,7 @@ export default async function PovestiPage() {
                 </p>
             </section>
 
-            {/* Submit Story CTA */}
-            <section className="glow-wrap glow-blue glow-peach glass surface-rounded p-6 md:p-10 space-y-6">
-                <div className="text-center space-y-2">
-                    <h2 className="text-xl md:text-2xl font-semibold">Împărtășește-ți povestea</h2>
-                    <p className="text-sm text-muted-foreground">
-                        Povestea ta va fi revizuită de echipa noastră înainte de publicare.
-                    </p>
-                </div>
-                <StorySubmitForm />
-            </section>
-
-            {/* Stories grid */}
+            {/* Stories grid — first */}
             <section className="space-y-6">
                 <h2 className="text-2xl font-semibold text-center">Povești publicate</h2>
                 {stories.length === 0 ? (
@@ -100,6 +90,19 @@ export default async function PovestiPage() {
                         })}
                     </div>
                 )}
+            </section>
+
+            {/* Submit Story — auth-gated */}
+            <section className="glow-wrap glow-blue glow-peach glass surface-rounded p-6 md:p-10 space-y-6">
+                <div className="text-center space-y-2">
+                    <h2 className="text-xl md:text-2xl font-semibold">Împărtășește-ți povestea</h2>
+                    <p className="text-sm text-muted-foreground">
+                        Povestea ta va fi revizuită de echipa noastră înainte de publicare.
+                    </p>
+                </div>
+                <AuthGate message="Conectează-te pentru a împărtăși povestea ta.">
+                    <StorySubmitForm />
+                </AuthGate>
             </section>
         </div>
     )
