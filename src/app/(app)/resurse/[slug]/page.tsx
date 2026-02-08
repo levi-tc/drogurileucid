@@ -19,8 +19,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     const article = docs[0]
     if (!article) notFound()
 
-    const org = typeof article.organization === 'object' && article.organization !== null
-        ? article.organization
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const org = typeof (article as any).organization === 'object' && (article as any).organization !== null
+        ? (article as any).organization
         : null
 
     // Fetch approved comments for this article

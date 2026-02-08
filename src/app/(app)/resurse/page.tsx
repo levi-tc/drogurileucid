@@ -35,7 +35,7 @@ export default async function ResursePage() {
   }))
 
   const articleItems = articles.map((a) => {
-    const org = typeof a.organization === 'object' && a.organization !== null ? a.organization : null
+    const org = typeof (a as any).organization === 'object' && (a as any).organization !== null ? (a as any).organization : null
     return {
       id: String(a.id),
       type: 'article' as const,
