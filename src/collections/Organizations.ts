@@ -2,15 +2,18 @@ import type { CollectionConfig } from 'payload'
 
 export const Organizations: CollectionConfig = {
     slug: 'organizations',
+    labels: {
+        singular: 'Organizație',
+        plural: 'Organizații',
+    },
     admin: {
         useAsTitle: 'name',
         defaultColumns: ['name', 'status', 'type', 'featured'],
-        description: 'Organization listings. New submissions arrive as "Pending" — review and approve or reject them.',
+        description: 'Lista organizațiilor. Noile trimiteri vin ca „În așteptare" — revizuiți și aprobați sau respingeți-le.',
     },
     hooks: {
         beforeChange: [
             ({ data, originalDoc }) => {
-                // Auto-set approvedAt when status transitions to approved
                 if (data?.status === 'approved' && originalDoc?.status !== 'approved') {
                     data.approvedAt = new Date().toISOString()
                 }
@@ -19,9 +22,7 @@ export const Organizations: CollectionConfig = {
         ],
     },
     access: {
-        // Anyone can submit an organization listing (goes as pending)
         create: () => true,
-        // Only approved organizations are public; admins see all
         read: ({ req }) => {
             if (req.user) return true
             return { status: { equals: 'approved' } }
@@ -30,21 +31,21 @@ export const Organizations: CollectionConfig = {
         delete: ({ req }) => !!req.user,
     },
     fields: [
-        { name: 'name', type: 'text', required: true },
+        { name: 'name', type: 'text', required: true, label: 'Nume' },
         {
             name: 'representatives',
             type: 'array',
             maxRows: 3,
-            label: 'Representatives',
+            label: 'Reprezentanți',
             admin: {
-                description: 'Up to 3 verified representatives. The first is auto-added from submission.',
+                description: 'Până la 3 reprezentanți verificați. Primul este adăugat automat din trimitere.',
             },
             fields: [
                 {
                     name: 'clerkUserId',
                     type: 'text',
                     required: true,
-                    label: 'Clerk User ID',
+                    label: 'ID Utilizator Clerk',
                 },
                 {
                     name: 'email',
@@ -55,12 +56,13 @@ export const Organizations: CollectionConfig = {
                 {
                     name: 'status',
                     type: 'select',
+                    label: 'Stare',
                     defaultValue: 'pending',
                     options: [
-                        { label: '⏳ Pending', value: 'pending' },
-                        { label: '✅ Approved', value: 'approved' },
+                        { label: '⏳ În așteptare', value: 'pending' },
+                        { label: '✅ Aprobat', value: 'approved' },
                     ],
-                    admin: { description: 'Approve to grant posting rights' },
+                    admin: { description: 'Aprobați pentru a acorda drepturi de publicare' },
                 },
             ],
         },
@@ -85,7 +87,7 @@ export const Organizations: CollectionConfig = {
                 ],
             },
         },
-        { name: 'description', type: 'richText' },
+        { name: 'description', type: 'richText', label: 'Descriere' },
         {
             name: 'logo',
             type: 'upload',
@@ -94,11 +96,13 @@ export const Organizations: CollectionConfig = {
         {
             name: 'website',
             type: 'text',
-            admin: { description: 'External URL' },
+            label: 'Website',
+            admin: { description: 'URL extern' },
         },
         {
             name: 'type',
             type: 'select',
+            label: 'Tip',
             options: [
                 { label: 'Susținător', value: 'supporter' },
                 { label: 'Partener', value: 'partner' },
@@ -109,24 +113,25 @@ export const Organizations: CollectionConfig = {
         {
             name: 'status',
             type: 'select',
+            label: 'Stare',
             defaultValue: 'pending',
             options: [
-                { label: '⏳ Pending', value: 'pending' },
-                { label: '✅ Approved', value: 'approved' },
-                { label: '❌ Rejected', value: 'rejected' },
+                { label: '⏳ În așteptare', value: 'pending' },
+                { label: '✅ Aprobat', value: 'approved' },
+                { label: '❌ Respins', value: 'rejected' },
             ],
             admin: {
                 position: 'sidebar',
-                description: 'Submissions arrive as Pending. Review and set to Approved or Rejected.',
+                description: 'Trimiterile vin ca „În așteptare". Revizuiți și setați ca Aprobat sau Respins.',
             },
         },
         {
             name: 'adminNotes',
             type: 'textarea',
-            label: 'Admin Notes',
+            label: 'Note admin',
             admin: {
                 position: 'sidebar',
-                description: 'Internal notes — not shown publicly',
+                description: 'Note interne — nu se afișează public',
             },
             access: {
                 read: ({ req }) => !!req.user,
@@ -137,13 +142,14 @@ export const Organizations: CollectionConfig = {
         {
             name: 'approvedAt',
             type: 'date',
+            label: 'Aprobat la',
             admin: { position: 'sidebar', readOnly: true },
         },
         {
             name: 'featured',
             type: 'checkbox',
             defaultValue: false,
-            label: 'Show on Homepage',
+            label: 'Afișează pe pagina principală',
             admin: { position: 'sidebar' },
         },
     ],

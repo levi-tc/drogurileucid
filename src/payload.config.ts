@@ -4,6 +4,7 @@ import path from "path";
 import { buildConfig } from "payload";
 import { fileURLToPath } from "url";
 import sharp from "sharp";
+import { ro } from "@payloadcms/translations/languages/ro";
 
 import { Users } from "./collections/Users";
 import { Media } from "./collections/Media";
@@ -21,6 +22,13 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
+    meta: {
+      titleSuffix: "— Asociația Antidrog",
+    },
+  },
+  i18n: {
+    supportedLanguages: { ro },
+    fallbackLanguage: "ro",
   },
   collections: [Users, Media, Stories, Comments, Articles, Organizations],
   editor: lexicalEditor(),

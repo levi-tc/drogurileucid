@@ -2,9 +2,14 @@ import type { CollectionConfig } from 'payload'
 
 export const Articles: CollectionConfig = {
     slug: 'articles',
+    labels: {
+        singular: 'Articol',
+        plural: 'Articole',
+    },
     admin: {
         useAsTitle: 'title',
         defaultColumns: ['title', 'category', 'status', 'publishedAt'],
+        description: 'Articole și ghiduri. Cele trimise de organizații vin ca „În așteptare".',
     },
     hooks: {
         beforeChange: [
@@ -26,7 +31,7 @@ export const Articles: CollectionConfig = {
         delete: ({ req }) => !!req.user,
     },
     fields: [
-        { name: 'title', type: 'text', required: true },
+        { name: 'title', type: 'text', required: true, label: 'Titlu' },
         {
             name: 'slug',
             type: 'text',
@@ -48,10 +53,11 @@ export const Articles: CollectionConfig = {
                 ],
             },
         },
-        { name: 'body', type: 'richText', required: true },
+        { name: 'body', type: 'richText', required: true, label: 'Conținut' },
         {
             name: 'category',
             type: 'select',
+            label: 'Categorie',
             options: [
                 { label: 'Prevenție', value: 'prevention' },
                 { label: 'Sănătate', value: 'health' },
@@ -63,43 +69,49 @@ export const Articles: CollectionConfig = {
         {
             name: 'featuredImage',
             type: 'upload',
+            label: 'Imagine principală',
             relationTo: 'media',
         },
         {
             name: 'author',
             type: 'text',
-            admin: { description: 'Optional author credit' },
+            label: 'Autor',
+            admin: { description: 'Credit autor (opțional)' },
         },
         {
             name: 'organization',
             type: 'relationship',
+            label: 'Organizație',
             relationTo: 'organizations',
-            admin: { description: 'Organization that submitted this article' },
+            admin: { description: 'Organizația care a trimis acest articol' },
         },
         {
             name: 'clerkUserId',
             type: 'text',
+            label: 'ID Utilizator Clerk',
             admin: {
                 position: 'sidebar',
                 readOnly: true,
-                description: 'Clerk user ID of submitter',
+                description: 'ID-ul Clerk al celui care a trimis',
             },
         },
         {
             name: 'status',
             type: 'select',
+            label: 'Stare',
             defaultValue: 'pending',
             options: [
-                { label: '📝 Draft', value: 'draft' },
-                { label: '⏳ Pending', value: 'pending' },
-                { label: '✅ Published', value: 'published' },
-                { label: '❌ Rejected', value: 'rejected' },
+                { label: '📝 Ciornă', value: 'draft' },
+                { label: '⏳ În așteptare', value: 'pending' },
+                { label: '✅ Publicat', value: 'published' },
+                { label: '❌ Respins', value: 'rejected' },
             ],
             admin: { position: 'sidebar' },
         },
         {
             name: 'publishedAt',
             type: 'date',
+            label: 'Data publicării',
             admin: { position: 'sidebar', date: { pickerAppearance: 'dayOnly' } },
         },
     ],

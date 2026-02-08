@@ -2,10 +2,14 @@ import type { CollectionConfig } from 'payload'
 
 export const Stories: CollectionConfig = {
     slug: 'stories',
+    labels: {
+        singular: 'Poveste',
+        plural: 'Povești',
+    },
     admin: {
         useAsTitle: 'title',
         defaultColumns: ['title', 'author', 'status', 'category', 'publishedAt'],
-        description: 'User-submitted stories. New submissions arrive as "Pending" — review and approve or reject them.',
+        description: 'Povești trimise de utilizatori. Noile trimiteri vin ca „În așteptare" — revizuiți și aprobați sau respingeți-le.',
     },
     hooks: {
         beforeChange: [
@@ -19,9 +23,7 @@ export const Stories: CollectionConfig = {
         ],
     },
     access: {
-        // Anyone can submit a story (goes as pending)
         create: () => true,
-        // Only published stories are public; admins see all
         read: ({ req }) => {
             if (req.user) return true
             return { status: { equals: 'published' } }
@@ -30,7 +32,7 @@ export const Stories: CollectionConfig = {
         delete: ({ req }) => !!req.user,
     },
     fields: [
-        { name: 'title', type: 'text', required: true },
+        { name: 'title', type: 'text', required: true, label: 'Titlu' },
         {
             name: 'slug',
             type: 'text',
@@ -52,23 +54,25 @@ export const Stories: CollectionConfig = {
                 ],
             },
         },
-        { name: 'author', type: 'text', required: true },
-        { name: 'authorRole', type: 'text', label: 'Author Role' },
+        { name: 'author', type: 'text', required: true, label: 'Autor' },
+        { name: 'authorRole', type: 'text', label: 'Rolul autorului' },
         {
             name: 'email',
             type: 'email',
-            admin: { description: 'Private — not shown publicly' },
+            admin: { description: 'Privat — nu se afișează public' },
         },
         {
             name: 'excerpt',
             type: 'textarea',
+            label: 'Rezumat',
             maxLength: 300,
-            admin: { description: 'Short preview for story cards' },
+            admin: { description: 'Scurtă previzualizare pentru carduri' },
         },
-        { name: 'body', type: 'richText', required: true },
+        { name: 'body', type: 'richText', required: true, label: 'Conținut' },
         {
             name: 'category',
             type: 'select',
+            label: 'Categorie',
             defaultValue: 'personal',
             options: [
                 { label: 'Personal', value: 'personal' },
@@ -80,28 +84,28 @@ export const Stories: CollectionConfig = {
         {
             name: 'status',
             type: 'select',
+            label: 'Stare',
             defaultValue: 'pending',
             options: [
-                { label: '📝 Draft', value: 'draft' },
-                { label: '⏳ Pending', value: 'pending' },
-                { label: '✅ Published', value: 'published' },
-                { label: '❌ Rejected', value: 'rejected' },
+                { label: '📝 Ciornă', value: 'draft' },
+                { label: '⏳ În așteptare', value: 'pending' },
+                { label: '✅ Publicat', value: 'published' },
+                { label: '❌ Respins', value: 'rejected' },
             ],
             admin: {
                 position: 'sidebar',
-                description: 'Submissions arrive as Pending. Review and set to Published or Rejected.',
+                description: 'Trimiterile vin ca „În așteptare". Revizuiți și setați ca Publicat sau Respins.',
             },
         },
         {
             name: 'adminNotes',
             type: 'textarea',
-            label: 'Admin Notes',
+            label: 'Note admin',
             admin: {
                 position: 'sidebar',
-                description: 'Internal notes — not shown publicly',
+                description: 'Note interne — nu se afișează public',
             },
             access: {
-                // Only admins can read/write admin notes
                 read: ({ req }) => !!req.user,
                 create: ({ req }) => !!req.user,
                 update: ({ req }) => !!req.user,
@@ -110,24 +114,25 @@ export const Stories: CollectionConfig = {
         {
             name: 'featuredImage',
             type: 'upload',
+            label: 'Imagine principală',
             relationTo: 'media',
         },
         {
             name: 'publishedAt',
             type: 'date',
+            label: 'Data publicării',
             admin: { position: 'sidebar', date: { pickerAppearance: 'dayOnly' } },
         },
-        // Team responses — admin-only replies shown on story page
         {
             name: 'responses',
             type: 'array',
-            label: 'Team Responses',
-            admin: { description: 'Replies from the team (shown publicly on the story page)' },
+            label: 'Răspunsuri echipă',
+            admin: { description: 'Răspunsuri de la echipă (afișate public pe pagina poveștii)' },
             fields: [
-                { name: 'responderName', type: 'text', required: true },
-                { name: 'responderRole', type: 'text' },
-                { name: 'message', type: 'textarea', required: true },
-                { name: 'respondedAt', type: 'date' },
+                { name: 'responderName', type: 'text', required: true, label: 'Numele celui care răspunde' },
+                { name: 'responderRole', type: 'text', label: 'Rolul' },
+                { name: 'message', type: 'textarea', required: true, label: 'Mesaj' },
+                { name: 'respondedAt', type: 'date', label: 'Răspuns la' },
             ],
         },
     ],
