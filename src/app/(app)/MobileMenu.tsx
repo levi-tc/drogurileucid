@@ -60,6 +60,9 @@ export default function MobileMenu() {
             <Link href="/despre-noi" className="block text-lg font-medium hover:underline" onClick={() => setOpen(false)}>
               Despre noi
             </Link>
+            <Link href="/sustinatori" className="block text-lg font-medium hover:underline" onClick={() => setOpen(false)}>
+              Susținători
+            </Link>
             <Link href="/contact" className="block text-lg font-medium hover:underline" onClick={() => setOpen(false)}>
               Contact
             </Link>

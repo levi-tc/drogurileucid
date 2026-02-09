@@ -86,7 +86,7 @@ export default function Home() {
             >
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-medium" style={{ borderColor: "var(--brand-orange-500)", color: "var(--brand-orange-500)", background: "rgba(254,101,79,0.06)" }}>
                 <span className="size-2 rounded-full animate-pulse" style={{ background: "var(--brand-orange-500)" }} />
-                Mișcarea AntiDrog
+                Mișcarea Națională AntiDrog
               </div>
               <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.08] tracking-tight">
                 Împreună{" "}
