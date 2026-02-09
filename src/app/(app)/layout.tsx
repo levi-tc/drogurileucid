@@ -63,7 +63,7 @@ export default function RootLayout({
           <main className="mx-auto max-w-7xl px-4">{children}</main>
           <footer className="mt-20 border-t">
             <div className="mx-auto max-w-6xl px-4 py-8 text-center text-sm text-muted-foreground">
-              © 2025 Asociația „Drogurile ucid visurile copiilor"
+              © 2025 Uniunea Națională Antidrog – „Alege Viața, nu Dependența"
             </div>
           </footer>
         </body>
