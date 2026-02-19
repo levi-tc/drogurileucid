@@ -10,6 +10,9 @@ import { Stories } from "./collections/Stories";
 import { Comments } from "./collections/Comments";
 import { Articles } from "./collections/Articles";
 import { Organizations } from "./collections/Organizations";
+import { PrivacyPolicy } from "./globals/PrivacyPolicy";
+import { CookiePolicy } from "./globals/CookiePolicy";
+import { TermsConditions } from "./globals/TermsConditions";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -25,6 +28,7 @@ export default buildConfig({
     },
   },
   collections: [Users, Media, Stories, Comments, Articles, Organizations],
+  globals: [PrivacyPolicy, CookiePolicy, TermsConditions],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || "",
   typescript: {

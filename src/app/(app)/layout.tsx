@@ -3,6 +3,8 @@ import Link from "next/link";
 import ParallaxBackground from "./ParallaxBackground";
 import MobileMenu from "./MobileMenu";
 import AuthButtons from "./AuthButtons";
+import Footer from "./Footer";
+import CookieConsent from "./CookieConsent";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
@@ -40,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="ro">
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <ParallaxBackground />
           <header className="sticky top-0 z-50 bg-transparent">
@@ -61,13 +63,11 @@ export default function RootLayout({
             </div>
           </header>
           <main className="mx-auto max-w-7xl px-4">{children}</main>
-          <footer className="mt-20 border-t">
-            <div className="mx-auto max-w-6xl px-4 py-8 text-center text-sm text-muted-foreground">
-              © 2025 Uniunea Națională Antidrog – „Alege Viața, nu Dependența"
-            </div>
-          </footer>
+          <Footer />
+          <CookieConsent />
         </body>
       </html>
     </ClerkProvider>
   );
 }
+
